@@ -1,0 +1,2 @@
+integrity_rule_id,rule_ref,rule_version,threshold,effective_from,effective_to,rule_description
+1,SIMILARITY-THRESHOLD,1,70.0,2026-01-01T12:00:00+00:00,,Scores at or above 70 trigger human review; they do not establish guilt.

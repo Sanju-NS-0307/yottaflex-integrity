@@ -1,0 +1,27 @@
+{
+  "seed": 20261022,
+  "submissions_requested": 10000,
+  "flags_requested": 1000,
+  "cases_requested": 300,
+  "submission_count": 10000,
+  "flagged_report_count": 1000,
+  "case_count": 300,
+  "appeal_count": 60,
+  "foreign_key_violations": 0,
+  "table_counts": {
+    "learner": 10000,
+    "assessment": 10,
+    "integrity_rule": 1,
+    "submission": 10000,
+    "similarity_report": 10000,
+    "reviewer": 20,
+    "case_record": 300,
+    "reviewer_assignment": 300,
+    "reviewer_conflict": 30,
+    "evidence_item": 300,
+    "decision": 300,
+    "appeal": 60,
+    "appeal_review": 60,
+    "audit_event": 1620
+  }
+}

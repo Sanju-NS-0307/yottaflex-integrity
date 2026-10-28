@@ -1,0 +1,1621 @@
+event_id,case_id,event_type,actor_type,actor_id,occurred_at,previous_state,new_state,event_details
+1,1,case_opened,system,,2026-01-02T15:00:00+00:00,,open,Case created from a flagged similarity report.
+2,1,reviewer_assigned,system,,2026-01-02T15:00:00+00:00,open,assigned,Assigned to reviewer 1.
+3,1,review_started,reviewer,1,2026-01-02T15:00:00+00:00,assigned,under_review,Human review started.
+4,1,evidence_added,reviewer,1,2026-01-02T16:00:00+00:00,,,Synthetic evidence added before the decision.
+5,1,decision_recorded,reviewer,1,2026-01-02T17:00:00+00:00,under_review,decision_recorded,breach_found
+6,1,appeal_submitted,system,,2026-01-03T10:00:00+00:00,decision_recorded,appealed,Appeal submitted after the original decision.
+7,1,independent_review_completed,reviewer,2,2026-01-04T10:00:00+00:00,appealed,closed,Independent reviewer completed appeal review.
+8,2,case_opened,system,,2026-01-03T15:00:00+00:00,,open,Case created from a flagged similarity report.
+9,2,reviewer_assigned,system,,2026-01-03T15:00:00+00:00,open,assigned,Assigned to reviewer 2.
+10,2,review_started,reviewer,2,2026-01-03T15:00:00+00:00,assigned,under_review,Human review started.
+11,2,evidence_added,reviewer,2,2026-01-03T16:00:00+00:00,,,Synthetic evidence added before the decision.
+12,2,decision_recorded,reviewer,2,2026-01-03T17:00:00+00:00,under_review,decision_recorded,no_breach
+13,2,appeal_submitted,system,,2026-01-04T10:00:00+00:00,decision_recorded,appealed,Appeal submitted after the original decision.
+14,2,independent_review_completed,reviewer,3,2026-01-05T10:00:00+00:00,appealed,closed,Independent reviewer completed appeal review.
+15,3,case_opened,system,,2026-01-04T15:00:00+00:00,,open,Case created from a flagged similarity report.
+16,3,reviewer_assigned,system,,2026-01-04T15:00:00+00:00,open,assigned,Assigned to reviewer 3.
+17,3,review_started,reviewer,3,2026-01-04T15:00:00+00:00,assigned,under_review,Human review started.
+18,3,evidence_added,reviewer,3,2026-01-04T16:00:00+00:00,,,Synthetic evidence added before the decision.
+19,3,decision_recorded,reviewer,3,2026-01-04T17:00:00+00:00,under_review,decision_recorded,no_breach
+20,3,appeal_submitted,system,,2026-01-05T10:00:00+00:00,decision_recorded,appealed,Appeal submitted after the original decision.
+21,3,independent_review_completed,reviewer,4,2026-01-06T10:00:00+00:00,appealed,closed,Independent reviewer completed appeal review.
+22,4,case_opened,system,,2026-01-05T15:00:00+00:00,,open,Case created from a flagged similarity report.
+23,4,reviewer_assigned,system,,2026-01-05T15:00:00+00:00,open,assigned,Assigned to reviewer 4.
+24,4,review_started,reviewer,4,2026-01-05T15:00:00+00:00,assigned,under_review,Human review started.
+25,4,evidence_added,reviewer,4,2026-01-05T16:00:00+00:00,,,Synthetic evidence added before the decision.
+26,4,decision_recorded,reviewer,4,2026-01-05T17:00:00+00:00,under_review,decision_recorded,no_breach
+27,4,appeal_submitted,system,,2026-01-06T10:00:00+00:00,decision_recorded,appealed,Appeal submitted after the original decision.
+28,4,independent_review_completed,reviewer,5,2026-01-07T10:00:00+00:00,appealed,closed,Independent reviewer completed appeal review.
+29,5,case_opened,system,,2026-01-06T15:00:00+00:00,,open,Case created from a flagged similarity report.
+30,5,reviewer_assigned,system,,2026-01-06T15:00:00+00:00,open,assigned,Assigned to reviewer 5.
+31,5,review_started,reviewer,5,2026-01-06T15:00:00+00:00,assigned,under_review,Human review started.
+32,5,evidence_added,reviewer,5,2026-01-06T16:00:00+00:00,,,Synthetic evidence added before the decision.
+33,5,decision_recorded,reviewer,5,2026-01-06T17:00:00+00:00,under_review,decision_recorded,breach_found
+34,5,appeal_submitted,system,,2026-01-07T10:00:00+00:00,decision_recorded,appealed,Appeal submitted after the original decision.
+35,5,independent_review_completed,reviewer,6,2026-01-08T10:00:00+00:00,appealed,closed,Independent reviewer completed appeal review.
+36,6,case_opened,system,,2026-01-07T15:00:00+00:00,,open,Case created from a flagged similarity report.
+37,6,reviewer_assigned,system,,2026-01-07T15:00:00+00:00,open,assigned,Assigned to reviewer 6.
+38,6,review_started,reviewer,6,2026-01-07T15:00:00+00:00,assigned,under_review,Human review started.
+39,6,evidence_added,reviewer,6,2026-01-07T16:00:00+00:00,,,Synthetic evidence added before the decision.
+40,6,decision_recorded,reviewer,6,2026-01-07T17:00:00+00:00,under_review,decision_recorded,no_breach
+41,6,appeal_submitted,system,,2026-01-08T10:00:00+00:00,decision_recorded,appealed,Appeal submitted after the original decision.
+42,6,independent_review_completed,reviewer,7,2026-01-09T10:00:00+00:00,appealed,closed,Independent reviewer completed appeal review.
+43,7,case_opened,system,,2026-01-08T15:00:00+00:00,,open,Case created from a flagged similarity report.
+44,7,reviewer_assigned,system,,2026-01-08T15:00:00+00:00,open,assigned,Assigned to reviewer 7.
+45,7,review_started,reviewer,7,2026-01-08T15:00:00+00:00,assigned,under_review,Human review started.
+46,7,evidence_added,reviewer,7,2026-01-08T16:00:00+00:00,,,Synthetic evidence added before the decision.
+47,7,decision_recorded,reviewer,7,2026-01-08T17:00:00+00:00,under_review,decision_recorded,no_breach
+48,7,appeal_submitted,system,,2026-01-09T10:00:00+00:00,decision_recorded,appealed,Appeal submitted after the original decision.
+49,7,independent_review_completed,reviewer,8,2026-01-10T10:00:00+00:00,appealed,closed,Independent reviewer completed appeal review.
+50,8,case_opened,system,,2026-01-09T15:00:00+00:00,,open,Case created from a flagged similarity report.
+51,8,reviewer_assigned,system,,2026-01-09T15:00:00+00:00,open,assigned,Assigned to reviewer 8.
+52,8,review_started,reviewer,8,2026-01-09T15:00:00+00:00,assigned,under_review,Human review started.
+53,8,evidence_added,reviewer,8,2026-01-09T16:00:00+00:00,,,Synthetic evidence added before the decision.
+54,8,decision_recorded,reviewer,8,2026-01-09T17:00:00+00:00,under_review,decision_recorded,no_breach
+55,8,appeal_submitted,system,,2026-01-10T10:00:00+00:00,decision_recorded,appealed,Appeal submitted after the original decision.
+56,8,independent_review_completed,reviewer,9,2026-01-11T10:00:00+00:00,appealed,closed,Independent reviewer completed appeal review.
+57,9,case_opened,system,,2026-01-10T15:00:00+00:00,,open,Case created from a flagged similarity report.
+58,9,reviewer_assigned,system,,2026-01-10T15:00:00+00:00,open,assigned,Assigned to reviewer 9.
+59,9,review_started,reviewer,9,2026-01-10T15:00:00+00:00,assigned,under_review,Human review started.
+60,9,evidence_added,reviewer,9,2026-01-10T16:00:00+00:00,,,Synthetic evidence added before the decision.
+61,9,decision_recorded,reviewer,9,2026-01-10T17:00:00+00:00,under_review,decision_recorded,inconclusive
+62,9,appeal_submitted,system,,2026-01-11T10:00:00+00:00,decision_recorded,appealed,Appeal submitted after the original decision.
+63,9,independent_review_completed,reviewer,10,2026-01-12T10:00:00+00:00,appealed,closed,Independent reviewer completed appeal review.
+64,10,case_opened,system,,2026-01-11T15:00:00+00:00,,open,Case created from a flagged similarity report.
+65,10,reviewer_assigned,system,,2026-01-11T15:00:00+00:00,open,assigned,Assigned to reviewer 11.
+66,10,review_started,reviewer,11,2026-01-11T15:00:00+00:00,assigned,under_review,Human review started.
+67,10,evidence_added,reviewer,11,2026-01-11T16:00:00+00:00,,,Synthetic evidence added before the decision.
+68,10,decision_recorded,reviewer,11,2026-01-11T17:00:00+00:00,under_review,decision_recorded,no_breach
+69,10,appeal_submitted,system,,2026-01-12T10:00:00+00:00,decision_recorded,appealed,Appeal submitted after the original decision.
+70,10,independent_review_completed,reviewer,12,2026-01-13T10:00:00+00:00,appealed,closed,Independent reviewer completed appeal review.
+71,11,case_opened,system,,2026-01-12T15:00:00+00:00,,open,Case created from a flagged similarity report.
+72,11,reviewer_assigned,system,,2026-01-12T15:00:00+00:00,open,assigned,Assigned to reviewer 11.
+73,11,review_started,reviewer,11,2026-01-12T15:00:00+00:00,assigned,under_review,Human review started.
+74,11,evidence_added,reviewer,11,2026-01-12T16:00:00+00:00,,,Synthetic evidence added before the decision.
+75,11,decision_recorded,reviewer,11,2026-01-12T17:00:00+00:00,under_review,decision_recorded,no_breach
+76,11,appeal_submitted,system,,2026-01-13T10:00:00+00:00,decision_recorded,appealed,Appeal submitted after the original decision.
+77,11,independent_review_completed,reviewer,12,2026-01-14T10:00:00+00:00,appealed,closed,Independent reviewer completed appeal review.
+78,12,case_opened,system,,2026-01-13T15:00:00+00:00,,open,Case created from a flagged similarity report.
+79,12,reviewer_assigned,system,,2026-01-13T15:00:00+00:00,open,assigned,Assigned to reviewer 12.
+80,12,review_started,reviewer,12,2026-01-13T15:00:00+00:00,assigned,under_review,Human review started.
+81,12,evidence_added,reviewer,12,2026-01-13T16:00:00+00:00,,,Synthetic evidence added before the decision.
+82,12,decision_recorded,reviewer,12,2026-01-13T17:00:00+00:00,under_review,decision_recorded,no_breach
+83,12,appeal_submitted,system,,2026-01-14T10:00:00+00:00,decision_recorded,appealed,Appeal submitted after the original decision.
+84,12,independent_review_completed,reviewer,13,2026-01-15T10:00:00+00:00,appealed,closed,Independent reviewer completed appeal review.
+85,13,case_opened,system,,2026-01-14T15:00:00+00:00,,open,Case created from a flagged similarity report.
+86,13,reviewer_assigned,system,,2026-01-14T15:00:00+00:00,open,assigned,Assigned to reviewer 13.
+87,13,review_started,reviewer,13,2026-01-14T15:00:00+00:00,assigned,under_review,Human review started.
+88,13,evidence_added,reviewer,13,2026-01-14T16:00:00+00:00,,,Synthetic evidence added before the decision.
+89,13,decision_recorded,reviewer,13,2026-01-14T17:00:00+00:00,under_review,decision_recorded,breach_found
+90,13,appeal_submitted,system,,2026-01-15T10:00:00+00:00,decision_recorded,appealed,Appeal submitted after the original decision.
+91,13,independent_review_completed,reviewer,14,2026-01-16T10:00:00+00:00,appealed,closed,Independent reviewer completed appeal review.
+92,14,case_opened,system,,2026-01-15T15:00:00+00:00,,open,Case created from a flagged similarity report.
+93,14,reviewer_assigned,system,,2026-01-15T15:00:00+00:00,open,assigned,Assigned to reviewer 14.
+94,14,review_started,reviewer,14,2026-01-15T15:00:00+00:00,assigned,under_review,Human review started.
+95,14,evidence_added,reviewer,14,2026-01-15T16:00:00+00:00,,,Synthetic evidence added before the decision.
+96,14,decision_recorded,reviewer,14,2026-01-15T17:00:00+00:00,under_review,decision_recorded,no_breach
+97,14,appeal_submitted,system,,2026-01-16T10:00:00+00:00,decision_recorded,appealed,Appeal submitted after the original decision.
+98,14,independent_review_completed,reviewer,15,2026-01-17T10:00:00+00:00,appealed,closed,Independent reviewer completed appeal review.
+99,15,case_opened,system,,2026-01-16T15:00:00+00:00,,open,Case created from a flagged similarity report.
+100,15,reviewer_assigned,system,,2026-01-16T15:00:00+00:00,open,assigned,Assigned to reviewer 15.
+101,15,review_started,reviewer,15,2026-01-16T15:00:00+00:00,assigned,under_review,Human review started.
+102,15,evidence_added,reviewer,15,2026-01-16T16:00:00+00:00,,,Synthetic evidence added before the decision.
+103,15,decision_recorded,reviewer,15,2026-01-16T17:00:00+00:00,under_review,decision_recorded,no_breach
+104,15,appeal_submitted,system,,2026-01-17T10:00:00+00:00,decision_recorded,appealed,Appeal submitted after the original decision.
+105,15,independent_review_completed,reviewer,16,2026-01-18T10:00:00+00:00,appealed,closed,Independent reviewer completed appeal review.
+106,16,case_opened,system,,2026-01-17T15:00:00+00:00,,open,Case created from a flagged similarity report.
+107,16,reviewer_assigned,system,,2026-01-17T15:00:00+00:00,open,assigned,Assigned to reviewer 16.
+108,16,review_started,reviewer,16,2026-01-17T15:00:00+00:00,assigned,under_review,Human review started.
+109,16,evidence_added,reviewer,16,2026-01-17T16:00:00+00:00,,,Synthetic evidence added before the decision.
+110,16,decision_recorded,reviewer,16,2026-01-17T17:00:00+00:00,under_review,decision_recorded,no_breach
+111,16,appeal_submitted,system,,2026-01-18T10:00:00+00:00,decision_recorded,appealed,Appeal submitted after the original decision.
+112,16,independent_review_completed,reviewer,17,2026-01-19T10:00:00+00:00,appealed,closed,Independent reviewer completed appeal review.
+113,17,case_opened,system,,2026-01-18T15:00:00+00:00,,open,Case created from a flagged similarity report.
+114,17,reviewer_assigned,system,,2026-01-18T15:00:00+00:00,open,assigned,Assigned to reviewer 17.
+115,17,review_started,reviewer,17,2026-01-18T15:00:00+00:00,assigned,under_review,Human review started.
+116,17,evidence_added,reviewer,17,2026-01-18T16:00:00+00:00,,,Synthetic evidence added before the decision.
+117,17,decision_recorded,reviewer,17,2026-01-18T17:00:00+00:00,under_review,decision_recorded,inconclusive
+118,17,appeal_submitted,system,,2026-01-19T10:00:00+00:00,decision_recorded,appealed,Appeal submitted after the original decision.
+119,17,independent_review_completed,reviewer,18,2026-01-20T10:00:00+00:00,appealed,closed,Independent reviewer completed appeal review.
+120,18,case_opened,system,,2026-01-19T15:00:00+00:00,,open,Case created from a flagged similarity report.
+121,18,reviewer_assigned,system,,2026-01-19T15:00:00+00:00,open,assigned,Assigned to reviewer 18.
+122,18,review_started,reviewer,18,2026-01-19T15:00:00+00:00,assigned,under_review,Human review started.
+123,18,evidence_added,reviewer,18,2026-01-19T16:00:00+00:00,,,Synthetic evidence added before the decision.
+124,18,decision_recorded,reviewer,18,2026-01-19T17:00:00+00:00,under_review,decision_recorded,no_breach
+125,18,appeal_submitted,system,,2026-01-20T10:00:00+00:00,decision_recorded,appealed,Appeal submitted after the original decision.
+126,18,independent_review_completed,reviewer,19,2026-01-21T10:00:00+00:00,appealed,closed,Independent reviewer completed appeal review.
+127,19,case_opened,system,,2026-01-20T15:00:00+00:00,,open,Case created from a flagged similarity report.
+128,19,reviewer_assigned,system,,2026-01-20T15:00:00+00:00,open,assigned,Assigned to reviewer 19.
+129,19,review_started,reviewer,19,2026-01-20T15:00:00+00:00,assigned,under_review,Human review started.
+130,19,evidence_added,reviewer,19,2026-01-20T16:00:00+00:00,,,Synthetic evidence added before the decision.
+131,19,decision_recorded,reviewer,19,2026-01-20T17:00:00+00:00,under_review,decision_recorded,no_breach
+132,19,appeal_submitted,system,,2026-01-21T10:00:00+00:00,decision_recorded,appealed,Appeal submitted after the original decision.
+133,19,independent_review_completed,reviewer,20,2026-01-22T10:00:00+00:00,appealed,closed,Independent reviewer completed appeal review.
+134,20,case_opened,system,,2026-01-21T15:00:00+00:00,,open,Case created from a flagged similarity report.
+135,20,reviewer_assigned,system,,2026-01-21T15:00:00+00:00,open,assigned,Assigned to reviewer 1.
+136,20,review_started,reviewer,1,2026-01-21T15:00:00+00:00,assigned,under_review,Human review started.
+137,20,evidence_added,reviewer,1,2026-01-21T16:00:00+00:00,,,Synthetic evidence added before the decision.
+138,20,decision_recorded,reviewer,1,2026-01-21T17:00:00+00:00,under_review,decision_recorded,no_breach
+139,20,appeal_submitted,system,,2026-01-22T10:00:00+00:00,decision_recorded,appealed,Appeal submitted after the original decision.
+140,20,independent_review_completed,reviewer,2,2026-01-23T10:00:00+00:00,appealed,closed,Independent reviewer completed appeal review.
+141,21,case_opened,system,,2026-01-22T15:00:00+00:00,,open,Case created from a flagged similarity report.
+142,21,reviewer_assigned,system,,2026-01-22T15:00:00+00:00,open,assigned,Assigned to reviewer 1.
+143,21,review_started,reviewer,1,2026-01-22T15:00:00+00:00,assigned,under_review,Human review started.
+144,21,evidence_added,reviewer,1,2026-01-22T16:00:00+00:00,,,Synthetic evidence added before the decision.
+145,21,decision_recorded,reviewer,1,2026-01-22T17:00:00+00:00,under_review,decision_recorded,inconclusive
+146,21,appeal_submitted,system,,2026-01-23T10:00:00+00:00,decision_recorded,appealed,Appeal submitted after the original decision.
+147,21,independent_review_completed,reviewer,2,2026-01-24T10:00:00+00:00,appealed,closed,Independent reviewer completed appeal review.
+148,22,case_opened,system,,2026-01-23T15:00:00+00:00,,open,Case created from a flagged similarity report.
+149,22,reviewer_assigned,system,,2026-01-23T15:00:00+00:00,open,assigned,Assigned to reviewer 2.
+150,22,review_started,reviewer,2,2026-01-23T15:00:00+00:00,assigned,under_review,Human review started.
+151,22,evidence_added,reviewer,2,2026-01-23T16:00:00+00:00,,,Synthetic evidence added before the decision.
+152,22,decision_recorded,reviewer,2,2026-01-23T17:00:00+00:00,under_review,decision_recorded,no_breach
+153,22,appeal_submitted,system,,2026-01-24T10:00:00+00:00,decision_recorded,appealed,Appeal submitted after the original decision.
+154,22,independent_review_completed,reviewer,3,2026-01-25T10:00:00+00:00,appealed,closed,Independent reviewer completed appeal review.
+155,23,case_opened,system,,2026-01-24T15:00:00+00:00,,open,Case created from a flagged similarity report.
+156,23,reviewer_assigned,system,,2026-01-24T15:00:00+00:00,open,assigned,Assigned to reviewer 3.
+157,23,review_started,reviewer,3,2026-01-24T15:00:00+00:00,assigned,under_review,Human review started.
+158,23,evidence_added,reviewer,3,2026-01-24T16:00:00+00:00,,,Synthetic evidence added before the decision.
+159,23,decision_recorded,reviewer,3,2026-01-24T17:00:00+00:00,under_review,decision_recorded,no_breach
+160,23,appeal_submitted,system,,2026-01-25T10:00:00+00:00,decision_recorded,appealed,Appeal submitted after the original decision.
+161,23,independent_review_completed,reviewer,4,2026-01-26T10:00:00+00:00,appealed,closed,Independent reviewer completed appeal review.
+162,24,case_opened,system,,2026-01-25T15:00:00+00:00,,open,Case created from a flagged similarity report.
+163,24,reviewer_assigned,system,,2026-01-25T15:00:00+00:00,open,assigned,Assigned to reviewer 4.
+164,24,review_started,reviewer,4,2026-01-25T15:00:00+00:00,assigned,under_review,Human review started.
+165,24,evidence_added,reviewer,4,2026-01-25T16:00:00+00:00,,,Synthetic evidence added before the decision.
+166,24,decision_recorded,reviewer,4,2026-01-25T17:00:00+00:00,under_review,decision_recorded,no_breach
+167,24,appeal_submitted,system,,2026-01-26T10:00:00+00:00,decision_recorded,appealed,Appeal submitted after the original decision.
+168,24,independent_review_completed,reviewer,5,2026-01-27T10:00:00+00:00,appealed,closed,Independent reviewer completed appeal review.
+169,25,case_opened,system,,2026-01-26T15:00:00+00:00,,open,Case created from a flagged similarity report.
+170,25,reviewer_assigned,system,,2026-01-26T15:00:00+00:00,open,assigned,Assigned to reviewer 5.
+171,25,review_started,reviewer,5,2026-01-26T15:00:00+00:00,assigned,under_review,Human review started.
+172,25,evidence_added,reviewer,5,2026-01-26T16:00:00+00:00,,,Synthetic evidence added before the decision.
+173,25,decision_recorded,reviewer,5,2026-01-26T17:00:00+00:00,under_review,decision_recorded,inconclusive
+174,25,appeal_submitted,system,,2026-01-27T10:00:00+00:00,decision_recorded,appealed,Appeal submitted after the original decision.
+175,25,independent_review_completed,reviewer,6,2026-01-28T10:00:00+00:00,appealed,closed,Independent reviewer completed appeal review.
+176,26,case_opened,system,,2026-01-27T15:00:00+00:00,,open,Case created from a flagged similarity report.
+177,26,reviewer_assigned,system,,2026-01-27T15:00:00+00:00,open,assigned,Assigned to reviewer 6.
+178,26,review_started,reviewer,6,2026-01-27T15:00:00+00:00,assigned,under_review,Human review started.
+179,26,evidence_added,reviewer,6,2026-01-27T16:00:00+00:00,,,Synthetic evidence added before the decision.
+180,26,decision_recorded,reviewer,6,2026-01-27T17:00:00+00:00,under_review,decision_recorded,no_breach
+181,26,appeal_submitted,system,,2026-01-28T10:00:00+00:00,decision_recorded,appealed,Appeal submitted after the original decision.
+182,26,independent_review_completed,reviewer,7,2026-01-29T10:00:00+00:00,appealed,closed,Independent reviewer completed appeal review.
+183,27,case_opened,system,,2026-01-28T15:00:00+00:00,,open,Case created from a flagged similarity report.
+184,27,reviewer_assigned,system,,2026-01-28T15:00:00+00:00,open,assigned,Assigned to reviewer 7.
+185,27,review_started,reviewer,7,2026-01-28T15:00:00+00:00,assigned,under_review,Human review started.
+186,27,evidence_added,reviewer,7,2026-01-28T16:00:00+00:00,,,Synthetic evidence added before the decision.
+187,27,decision_recorded,reviewer,7,2026-01-28T17:00:00+00:00,under_review,decision_recorded,no_breach
+188,27,appeal_submitted,system,,2026-01-29T10:00:00+00:00,decision_recorded,appealed,Appeal submitted after the original decision.
+189,27,independent_review_completed,reviewer,8,2026-01-30T10:00:00+00:00,appealed,closed,Independent reviewer completed appeal review.
+190,28,case_opened,system,,2026-01-29T15:00:00+00:00,,open,Case created from a flagged similarity report.
+191,28,reviewer_assigned,system,,2026-01-29T15:00:00+00:00,open,assigned,Assigned to reviewer 8.
+192,28,review_started,reviewer,8,2026-01-29T15:00:00+00:00,assigned,under_review,Human review started.
+193,28,evidence_added,reviewer,8,2026-01-29T16:00:00+00:00,,,Synthetic evidence added before the decision.
+194,28,decision_recorded,reviewer,8,2026-01-29T17:00:00+00:00,under_review,decision_recorded,no_breach
+195,28,appeal_submitted,system,,2026-01-30T10:00:00+00:00,decision_recorded,appealed,Appeal submitted after the original decision.
+196,28,independent_review_completed,reviewer,9,2026-01-31T10:00:00+00:00,appealed,closed,Independent reviewer completed appeal review.
+197,29,case_opened,system,,2026-01-30T15:00:00+00:00,,open,Case created from a flagged similarity report.
+198,29,reviewer_assigned,system,,2026-01-30T15:00:00+00:00,open,assigned,Assigned to reviewer 9.
+199,29,review_started,reviewer,9,2026-01-30T15:00:00+00:00,assigned,under_review,Human review started.
+200,29,evidence_added,reviewer,9,2026-01-30T16:00:00+00:00,,,Synthetic evidence added before the decision.
+201,29,decision_recorded,reviewer,9,2026-01-30T17:00:00+00:00,under_review,decision_recorded,breach_found
+202,29,appeal_submitted,system,,2026-01-31T10:00:00+00:00,decision_recorded,appealed,Appeal submitted after the original decision.
+203,29,independent_review_completed,reviewer,10,2026-02-01T10:00:00+00:00,appealed,closed,Independent reviewer completed appeal review.
+204,30,case_opened,system,,2026-01-31T15:00:00+00:00,,open,Case created from a flagged similarity report.
+205,30,reviewer_assigned,system,,2026-01-31T15:00:00+00:00,open,assigned,Assigned to reviewer 11.
+206,30,review_started,reviewer,11,2026-01-31T15:00:00+00:00,assigned,under_review,Human review started.
+207,30,evidence_added,reviewer,11,2026-01-31T16:00:00+00:00,,,Synthetic evidence added before the decision.
+208,30,decision_recorded,reviewer,11,2026-01-31T17:00:00+00:00,under_review,decision_recorded,no_breach
+209,30,appeal_submitted,system,,2026-02-01T10:00:00+00:00,decision_recorded,appealed,Appeal submitted after the original decision.
+210,30,independent_review_completed,reviewer,12,2026-02-02T10:00:00+00:00,appealed,closed,Independent reviewer completed appeal review.
+211,31,case_opened,system,,2026-02-01T15:00:00+00:00,,open,Case created from a flagged similarity report.
+212,31,reviewer_assigned,system,,2026-02-01T15:00:00+00:00,open,assigned,Assigned to reviewer 11.
+213,31,review_started,reviewer,11,2026-02-01T15:00:00+00:00,assigned,under_review,Human review started.
+214,31,evidence_added,reviewer,11,2026-02-01T16:00:00+00:00,,,Synthetic evidence added before the decision.
+215,31,decision_recorded,reviewer,11,2026-02-01T17:00:00+00:00,under_review,decision_recorded,no_breach
+216,31,appeal_submitted,system,,2026-02-02T10:00:00+00:00,decision_recorded,appealed,Appeal submitted after the original decision.
+217,31,independent_review_completed,reviewer,12,2026-02-03T10:00:00+00:00,appealed,closed,Independent reviewer completed appeal review.
+218,32,case_opened,system,,2026-02-02T15:00:00+00:00,,open,Case created from a flagged similarity report.
+219,32,reviewer_assigned,system,,2026-02-02T15:00:00+00:00,open,assigned,Assigned to reviewer 12.
+220,32,review_started,reviewer,12,2026-02-02T15:00:00+00:00,assigned,under_review,Human review started.
+221,32,evidence_added,reviewer,12,2026-02-02T16:00:00+00:00,,,Synthetic evidence added before the decision.
+222,32,decision_recorded,reviewer,12,2026-02-02T17:00:00+00:00,under_review,decision_recorded,no_breach
+223,32,appeal_submitted,system,,2026-02-03T10:00:00+00:00,decision_recorded,appealed,Appeal submitted after the original decision.
+224,32,independent_review_completed,reviewer,13,2026-02-04T10:00:00+00:00,appealed,closed,Independent reviewer completed appeal review.
+225,33,case_opened,system,,2026-02-03T15:00:00+00:00,,open,Case created from a flagged similarity report.
+226,33,reviewer_assigned,system,,2026-02-03T15:00:00+00:00,open,assigned,Assigned to reviewer 13.
+227,33,review_started,reviewer,13,2026-02-03T15:00:00+00:00,assigned,under_review,Human review started.
+228,33,evidence_added,reviewer,13,2026-02-03T16:00:00+00:00,,,Synthetic evidence added before the decision.
+229,33,decision_recorded,reviewer,13,2026-02-03T17:00:00+00:00,under_review,decision_recorded,breach_found
+230,33,appeal_submitted,system,,2026-02-04T10:00:00+00:00,decision_recorded,appealed,Appeal submitted after the original decision.
+231,33,independent_review_completed,reviewer,14,2026-02-05T10:00:00+00:00,appealed,closed,Independent reviewer completed appeal review.
+232,34,case_opened,system,,2026-02-04T15:00:00+00:00,,open,Case created from a flagged similarity report.
+233,34,reviewer_assigned,system,,2026-02-04T15:00:00+00:00,open,assigned,Assigned to reviewer 14.
+234,34,review_started,reviewer,14,2026-02-04T15:00:00+00:00,assigned,under_review,Human review started.
+235,34,evidence_added,reviewer,14,2026-02-04T16:00:00+00:00,,,Synthetic evidence added before the decision.
+236,34,decision_recorded,reviewer,14,2026-02-04T17:00:00+00:00,under_review,decision_recorded,no_breach
+237,34,appeal_submitted,system,,2026-02-05T10:00:00+00:00,decision_recorded,appealed,Appeal submitted after the original decision.
+238,34,independent_review_completed,reviewer,15,2026-02-06T10:00:00+00:00,appealed,closed,Independent reviewer completed appeal review.
+239,35,case_opened,system,,2026-02-05T15:00:00+00:00,,open,Case created from a flagged similarity report.
+240,35,reviewer_assigned,system,,2026-02-05T15:00:00+00:00,open,assigned,Assigned to reviewer 15.
+241,35,review_started,reviewer,15,2026-02-05T15:00:00+00:00,assigned,under_review,Human review started.
+242,35,evidence_added,reviewer,15,2026-02-05T16:00:00+00:00,,,Synthetic evidence added before the decision.
+243,35,decision_recorded,reviewer,15,2026-02-05T17:00:00+00:00,under_review,decision_recorded,no_breach
+244,35,appeal_submitted,system,,2026-02-06T10:00:00+00:00,decision_recorded,appealed,Appeal submitted after the original decision.
+245,35,independent_review_completed,reviewer,16,2026-02-07T10:00:00+00:00,appealed,closed,Independent reviewer completed appeal review.
+246,36,case_opened,system,,2026-02-06T15:00:00+00:00,,open,Case created from a flagged similarity report.
+247,36,reviewer_assigned,system,,2026-02-06T15:00:00+00:00,open,assigned,Assigned to reviewer 16.
+248,36,review_started,reviewer,16,2026-02-06T15:00:00+00:00,assigned,under_review,Human review started.
+249,36,evidence_added,reviewer,16,2026-02-06T16:00:00+00:00,,,Synthetic evidence added before the decision.
+250,36,decision_recorded,reviewer,16,2026-02-06T17:00:00+00:00,under_review,decision_recorded,no_breach
+251,36,appeal_submitted,system,,2026-02-07T10:00:00+00:00,decision_recorded,appealed,Appeal submitted after the original decision.
+252,36,independent_review_completed,reviewer,17,2026-02-08T10:00:00+00:00,appealed,closed,Independent reviewer completed appeal review.
+253,37,case_opened,system,,2026-02-07T15:00:00+00:00,,open,Case created from a flagged similarity report.
+254,37,reviewer_assigned,system,,2026-02-07T15:00:00+00:00,open,assigned,Assigned to reviewer 17.
+255,37,review_started,reviewer,17,2026-02-07T15:00:00+00:00,assigned,under_review,Human review started.
+256,37,evidence_added,reviewer,17,2026-02-07T16:00:00+00:00,,,Synthetic evidence added before the decision.
+257,37,decision_recorded,reviewer,17,2026-02-07T17:00:00+00:00,under_review,decision_recorded,breach_found
+258,37,appeal_submitted,system,,2026-02-08T10:00:00+00:00,decision_recorded,appealed,Appeal submitted after the original decision.
+259,37,independent_review_completed,reviewer,18,2026-02-09T10:00:00+00:00,appealed,closed,Independent reviewer completed appeal review.
+260,38,case_opened,system,,2026-02-08T15:00:00+00:00,,open,Case created from a flagged similarity report.
+261,38,reviewer_assigned,system,,2026-02-08T15:00:00+00:00,open,assigned,Assigned to reviewer 18.
+262,38,review_started,reviewer,18,2026-02-08T15:00:00+00:00,assigned,under_review,Human review started.
+263,38,evidence_added,reviewer,18,2026-02-08T16:00:00+00:00,,,Synthetic evidence added before the decision.
+264,38,decision_recorded,reviewer,18,2026-02-08T17:00:00+00:00,under_review,decision_recorded,no_breach
+265,38,appeal_submitted,system,,2026-02-09T10:00:00+00:00,decision_recorded,appealed,Appeal submitted after the original decision.
+266,38,independent_review_completed,reviewer,19,2026-02-10T10:00:00+00:00,appealed,closed,Independent reviewer completed appeal review.
+267,39,case_opened,system,,2026-02-09T15:00:00+00:00,,open,Case created from a flagged similarity report.
+268,39,reviewer_assigned,system,,2026-02-09T15:00:00+00:00,open,assigned,Assigned to reviewer 19.
+269,39,review_started,reviewer,19,2026-02-09T15:00:00+00:00,assigned,under_review,Human review started.
+270,39,evidence_added,reviewer,19,2026-02-09T16:00:00+00:00,,,Synthetic evidence added before the decision.
+271,39,decision_recorded,reviewer,19,2026-02-09T17:00:00+00:00,under_review,decision_recorded,no_breach
+272,39,appeal_submitted,system,,2026-02-10T10:00:00+00:00,decision_recorded,appealed,Appeal submitted after the original decision.
+273,39,independent_review_completed,reviewer,20,2026-02-11T10:00:00+00:00,appealed,closed,Independent reviewer completed appeal review.
+274,40,case_opened,system,,2026-02-10T15:00:00+00:00,,open,Case created from a flagged similarity report.
+275,40,reviewer_assigned,system,,2026-02-10T15:00:00+00:00,open,assigned,Assigned to reviewer 1.
+276,40,review_started,reviewer,1,2026-02-10T15:00:00+00:00,assigned,under_review,Human review started.
+277,40,evidence_added,reviewer,1,2026-02-10T16:00:00+00:00,,,Synthetic evidence added before the decision.
+278,40,decision_recorded,reviewer,1,2026-02-10T17:00:00+00:00,under_review,decision_recorded,no_breach
+279,40,appeal_submitted,system,,2026-02-11T10:00:00+00:00,decision_recorded,appealed,Appeal submitted after the original decision.
+280,40,independent_review_completed,reviewer,2,2026-02-12T10:00:00+00:00,appealed,closed,Independent reviewer completed appeal review.
+281,41,case_opened,system,,2026-02-11T15:00:00+00:00,,open,Case created from a flagged similarity report.
+282,41,reviewer_assigned,system,,2026-02-11T15:00:00+00:00,open,assigned,Assigned to reviewer 1.
+283,41,review_started,reviewer,1,2026-02-11T15:00:00+00:00,assigned,under_review,Human review started.
+284,41,evidence_added,reviewer,1,2026-02-11T16:00:00+00:00,,,Synthetic evidence added before the decision.
+285,41,decision_recorded,reviewer,1,2026-02-11T17:00:00+00:00,under_review,decision_recorded,inconclusive
+286,41,appeal_submitted,system,,2026-02-12T10:00:00+00:00,decision_recorded,appealed,Appeal submitted after the original decision.
+287,41,independent_review_completed,reviewer,2,2026-02-13T10:00:00+00:00,appealed,closed,Independent reviewer completed appeal review.
+288,42,case_opened,system,,2026-02-12T15:00:00+00:00,,open,Case created from a flagged similarity report.
+289,42,reviewer_assigned,system,,2026-02-12T15:00:00+00:00,open,assigned,Assigned to reviewer 2.
+290,42,review_started,reviewer,2,2026-02-12T15:00:00+00:00,assigned,under_review,Human review started.
+291,42,evidence_added,reviewer,2,2026-02-12T16:00:00+00:00,,,Synthetic evidence added before the decision.
+292,42,decision_recorded,reviewer,2,2026-02-12T17:00:00+00:00,under_review,decision_recorded,no_breach
+293,42,appeal_submitted,system,,2026-02-13T10:00:00+00:00,decision_recorded,appealed,Appeal submitted after the original decision.
+294,42,independent_review_completed,reviewer,3,2026-02-14T10:00:00+00:00,appealed,closed,Independent reviewer completed appeal review.
+295,43,case_opened,system,,2026-02-13T15:00:00+00:00,,open,Case created from a flagged similarity report.
+296,43,reviewer_assigned,system,,2026-02-13T15:00:00+00:00,open,assigned,Assigned to reviewer 3.
+297,43,review_started,reviewer,3,2026-02-13T15:00:00+00:00,assigned,under_review,Human review started.
+298,43,evidence_added,reviewer,3,2026-02-13T16:00:00+00:00,,,Synthetic evidence added before the decision.
+299,43,decision_recorded,reviewer,3,2026-02-13T17:00:00+00:00,under_review,decision_recorded,no_breach
+300,43,appeal_submitted,system,,2026-02-14T10:00:00+00:00,decision_recorded,appealed,Appeal submitted after the original decision.
+301,43,independent_review_completed,reviewer,4,2026-02-15T10:00:00+00:00,appealed,closed,Independent reviewer completed appeal review.
+302,44,case_opened,system,,2026-02-14T15:00:00+00:00,,open,Case created from a flagged similarity report.
+303,44,reviewer_assigned,system,,2026-02-14T15:00:00+00:00,open,assigned,Assigned to reviewer 4.
+304,44,review_started,reviewer,4,2026-02-14T15:00:00+00:00,assigned,under_review,Human review started.
+305,44,evidence_added,reviewer,4,2026-02-14T16:00:00+00:00,,,Synthetic evidence added before the decision.
+306,44,decision_recorded,reviewer,4,2026-02-14T17:00:00+00:00,under_review,decision_recorded,no_breach
+307,44,appeal_submitted,system,,2026-02-15T10:00:00+00:00,decision_recorded,appealed,Appeal submitted after the original decision.
+308,44,independent_review_completed,reviewer,5,2026-02-16T10:00:00+00:00,appealed,closed,Independent reviewer completed appeal review.
+309,45,case_opened,system,,2026-02-15T15:00:00+00:00,,open,Case created from a flagged similarity report.
+310,45,reviewer_assigned,system,,2026-02-15T15:00:00+00:00,open,assigned,Assigned to reviewer 5.
+311,45,review_started,reviewer,5,2026-02-15T15:00:00+00:00,assigned,under_review,Human review started.
+312,45,evidence_added,reviewer,5,2026-02-15T16:00:00+00:00,,,Synthetic evidence added before the decision.
+313,45,decision_recorded,reviewer,5,2026-02-15T17:00:00+00:00,under_review,decision_recorded,breach_found
+314,45,appeal_submitted,system,,2026-02-16T10:00:00+00:00,decision_recorded,appealed,Appeal submitted after the original decision.
+315,45,independent_review_completed,reviewer,6,2026-02-17T10:00:00+00:00,appealed,closed,Independent reviewer completed appeal review.
+316,46,case_opened,system,,2026-02-16T15:00:00+00:00,,open,Case created from a flagged similarity report.
+317,46,reviewer_assigned,system,,2026-02-16T15:00:00+00:00,open,assigned,Assigned to reviewer 6.
+318,46,review_started,reviewer,6,2026-02-16T15:00:00+00:00,assigned,under_review,Human review started.
+319,46,evidence_added,reviewer,6,2026-02-16T16:00:00+00:00,,,Synthetic evidence added before the decision.
+320,46,decision_recorded,reviewer,6,2026-02-16T17:00:00+00:00,under_review,decision_recorded,no_breach
+321,46,appeal_submitted,system,,2026-02-17T10:00:00+00:00,decision_recorded,appealed,Appeal submitted after the original decision.
+322,46,independent_review_completed,reviewer,7,2026-02-18T10:00:00+00:00,appealed,closed,Independent reviewer completed appeal review.
+323,47,case_opened,system,,2026-02-17T15:00:00+00:00,,open,Case created from a flagged similarity report.
+324,47,reviewer_assigned,system,,2026-02-17T15:00:00+00:00,open,assigned,Assigned to reviewer 7.
+325,47,review_started,reviewer,7,2026-02-17T15:00:00+00:00,assigned,under_review,Human review started.
+326,47,evidence_added,reviewer,7,2026-02-17T16:00:00+00:00,,,Synthetic evidence added before the decision.
+327,47,decision_recorded,reviewer,7,2026-02-17T17:00:00+00:00,under_review,decision_recorded,no_breach
+328,47,appeal_submitted,system,,2026-02-18T10:00:00+00:00,decision_recorded,appealed,Appeal submitted after the original decision.
+329,47,independent_review_completed,reviewer,8,2026-02-19T10:00:00+00:00,appealed,closed,Independent reviewer completed appeal review.
+330,48,case_opened,system,,2026-02-18T15:00:00+00:00,,open,Case created from a flagged similarity report.
+331,48,reviewer_assigned,system,,2026-02-18T15:00:00+00:00,open,assigned,Assigned to reviewer 8.
+332,48,review_started,reviewer,8,2026-02-18T15:00:00+00:00,assigned,under_review,Human review started.
+333,48,evidence_added,reviewer,8,2026-02-18T16:00:00+00:00,,,Synthetic evidence added before the decision.
+334,48,decision_recorded,reviewer,8,2026-02-18T17:00:00+00:00,under_review,decision_recorded,no_breach
+335,48,appeal_submitted,system,,2026-02-19T10:00:00+00:00,decision_recorded,appealed,Appeal submitted after the original decision.
+336,48,independent_review_completed,reviewer,9,2026-02-20T10:00:00+00:00,appealed,closed,Independent reviewer completed appeal review.
+337,49,case_opened,system,,2026-02-19T15:00:00+00:00,,open,Case created from a flagged similarity report.
+338,49,reviewer_assigned,system,,2026-02-19T15:00:00+00:00,open,assigned,Assigned to reviewer 9.
+339,49,review_started,reviewer,9,2026-02-19T15:00:00+00:00,assigned,under_review,Human review started.
+340,49,evidence_added,reviewer,9,2026-02-19T16:00:00+00:00,,,Synthetic evidence added before the decision.
+341,49,decision_recorded,reviewer,9,2026-02-19T17:00:00+00:00,under_review,decision_recorded,breach_found
+342,49,appeal_submitted,system,,2026-02-20T10:00:00+00:00,decision_recorded,appealed,Appeal submitted after the original decision.
+343,49,independent_review_completed,reviewer,10,2026-02-21T10:00:00+00:00,appealed,closed,Independent reviewer completed appeal review.
+344,50,case_opened,system,,2026-02-20T15:00:00+00:00,,open,Case created from a flagged similarity report.
+345,50,reviewer_assigned,system,,2026-02-20T15:00:00+00:00,open,assigned,Assigned to reviewer 11.
+346,50,review_started,reviewer,11,2026-02-20T15:00:00+00:00,assigned,under_review,Human review started.
+347,50,evidence_added,reviewer,11,2026-02-20T16:00:00+00:00,,,Synthetic evidence added before the decision.
+348,50,decision_recorded,reviewer,11,2026-02-20T17:00:00+00:00,under_review,decision_recorded,no_breach
+349,50,appeal_submitted,system,,2026-02-21T10:00:00+00:00,decision_recorded,appealed,Appeal submitted after the original decision.
+350,50,independent_review_completed,reviewer,12,2026-02-22T10:00:00+00:00,appealed,closed,Independent reviewer completed appeal review.
+351,51,case_opened,system,,2026-02-21T15:00:00+00:00,,open,Case created from a flagged similarity report.
+352,51,reviewer_assigned,system,,2026-02-21T15:00:00+00:00,open,assigned,Assigned to reviewer 11.
+353,51,review_started,reviewer,11,2026-02-21T15:00:00+00:00,assigned,under_review,Human review started.
+354,51,evidence_added,reviewer,11,2026-02-21T16:00:00+00:00,,,Synthetic evidence added before the decision.
+355,51,decision_recorded,reviewer,11,2026-02-21T17:00:00+00:00,under_review,decision_recorded,no_breach
+356,51,appeal_submitted,system,,2026-02-22T10:00:00+00:00,decision_recorded,appealed,Appeal submitted after the original decision.
+357,51,independent_review_completed,reviewer,12,2026-02-23T10:00:00+00:00,appealed,closed,Independent reviewer completed appeal review.
+358,52,case_opened,system,,2026-02-22T15:00:00+00:00,,open,Case created from a flagged similarity report.
+359,52,reviewer_assigned,system,,2026-02-22T15:00:00+00:00,open,assigned,Assigned to reviewer 12.
+360,52,review_started,reviewer,12,2026-02-22T15:00:00+00:00,assigned,under_review,Human review started.
+361,52,evidence_added,reviewer,12,2026-02-22T16:00:00+00:00,,,Synthetic evidence added before the decision.
+362,52,decision_recorded,reviewer,12,2026-02-22T17:00:00+00:00,under_review,decision_recorded,no_breach
+363,52,appeal_submitted,system,,2026-02-23T10:00:00+00:00,decision_recorded,appealed,Appeal submitted after the original decision.
+364,52,independent_review_completed,reviewer,13,2026-02-24T10:00:00+00:00,appealed,closed,Independent reviewer completed appeal review.
+365,53,case_opened,system,,2026-02-23T15:00:00+00:00,,open,Case created from a flagged similarity report.
+366,53,reviewer_assigned,system,,2026-02-23T15:00:00+00:00,open,assigned,Assigned to reviewer 13.
+367,53,review_started,reviewer,13,2026-02-23T15:00:00+00:00,assigned,under_review,Human review started.
+368,53,evidence_added,reviewer,13,2026-02-23T16:00:00+00:00,,,Synthetic evidence added before the decision.
+369,53,decision_recorded,reviewer,13,2026-02-23T17:00:00+00:00,under_review,decision_recorded,breach_found
+370,53,appeal_submitted,system,,2026-02-24T10:00:00+00:00,decision_recorded,appealed,Appeal submitted after the original decision.
+371,53,independent_review_completed,reviewer,14,2026-02-25T10:00:00+00:00,appealed,closed,Independent reviewer completed appeal review.
+372,54,case_opened,system,,2026-02-24T15:00:00+00:00,,open,Case created from a flagged similarity report.
+373,54,reviewer_assigned,system,,2026-02-24T15:00:00+00:00,open,assigned,Assigned to reviewer 14.
+374,54,review_started,reviewer,14,2026-02-24T15:00:00+00:00,assigned,under_review,Human review started.
+375,54,evidence_added,reviewer,14,2026-02-24T16:00:00+00:00,,,Synthetic evidence added before the decision.
+376,54,decision_recorded,reviewer,14,2026-02-24T17:00:00+00:00,under_review,decision_recorded,no_breach
+377,54,appeal_submitted,system,,2026-02-25T10:00:00+00:00,decision_recorded,appealed,Appeal submitted after the original decision.
+378,54,independent_review_completed,reviewer,15,2026-02-26T10:00:00+00:00,appealed,closed,Independent reviewer completed appeal review.
+379,55,case_opened,system,,2026-02-25T15:00:00+00:00,,open,Case created from a flagged similarity report.
+380,55,reviewer_assigned,system,,2026-02-25T15:00:00+00:00,open,assigned,Assigned to reviewer 15.
+381,55,review_started,reviewer,15,2026-02-25T15:00:00+00:00,assigned,under_review,Human review started.
+382,55,evidence_added,reviewer,15,2026-02-25T16:00:00+00:00,,,Synthetic evidence added before the decision.
+383,55,decision_recorded,reviewer,15,2026-02-25T17:00:00+00:00,under_review,decision_recorded,no_breach
+384,55,appeal_submitted,system,,2026-02-26T10:00:00+00:00,decision_recorded,appealed,Appeal submitted after the original decision.
+385,55,independent_review_completed,reviewer,16,2026-02-27T10:00:00+00:00,appealed,closed,Independent reviewer completed appeal review.
+386,56,case_opened,system,,2026-02-26T15:00:00+00:00,,open,Case created from a flagged similarity report.
+387,56,reviewer_assigned,system,,2026-02-26T15:00:00+00:00,open,assigned,Assigned to reviewer 16.
+388,56,review_started,reviewer,16,2026-02-26T15:00:00+00:00,assigned,under_review,Human review started.
+389,56,evidence_added,reviewer,16,2026-02-26T16:00:00+00:00,,,Synthetic evidence added before the decision.
+390,56,decision_recorded,reviewer,16,2026-02-26T17:00:00+00:00,under_review,decision_recorded,no_breach
+391,56,appeal_submitted,system,,2026-02-27T10:00:00+00:00,decision_recorded,appealed,Appeal submitted after the original decision.
+392,56,independent_review_completed,reviewer,17,2026-02-28T10:00:00+00:00,appealed,closed,Independent reviewer completed appeal review.
+393,57,case_opened,system,,2026-02-27T15:00:00+00:00,,open,Case created from a flagged similarity report.
+394,57,reviewer_assigned,system,,2026-02-27T15:00:00+00:00,open,assigned,Assigned to reviewer 17.
+395,57,review_started,reviewer,17,2026-02-27T15:00:00+00:00,assigned,under_review,Human review started.
+396,57,evidence_added,reviewer,17,2026-02-27T16:00:00+00:00,,,Synthetic evidence added before the decision.
+397,57,decision_recorded,reviewer,17,2026-02-27T17:00:00+00:00,under_review,decision_recorded,breach_found
+398,57,appeal_submitted,system,,2026-02-28T10:00:00+00:00,decision_recorded,appealed,Appeal submitted after the original decision.
+399,57,independent_review_completed,reviewer,18,2026-03-01T10:00:00+00:00,appealed,closed,Independent reviewer completed appeal review.
+400,58,case_opened,system,,2026-02-28T15:00:00+00:00,,open,Case created from a flagged similarity report.
+401,58,reviewer_assigned,system,,2026-02-28T15:00:00+00:00,open,assigned,Assigned to reviewer 18.
+402,58,review_started,reviewer,18,2026-02-28T15:00:00+00:00,assigned,under_review,Human review started.
+403,58,evidence_added,reviewer,18,2026-02-28T16:00:00+00:00,,,Synthetic evidence added before the decision.
+404,58,decision_recorded,reviewer,18,2026-02-28T17:00:00+00:00,under_review,decision_recorded,no_breach
+405,58,appeal_submitted,system,,2026-03-01T10:00:00+00:00,decision_recorded,appealed,Appeal submitted after the original decision.
+406,58,independent_review_completed,reviewer,19,2026-03-02T10:00:00+00:00,appealed,closed,Independent reviewer completed appeal review.
+407,59,case_opened,system,,2026-03-01T15:00:00+00:00,,open,Case created from a flagged similarity report.
+408,59,reviewer_assigned,system,,2026-03-01T15:00:00+00:00,open,assigned,Assigned to reviewer 19.
+409,59,review_started,reviewer,19,2026-03-01T15:00:00+00:00,assigned,under_review,Human review started.
+410,59,evidence_added,reviewer,19,2026-03-01T16:00:00+00:00,,,Synthetic evidence added before the decision.
+411,59,decision_recorded,reviewer,19,2026-03-01T17:00:00+00:00,under_review,decision_recorded,no_breach
+412,59,appeal_submitted,system,,2026-03-02T10:00:00+00:00,decision_recorded,appealed,Appeal submitted after the original decision.
+413,59,independent_review_completed,reviewer,20,2026-03-03T10:00:00+00:00,appealed,closed,Independent reviewer completed appeal review.
+414,60,case_opened,system,,2026-03-02T15:00:00+00:00,,open,Case created from a flagged similarity report.
+415,60,reviewer_assigned,system,,2026-03-02T15:00:00+00:00,open,assigned,Assigned to reviewer 1.
+416,60,review_started,reviewer,1,2026-03-02T15:00:00+00:00,assigned,under_review,Human review started.
+417,60,evidence_added,reviewer,1,2026-03-02T16:00:00+00:00,,,Synthetic evidence added before the decision.
+418,60,decision_recorded,reviewer,1,2026-03-02T17:00:00+00:00,under_review,decision_recorded,no_breach
+419,60,appeal_submitted,system,,2026-03-03T10:00:00+00:00,decision_recorded,appealed,Appeal submitted after the original decision.
+420,60,independent_review_completed,reviewer,2,2026-03-04T10:00:00+00:00,appealed,closed,Independent reviewer completed appeal review.
+421,61,case_opened,system,,2026-03-03T15:00:00+00:00,,open,Case created from a flagged similarity report.
+422,61,reviewer_assigned,system,,2026-03-03T15:00:00+00:00,open,assigned,Assigned to reviewer 1.
+423,61,review_started,reviewer,1,2026-03-03T15:00:00+00:00,assigned,under_review,Human review started.
+424,61,evidence_added,reviewer,1,2026-03-03T16:00:00+00:00,,,Synthetic evidence added before the decision.
+425,61,decision_recorded,reviewer,1,2026-03-03T17:00:00+00:00,under_review,decision_recorded,inconclusive
+426,62,case_opened,system,,2026-03-04T15:00:00+00:00,,open,Case created from a flagged similarity report.
+427,62,reviewer_assigned,system,,2026-03-04T15:00:00+00:00,open,assigned,Assigned to reviewer 2.
+428,62,review_started,reviewer,2,2026-03-04T15:00:00+00:00,assigned,under_review,Human review started.
+429,62,evidence_added,reviewer,2,2026-03-04T16:00:00+00:00,,,Synthetic evidence added before the decision.
+430,62,decision_recorded,reviewer,2,2026-03-04T17:00:00+00:00,under_review,decision_recorded,no_breach
+431,63,case_opened,system,,2026-03-05T15:00:00+00:00,,open,Case created from a flagged similarity report.
+432,63,reviewer_assigned,system,,2026-03-05T15:00:00+00:00,open,assigned,Assigned to reviewer 3.
+433,63,review_started,reviewer,3,2026-03-05T15:00:00+00:00,assigned,under_review,Human review started.
+434,63,evidence_added,reviewer,3,2026-03-05T16:00:00+00:00,,,Synthetic evidence added before the decision.
+435,63,decision_recorded,reviewer,3,2026-03-05T17:00:00+00:00,under_review,decision_recorded,no_breach
+436,64,case_opened,system,,2026-03-06T15:00:00+00:00,,open,Case created from a flagged similarity report.
+437,64,reviewer_assigned,system,,2026-03-06T15:00:00+00:00,open,assigned,Assigned to reviewer 4.
+438,64,review_started,reviewer,4,2026-03-06T15:00:00+00:00,assigned,under_review,Human review started.
+439,64,evidence_added,reviewer,4,2026-03-06T16:00:00+00:00,,,Synthetic evidence added before the decision.
+440,64,decision_recorded,reviewer,4,2026-03-06T17:00:00+00:00,under_review,decision_recorded,no_breach
+441,65,case_opened,system,,2026-03-07T15:00:00+00:00,,open,Case created from a flagged similarity report.
+442,65,reviewer_assigned,system,,2026-03-07T15:00:00+00:00,open,assigned,Assigned to reviewer 5.
+443,65,review_started,reviewer,5,2026-03-07T15:00:00+00:00,assigned,under_review,Human review started.
+444,65,evidence_added,reviewer,5,2026-03-07T16:00:00+00:00,,,Synthetic evidence added before the decision.
+445,65,decision_recorded,reviewer,5,2026-03-07T17:00:00+00:00,under_review,decision_recorded,breach_found
+446,66,case_opened,system,,2026-03-08T15:00:00+00:00,,open,Case created from a flagged similarity report.
+447,66,reviewer_assigned,system,,2026-03-08T15:00:00+00:00,open,assigned,Assigned to reviewer 6.
+448,66,review_started,reviewer,6,2026-03-08T15:00:00+00:00,assigned,under_review,Human review started.
+449,66,evidence_added,reviewer,6,2026-03-08T16:00:00+00:00,,,Synthetic evidence added before the decision.
+450,66,decision_recorded,reviewer,6,2026-03-08T17:00:00+00:00,under_review,decision_recorded,no_breach
+451,67,case_opened,system,,2026-03-09T15:00:00+00:00,,open,Case created from a flagged similarity report.
+452,67,reviewer_assigned,system,,2026-03-09T15:00:00+00:00,open,assigned,Assigned to reviewer 7.
+453,67,review_started,reviewer,7,2026-03-09T15:00:00+00:00,assigned,under_review,Human review started.
+454,67,evidence_added,reviewer,7,2026-03-09T16:00:00+00:00,,,Synthetic evidence added before the decision.
+455,67,decision_recorded,reviewer,7,2026-03-09T17:00:00+00:00,under_review,decision_recorded,no_breach
+456,68,case_opened,system,,2026-03-10T15:00:00+00:00,,open,Case created from a flagged similarity report.
+457,68,reviewer_assigned,system,,2026-03-10T15:00:00+00:00,open,assigned,Assigned to reviewer 8.
+458,68,review_started,reviewer,8,2026-03-10T15:00:00+00:00,assigned,under_review,Human review started.
+459,68,evidence_added,reviewer,8,2026-03-10T16:00:00+00:00,,,Synthetic evidence added before the decision.
+460,68,decision_recorded,reviewer,8,2026-03-10T17:00:00+00:00,under_review,decision_recorded,no_breach
+461,69,case_opened,system,,2026-03-11T15:00:00+00:00,,open,Case created from a flagged similarity report.
+462,69,reviewer_assigned,system,,2026-03-11T15:00:00+00:00,open,assigned,Assigned to reviewer 9.
+463,69,review_started,reviewer,9,2026-03-11T15:00:00+00:00,assigned,under_review,Human review started.
+464,69,evidence_added,reviewer,9,2026-03-11T16:00:00+00:00,,,Synthetic evidence added before the decision.
+465,69,decision_recorded,reviewer,9,2026-03-11T17:00:00+00:00,under_review,decision_recorded,inconclusive
+466,70,case_opened,system,,2026-03-12T15:00:00+00:00,,open,Case created from a flagged similarity report.
+467,70,reviewer_assigned,system,,2026-03-12T15:00:00+00:00,open,assigned,Assigned to reviewer 11.
+468,70,review_started,reviewer,11,2026-03-12T15:00:00+00:00,assigned,under_review,Human review started.
+469,70,evidence_added,reviewer,11,2026-03-12T16:00:00+00:00,,,Synthetic evidence added before the decision.
+470,70,decision_recorded,reviewer,11,2026-03-12T17:00:00+00:00,under_review,decision_recorded,no_breach
+471,71,case_opened,system,,2026-03-13T15:00:00+00:00,,open,Case created from a flagged similarity report.
+472,71,reviewer_assigned,system,,2026-03-13T15:00:00+00:00,open,assigned,Assigned to reviewer 11.
+473,71,review_started,reviewer,11,2026-03-13T15:00:00+00:00,assigned,under_review,Human review started.
+474,71,evidence_added,reviewer,11,2026-03-13T16:00:00+00:00,,,Synthetic evidence added before the decision.
+475,71,decision_recorded,reviewer,11,2026-03-13T17:00:00+00:00,under_review,decision_recorded,no_breach
+476,72,case_opened,system,,2026-03-14T15:00:00+00:00,,open,Case created from a flagged similarity report.
+477,72,reviewer_assigned,system,,2026-03-14T15:00:00+00:00,open,assigned,Assigned to reviewer 12.
+478,72,review_started,reviewer,12,2026-03-14T15:00:00+00:00,assigned,under_review,Human review started.
+479,72,evidence_added,reviewer,12,2026-03-14T16:00:00+00:00,,,Synthetic evidence added before the decision.
+480,72,decision_recorded,reviewer,12,2026-03-14T17:00:00+00:00,under_review,decision_recorded,no_breach
+481,73,case_opened,system,,2026-03-15T15:00:00+00:00,,open,Case created from a flagged similarity report.
+482,73,reviewer_assigned,system,,2026-03-15T15:00:00+00:00,open,assigned,Assigned to reviewer 13.
+483,73,review_started,reviewer,13,2026-03-15T15:00:00+00:00,assigned,under_review,Human review started.
+484,73,evidence_added,reviewer,13,2026-03-15T16:00:00+00:00,,,Synthetic evidence added before the decision.
+485,73,decision_recorded,reviewer,13,2026-03-15T17:00:00+00:00,under_review,decision_recorded,breach_found
+486,74,case_opened,system,,2026-03-16T15:00:00+00:00,,open,Case created from a flagged similarity report.
+487,74,reviewer_assigned,system,,2026-03-16T15:00:00+00:00,open,assigned,Assigned to reviewer 14.
+488,74,review_started,reviewer,14,2026-03-16T15:00:00+00:00,assigned,under_review,Human review started.
+489,74,evidence_added,reviewer,14,2026-03-16T16:00:00+00:00,,,Synthetic evidence added before the decision.
+490,74,decision_recorded,reviewer,14,2026-03-16T17:00:00+00:00,under_review,decision_recorded,no_breach
+491,75,case_opened,system,,2026-03-17T15:00:00+00:00,,open,Case created from a flagged similarity report.
+492,75,reviewer_assigned,system,,2026-03-17T15:00:00+00:00,open,assigned,Assigned to reviewer 15.
+493,75,review_started,reviewer,15,2026-03-17T15:00:00+00:00,assigned,under_review,Human review started.
+494,75,evidence_added,reviewer,15,2026-03-17T16:00:00+00:00,,,Synthetic evidence added before the decision.
+495,75,decision_recorded,reviewer,15,2026-03-17T17:00:00+00:00,under_review,decision_recorded,no_breach
+496,76,case_opened,system,,2026-03-18T15:00:00+00:00,,open,Case created from a flagged similarity report.
+497,76,reviewer_assigned,system,,2026-03-18T15:00:00+00:00,open,assigned,Assigned to reviewer 16.
+498,76,review_started,reviewer,16,2026-03-18T15:00:00+00:00,assigned,under_review,Human review started.
+499,76,evidence_added,reviewer,16,2026-03-18T16:00:00+00:00,,,Synthetic evidence added before the decision.
+500,76,decision_recorded,reviewer,16,2026-03-18T17:00:00+00:00,under_review,decision_recorded,no_breach
+501,77,case_opened,system,,2026-03-19T15:00:00+00:00,,open,Case created from a flagged similarity report.
+502,77,reviewer_assigned,system,,2026-03-19T15:00:00+00:00,open,assigned,Assigned to reviewer 17.
+503,77,review_started,reviewer,17,2026-03-19T15:00:00+00:00,assigned,under_review,Human review started.
+504,77,evidence_added,reviewer,17,2026-03-19T16:00:00+00:00,,,Synthetic evidence added before the decision.
+505,77,decision_recorded,reviewer,17,2026-03-19T17:00:00+00:00,under_review,decision_recorded,inconclusive
+506,78,case_opened,system,,2026-03-20T15:00:00+00:00,,open,Case created from a flagged similarity report.
+507,78,reviewer_assigned,system,,2026-03-20T15:00:00+00:00,open,assigned,Assigned to reviewer 18.
+508,78,review_started,reviewer,18,2026-03-20T15:00:00+00:00,assigned,under_review,Human review started.
+509,78,evidence_added,reviewer,18,2026-03-20T16:00:00+00:00,,,Synthetic evidence added before the decision.
+510,78,decision_recorded,reviewer,18,2026-03-20T17:00:00+00:00,under_review,decision_recorded,no_breach
+511,79,case_opened,system,,2026-03-21T15:00:00+00:00,,open,Case created from a flagged similarity report.
+512,79,reviewer_assigned,system,,2026-03-21T15:00:00+00:00,open,assigned,Assigned to reviewer 19.
+513,79,review_started,reviewer,19,2026-03-21T15:00:00+00:00,assigned,under_review,Human review started.
+514,79,evidence_added,reviewer,19,2026-03-21T16:00:00+00:00,,,Synthetic evidence added before the decision.
+515,79,decision_recorded,reviewer,19,2026-03-21T17:00:00+00:00,under_review,decision_recorded,no_breach
+516,80,case_opened,system,,2026-03-22T15:00:00+00:00,,open,Case created from a flagged similarity report.
+517,80,reviewer_assigned,system,,2026-03-22T15:00:00+00:00,open,assigned,Assigned to reviewer 1.
+518,80,review_started,reviewer,1,2026-03-22T15:00:00+00:00,assigned,under_review,Human review started.
+519,80,evidence_added,reviewer,1,2026-03-22T16:00:00+00:00,,,Synthetic evidence added before the decision.
+520,80,decision_recorded,reviewer,1,2026-03-22T17:00:00+00:00,under_review,decision_recorded,no_breach
+521,81,case_opened,system,,2026-03-23T15:00:00+00:00,,open,Case created from a flagged similarity report.
+522,81,reviewer_assigned,system,,2026-03-23T15:00:00+00:00,open,assigned,Assigned to reviewer 1.
+523,81,review_started,reviewer,1,2026-03-23T15:00:00+00:00,assigned,under_review,Human review started.
+524,81,evidence_added,reviewer,1,2026-03-23T16:00:00+00:00,,,Synthetic evidence added before the decision.
+525,81,decision_recorded,reviewer,1,2026-03-23T17:00:00+00:00,under_review,decision_recorded,inconclusive
+526,82,case_opened,system,,2026-03-24T15:00:00+00:00,,open,Case created from a flagged similarity report.
+527,82,reviewer_assigned,system,,2026-03-24T15:00:00+00:00,open,assigned,Assigned to reviewer 2.
+528,82,review_started,reviewer,2,2026-03-24T15:00:00+00:00,assigned,under_review,Human review started.
+529,82,evidence_added,reviewer,2,2026-03-24T16:00:00+00:00,,,Synthetic evidence added before the decision.
+530,82,decision_recorded,reviewer,2,2026-03-24T17:00:00+00:00,under_review,decision_recorded,no_breach
+531,83,case_opened,system,,2026-03-25T15:00:00+00:00,,open,Case created from a flagged similarity report.
+532,83,reviewer_assigned,system,,2026-03-25T15:00:00+00:00,open,assigned,Assigned to reviewer 3.
+533,83,review_started,reviewer,3,2026-03-25T15:00:00+00:00,assigned,under_review,Human review started.
+534,83,evidence_added,reviewer,3,2026-03-25T16:00:00+00:00,,,Synthetic evidence added before the decision.
+535,83,decision_recorded,reviewer,3,2026-03-25T17:00:00+00:00,under_review,decision_recorded,no_breach
+536,84,case_opened,system,,2026-03-26T15:00:00+00:00,,open,Case created from a flagged similarity report.
+537,84,reviewer_assigned,system,,2026-03-26T15:00:00+00:00,open,assigned,Assigned to reviewer 4.
+538,84,review_started,reviewer,4,2026-03-26T15:00:00+00:00,assigned,under_review,Human review started.
+539,84,evidence_added,reviewer,4,2026-03-26T16:00:00+00:00,,,Synthetic evidence added before the decision.
+540,84,decision_recorded,reviewer,4,2026-03-26T17:00:00+00:00,under_review,decision_recorded,no_breach
+541,85,case_opened,system,,2026-03-27T15:00:00+00:00,,open,Case created from a flagged similarity report.
+542,85,reviewer_assigned,system,,2026-03-27T15:00:00+00:00,open,assigned,Assigned to reviewer 5.
+543,85,review_started,reviewer,5,2026-03-27T15:00:00+00:00,assigned,under_review,Human review started.
+544,85,evidence_added,reviewer,5,2026-03-27T16:00:00+00:00,,,Synthetic evidence added before the decision.
+545,85,decision_recorded,reviewer,5,2026-03-27T17:00:00+00:00,under_review,decision_recorded,breach_found
+546,86,case_opened,system,,2026-03-28T15:00:00+00:00,,open,Case created from a flagged similarity report.
+547,86,reviewer_assigned,system,,2026-03-28T15:00:00+00:00,open,assigned,Assigned to reviewer 6.
+548,86,review_started,reviewer,6,2026-03-28T15:00:00+00:00,assigned,under_review,Human review started.
+549,86,evidence_added,reviewer,6,2026-03-28T16:00:00+00:00,,,Synthetic evidence added before the decision.
+550,86,decision_recorded,reviewer,6,2026-03-28T17:00:00+00:00,under_review,decision_recorded,no_breach
+551,87,case_opened,system,,2026-03-29T15:00:00+00:00,,open,Case created from a flagged similarity report.
+552,87,reviewer_assigned,system,,2026-03-29T15:00:00+00:00,open,assigned,Assigned to reviewer 7.
+553,87,review_started,reviewer,7,2026-03-29T15:00:00+00:00,assigned,under_review,Human review started.
+554,87,evidence_added,reviewer,7,2026-03-29T16:00:00+00:00,,,Synthetic evidence added before the decision.
+555,87,decision_recorded,reviewer,7,2026-03-29T17:00:00+00:00,under_review,decision_recorded,no_breach
+556,88,case_opened,system,,2026-03-30T15:00:00+00:00,,open,Case created from a flagged similarity report.
+557,88,reviewer_assigned,system,,2026-03-30T15:00:00+00:00,open,assigned,Assigned to reviewer 8.
+558,88,review_started,reviewer,8,2026-03-30T15:00:00+00:00,assigned,under_review,Human review started.
+559,88,evidence_added,reviewer,8,2026-03-30T16:00:00+00:00,,,Synthetic evidence added before the decision.
+560,88,decision_recorded,reviewer,8,2026-03-30T17:00:00+00:00,under_review,decision_recorded,no_breach
+561,89,case_opened,system,,2026-03-31T15:00:00+00:00,,open,Case created from a flagged similarity report.
+562,89,reviewer_assigned,system,,2026-03-31T15:00:00+00:00,open,assigned,Assigned to reviewer 9.
+563,89,review_started,reviewer,9,2026-03-31T15:00:00+00:00,assigned,under_review,Human review started.
+564,89,evidence_added,reviewer,9,2026-03-31T16:00:00+00:00,,,Synthetic evidence added before the decision.
+565,89,decision_recorded,reviewer,9,2026-03-31T17:00:00+00:00,under_review,decision_recorded,breach_found
+566,90,case_opened,system,,2026-04-01T15:00:00+00:00,,open,Case created from a flagged similarity report.
+567,90,reviewer_assigned,system,,2026-04-01T15:00:00+00:00,open,assigned,Assigned to reviewer 11.
+568,90,review_started,reviewer,11,2026-04-01T15:00:00+00:00,assigned,under_review,Human review started.
+569,90,evidence_added,reviewer,11,2026-04-01T16:00:00+00:00,,,Synthetic evidence added before the decision.
+570,90,decision_recorded,reviewer,11,2026-04-01T17:00:00+00:00,under_review,decision_recorded,no_breach
+571,91,case_opened,system,,2026-04-02T15:00:00+00:00,,open,Case created from a flagged similarity report.
+572,91,reviewer_assigned,system,,2026-04-02T15:00:00+00:00,open,assigned,Assigned to reviewer 11.
+573,91,review_started,reviewer,11,2026-04-02T15:00:00+00:00,assigned,under_review,Human review started.
+574,91,evidence_added,reviewer,11,2026-04-02T16:00:00+00:00,,,Synthetic evidence added before the decision.
+575,91,decision_recorded,reviewer,11,2026-04-02T17:00:00+00:00,under_review,decision_recorded,no_breach
+576,92,case_opened,system,,2026-04-03T15:00:00+00:00,,open,Case created from a flagged similarity report.
+577,92,reviewer_assigned,system,,2026-04-03T15:00:00+00:00,open,assigned,Assigned to reviewer 12.
+578,92,review_started,reviewer,12,2026-04-03T15:00:00+00:00,assigned,under_review,Human review started.
+579,92,evidence_added,reviewer,12,2026-04-03T16:00:00+00:00,,,Synthetic evidence added before the decision.
+580,92,decision_recorded,reviewer,12,2026-04-03T17:00:00+00:00,under_review,decision_recorded,no_breach
+581,93,case_opened,system,,2026-04-04T15:00:00+00:00,,open,Case created from a flagged similarity report.
+582,93,reviewer_assigned,system,,2026-04-04T15:00:00+00:00,open,assigned,Assigned to reviewer 13.
+583,93,review_started,reviewer,13,2026-04-04T15:00:00+00:00,assigned,under_review,Human review started.
+584,93,evidence_added,reviewer,13,2026-04-04T16:00:00+00:00,,,Synthetic evidence added before the decision.
+585,93,decision_recorded,reviewer,13,2026-04-04T17:00:00+00:00,under_review,decision_recorded,breach_found
+586,94,case_opened,system,,2026-04-05T15:00:00+00:00,,open,Case created from a flagged similarity report.
+587,94,reviewer_assigned,system,,2026-04-05T15:00:00+00:00,open,assigned,Assigned to reviewer 14.
+588,94,review_started,reviewer,14,2026-04-05T15:00:00+00:00,assigned,under_review,Human review started.
+589,94,evidence_added,reviewer,14,2026-04-05T16:00:00+00:00,,,Synthetic evidence added before the decision.
+590,94,decision_recorded,reviewer,14,2026-04-05T17:00:00+00:00,under_review,decision_recorded,no_breach
+591,95,case_opened,system,,2026-04-06T15:00:00+00:00,,open,Case created from a flagged similarity report.
+592,95,reviewer_assigned,system,,2026-04-06T15:00:00+00:00,open,assigned,Assigned to reviewer 15.
+593,95,review_started,reviewer,15,2026-04-06T15:00:00+00:00,assigned,under_review,Human review started.
+594,95,evidence_added,reviewer,15,2026-04-06T16:00:00+00:00,,,Synthetic evidence added before the decision.
+595,95,decision_recorded,reviewer,15,2026-04-06T17:00:00+00:00,under_review,decision_recorded,no_breach
+596,96,case_opened,system,,2026-04-07T15:00:00+00:00,,open,Case created from a flagged similarity report.
+597,96,reviewer_assigned,system,,2026-04-07T15:00:00+00:00,open,assigned,Assigned to reviewer 16.
+598,96,review_started,reviewer,16,2026-04-07T15:00:00+00:00,assigned,under_review,Human review started.
+599,96,evidence_added,reviewer,16,2026-04-07T16:00:00+00:00,,,Synthetic evidence added before the decision.
+600,96,decision_recorded,reviewer,16,2026-04-07T17:00:00+00:00,under_review,decision_recorded,no_breach
+601,97,case_opened,system,,2026-04-08T15:00:00+00:00,,open,Case created from a flagged similarity report.
+602,97,reviewer_assigned,system,,2026-04-08T15:00:00+00:00,open,assigned,Assigned to reviewer 17.
+603,97,review_started,reviewer,17,2026-04-08T15:00:00+00:00,assigned,under_review,Human review started.
+604,97,evidence_added,reviewer,17,2026-04-08T16:00:00+00:00,,,Synthetic evidence added before the decision.
+605,97,decision_recorded,reviewer,17,2026-04-08T17:00:00+00:00,under_review,decision_recorded,inconclusive
+606,98,case_opened,system,,2026-04-09T15:00:00+00:00,,open,Case created from a flagged similarity report.
+607,98,reviewer_assigned,system,,2026-04-09T15:00:00+00:00,open,assigned,Assigned to reviewer 18.
+608,98,review_started,reviewer,18,2026-04-09T15:00:00+00:00,assigned,under_review,Human review started.
+609,98,evidence_added,reviewer,18,2026-04-09T16:00:00+00:00,,,Synthetic evidence added before the decision.
+610,98,decision_recorded,reviewer,18,2026-04-09T17:00:00+00:00,under_review,decision_recorded,no_breach
+611,99,case_opened,system,,2026-04-10T15:00:00+00:00,,open,Case created from a flagged similarity report.
+612,99,reviewer_assigned,system,,2026-04-10T15:00:00+00:00,open,assigned,Assigned to reviewer 19.
+613,99,review_started,reviewer,19,2026-04-10T15:00:00+00:00,assigned,under_review,Human review started.
+614,99,evidence_added,reviewer,19,2026-04-10T16:00:00+00:00,,,Synthetic evidence added before the decision.
+615,99,decision_recorded,reviewer,19,2026-04-10T17:00:00+00:00,under_review,decision_recorded,no_breach
+616,100,case_opened,system,,2026-04-11T15:00:00+00:00,,open,Case created from a flagged similarity report.
+617,100,reviewer_assigned,system,,2026-04-11T15:00:00+00:00,open,assigned,Assigned to reviewer 1.
+618,100,review_started,reviewer,1,2026-04-11T15:00:00+00:00,assigned,under_review,Human review started.
+619,100,evidence_added,reviewer,1,2026-04-11T16:00:00+00:00,,,Synthetic evidence added before the decision.
+620,100,decision_recorded,reviewer,1,2026-04-11T17:00:00+00:00,under_review,decision_recorded,no_breach
+621,101,case_opened,system,,2026-04-12T15:00:00+00:00,,open,Case created from a flagged similarity report.
+622,101,reviewer_assigned,system,,2026-04-12T15:00:00+00:00,open,assigned,Assigned to reviewer 1.
+623,101,review_started,reviewer,1,2026-04-12T15:00:00+00:00,assigned,under_review,Human review started.
+624,101,evidence_added,reviewer,1,2026-04-12T16:00:00+00:00,,,Synthetic evidence added before the decision.
+625,101,decision_recorded,reviewer,1,2026-04-12T17:00:00+00:00,under_review,decision_recorded,inconclusive
+626,102,case_opened,system,,2026-04-13T15:00:00+00:00,,open,Case created from a flagged similarity report.
+627,102,reviewer_assigned,system,,2026-04-13T15:00:00+00:00,open,assigned,Assigned to reviewer 2.
+628,102,review_started,reviewer,2,2026-04-13T15:00:00+00:00,assigned,under_review,Human review started.
+629,102,evidence_added,reviewer,2,2026-04-13T16:00:00+00:00,,,Synthetic evidence added before the decision.
+630,102,decision_recorded,reviewer,2,2026-04-13T17:00:00+00:00,under_review,decision_recorded,no_breach
+631,103,case_opened,system,,2026-04-14T15:00:00+00:00,,open,Case created from a flagged similarity report.
+632,103,reviewer_assigned,system,,2026-04-14T15:00:00+00:00,open,assigned,Assigned to reviewer 3.
+633,103,review_started,reviewer,3,2026-04-14T15:00:00+00:00,assigned,under_review,Human review started.
+634,103,evidence_added,reviewer,3,2026-04-14T16:00:00+00:00,,,Synthetic evidence added before the decision.
+635,103,decision_recorded,reviewer,3,2026-04-14T17:00:00+00:00,under_review,decision_recorded,no_breach
+636,104,case_opened,system,,2026-04-15T15:00:00+00:00,,open,Case created from a flagged similarity report.
+637,104,reviewer_assigned,system,,2026-04-15T15:00:00+00:00,open,assigned,Assigned to reviewer 4.
+638,104,review_started,reviewer,4,2026-04-15T15:00:00+00:00,assigned,under_review,Human review started.
+639,104,evidence_added,reviewer,4,2026-04-15T16:00:00+00:00,,,Synthetic evidence added before the decision.
+640,104,decision_recorded,reviewer,4,2026-04-15T17:00:00+00:00,under_review,decision_recorded,no_breach
+641,105,case_opened,system,,2026-04-16T15:00:00+00:00,,open,Case created from a flagged similarity report.
+642,105,reviewer_assigned,system,,2026-04-16T15:00:00+00:00,open,assigned,Assigned to reviewer 5.
+643,105,review_started,reviewer,5,2026-04-16T15:00:00+00:00,assigned,under_review,Human review started.
+644,105,evidence_added,reviewer,5,2026-04-16T16:00:00+00:00,,,Synthetic evidence added before the decision.
+645,105,decision_recorded,reviewer,5,2026-04-16T17:00:00+00:00,under_review,decision_recorded,breach_found
+646,106,case_opened,system,,2026-04-17T15:00:00+00:00,,open,Case created from a flagged similarity report.
+647,106,reviewer_assigned,system,,2026-04-17T15:00:00+00:00,open,assigned,Assigned to reviewer 6.
+648,106,review_started,reviewer,6,2026-04-17T15:00:00+00:00,assigned,under_review,Human review started.
+649,106,evidence_added,reviewer,6,2026-04-17T16:00:00+00:00,,,Synthetic evidence added before the decision.
+650,106,decision_recorded,reviewer,6,2026-04-17T17:00:00+00:00,under_review,decision_recorded,no_breach
+651,107,case_opened,system,,2026-04-18T15:00:00+00:00,,open,Case created from a flagged similarity report.
+652,107,reviewer_assigned,system,,2026-04-18T15:00:00+00:00,open,assigned,Assigned to reviewer 7.
+653,107,review_started,reviewer,7,2026-04-18T15:00:00+00:00,assigned,under_review,Human review started.
+654,107,evidence_added,reviewer,7,2026-04-18T16:00:00+00:00,,,Synthetic evidence added before the decision.
+655,107,decision_recorded,reviewer,7,2026-04-18T17:00:00+00:00,under_review,decision_recorded,no_breach
+656,108,case_opened,system,,2026-04-19T15:00:00+00:00,,open,Case created from a flagged similarity report.
+657,108,reviewer_assigned,system,,2026-04-19T15:00:00+00:00,open,assigned,Assigned to reviewer 8.
+658,108,review_started,reviewer,8,2026-04-19T15:00:00+00:00,assigned,under_review,Human review started.
+659,108,evidence_added,reviewer,8,2026-04-19T16:00:00+00:00,,,Synthetic evidence added before the decision.
+660,108,decision_recorded,reviewer,8,2026-04-19T17:00:00+00:00,under_review,decision_recorded,no_breach
+661,109,case_opened,system,,2026-04-20T15:00:00+00:00,,open,Case created from a flagged similarity report.
+662,109,reviewer_assigned,system,,2026-04-20T15:00:00+00:00,open,assigned,Assigned to reviewer 9.
+663,109,review_started,reviewer,9,2026-04-20T15:00:00+00:00,assigned,under_review,Human review started.
+664,109,evidence_added,reviewer,9,2026-04-20T16:00:00+00:00,,,Synthetic evidence added before the decision.
+665,109,decision_recorded,reviewer,9,2026-04-20T17:00:00+00:00,under_review,decision_recorded,breach_found
+666,110,case_opened,system,,2026-04-21T15:00:00+00:00,,open,Case created from a flagged similarity report.
+667,110,reviewer_assigned,system,,2026-04-21T15:00:00+00:00,open,assigned,Assigned to reviewer 11.
+668,110,review_started,reviewer,11,2026-04-21T15:00:00+00:00,assigned,under_review,Human review started.
+669,110,evidence_added,reviewer,11,2026-04-21T16:00:00+00:00,,,Synthetic evidence added before the decision.
+670,110,decision_recorded,reviewer,11,2026-04-21T17:00:00+00:00,under_review,decision_recorded,no_breach
+671,111,case_opened,system,,2026-04-22T15:00:00+00:00,,open,Case created from a flagged similarity report.
+672,111,reviewer_assigned,system,,2026-04-22T15:00:00+00:00,open,assigned,Assigned to reviewer 11.
+673,111,review_started,reviewer,11,2026-04-22T15:00:00+00:00,assigned,under_review,Human review started.
+674,111,evidence_added,reviewer,11,2026-04-22T16:00:00+00:00,,,Synthetic evidence added before the decision.
+675,111,decision_recorded,reviewer,11,2026-04-22T17:00:00+00:00,under_review,decision_recorded,no_breach
+676,112,case_opened,system,,2026-04-23T15:00:00+00:00,,open,Case created from a flagged similarity report.
+677,112,reviewer_assigned,system,,2026-04-23T15:00:00+00:00,open,assigned,Assigned to reviewer 12.
+678,112,review_started,reviewer,12,2026-04-23T15:00:00+00:00,assigned,under_review,Human review started.
+679,112,evidence_added,reviewer,12,2026-04-23T16:00:00+00:00,,,Synthetic evidence added before the decision.
+680,112,decision_recorded,reviewer,12,2026-04-23T17:00:00+00:00,under_review,decision_recorded,no_breach
+681,113,case_opened,system,,2026-04-24T15:00:00+00:00,,open,Case created from a flagged similarity report.
+682,113,reviewer_assigned,system,,2026-04-24T15:00:00+00:00,open,assigned,Assigned to reviewer 13.
+683,113,review_started,reviewer,13,2026-04-24T15:00:00+00:00,assigned,under_review,Human review started.
+684,113,evidence_added,reviewer,13,2026-04-24T16:00:00+00:00,,,Synthetic evidence added before the decision.
+685,113,decision_recorded,reviewer,13,2026-04-24T17:00:00+00:00,under_review,decision_recorded,breach_found
+686,114,case_opened,system,,2026-04-25T15:00:00+00:00,,open,Case created from a flagged similarity report.
+687,114,reviewer_assigned,system,,2026-04-25T15:00:00+00:00,open,assigned,Assigned to reviewer 14.
+688,114,review_started,reviewer,14,2026-04-25T15:00:00+00:00,assigned,under_review,Human review started.
+689,114,evidence_added,reviewer,14,2026-04-25T16:00:00+00:00,,,Synthetic evidence added before the decision.
+690,114,decision_recorded,reviewer,14,2026-04-25T17:00:00+00:00,under_review,decision_recorded,no_breach
+691,115,case_opened,system,,2026-04-26T15:00:00+00:00,,open,Case created from a flagged similarity report.
+692,115,reviewer_assigned,system,,2026-04-26T15:00:00+00:00,open,assigned,Assigned to reviewer 15.
+693,115,review_started,reviewer,15,2026-04-26T15:00:00+00:00,assigned,under_review,Human review started.
+694,115,evidence_added,reviewer,15,2026-04-26T16:00:00+00:00,,,Synthetic evidence added before the decision.
+695,115,decision_recorded,reviewer,15,2026-04-26T17:00:00+00:00,under_review,decision_recorded,no_breach
+696,116,case_opened,system,,2026-04-27T15:00:00+00:00,,open,Case created from a flagged similarity report.
+697,116,reviewer_assigned,system,,2026-04-27T15:00:00+00:00,open,assigned,Assigned to reviewer 16.
+698,116,review_started,reviewer,16,2026-04-27T15:00:00+00:00,assigned,under_review,Human review started.
+699,116,evidence_added,reviewer,16,2026-04-27T16:00:00+00:00,,,Synthetic evidence added before the decision.
+700,116,decision_recorded,reviewer,16,2026-04-27T17:00:00+00:00,under_review,decision_recorded,no_breach
+701,117,case_opened,system,,2026-04-28T15:00:00+00:00,,open,Case created from a flagged similarity report.
+702,117,reviewer_assigned,system,,2026-04-28T15:00:00+00:00,open,assigned,Assigned to reviewer 17.
+703,117,review_started,reviewer,17,2026-04-28T15:00:00+00:00,assigned,under_review,Human review started.
+704,117,evidence_added,reviewer,17,2026-04-28T16:00:00+00:00,,,Synthetic evidence added before the decision.
+705,117,decision_recorded,reviewer,17,2026-04-28T17:00:00+00:00,under_review,decision_recorded,breach_found
+706,118,case_opened,system,,2026-04-29T15:00:00+00:00,,open,Case created from a flagged similarity report.
+707,118,reviewer_assigned,system,,2026-04-29T15:00:00+00:00,open,assigned,Assigned to reviewer 18.
+708,118,review_started,reviewer,18,2026-04-29T15:00:00+00:00,assigned,under_review,Human review started.
+709,118,evidence_added,reviewer,18,2026-04-29T16:00:00+00:00,,,Synthetic evidence added before the decision.
+710,118,decision_recorded,reviewer,18,2026-04-29T17:00:00+00:00,under_review,decision_recorded,no_breach
+711,119,case_opened,system,,2026-04-30T15:00:00+00:00,,open,Case created from a flagged similarity report.
+712,119,reviewer_assigned,system,,2026-04-30T15:00:00+00:00,open,assigned,Assigned to reviewer 19.
+713,119,review_started,reviewer,19,2026-04-30T15:00:00+00:00,assigned,under_review,Human review started.
+714,119,evidence_added,reviewer,19,2026-04-30T16:00:00+00:00,,,Synthetic evidence added before the decision.
+715,119,decision_recorded,reviewer,19,2026-04-30T17:00:00+00:00,under_review,decision_recorded,no_breach
+716,120,case_opened,system,,2026-05-01T15:00:00+00:00,,open,Case created from a flagged similarity report.
+717,120,reviewer_assigned,system,,2026-05-01T15:00:00+00:00,open,assigned,Assigned to reviewer 1.
+718,120,review_started,reviewer,1,2026-05-01T15:00:00+00:00,assigned,under_review,Human review started.
+719,120,evidence_added,reviewer,1,2026-05-01T16:00:00+00:00,,,Synthetic evidence added before the decision.
+720,120,decision_recorded,reviewer,1,2026-05-01T17:00:00+00:00,under_review,decision_recorded,no_breach
+721,121,case_opened,system,,2026-05-02T15:00:00+00:00,,open,Case created from a flagged similarity report.
+722,121,reviewer_assigned,system,,2026-05-02T15:00:00+00:00,open,assigned,Assigned to reviewer 1.
+723,121,review_started,reviewer,1,2026-05-02T15:00:00+00:00,assigned,under_review,Human review started.
+724,121,evidence_added,reviewer,1,2026-05-02T16:00:00+00:00,,,Synthetic evidence added before the decision.
+725,121,decision_recorded,reviewer,1,2026-05-02T17:00:00+00:00,under_review,decision_recorded,breach_found
+726,122,case_opened,system,,2026-05-03T15:00:00+00:00,,open,Case created from a flagged similarity report.
+727,122,reviewer_assigned,system,,2026-05-03T15:00:00+00:00,open,assigned,Assigned to reviewer 2.
+728,122,review_started,reviewer,2,2026-05-03T15:00:00+00:00,assigned,under_review,Human review started.
+729,122,evidence_added,reviewer,2,2026-05-03T16:00:00+00:00,,,Synthetic evidence added before the decision.
+730,122,decision_recorded,reviewer,2,2026-05-03T17:00:00+00:00,under_review,decision_recorded,no_breach
+731,123,case_opened,system,,2026-05-04T15:00:00+00:00,,open,Case created from a flagged similarity report.
+732,123,reviewer_assigned,system,,2026-05-04T15:00:00+00:00,open,assigned,Assigned to reviewer 3.
+733,123,review_started,reviewer,3,2026-05-04T15:00:00+00:00,assigned,under_review,Human review started.
+734,123,evidence_added,reviewer,3,2026-05-04T16:00:00+00:00,,,Synthetic evidence added before the decision.
+735,123,decision_recorded,reviewer,3,2026-05-04T17:00:00+00:00,under_review,decision_recorded,no_breach
+736,124,case_opened,system,,2026-05-05T15:00:00+00:00,,open,Case created from a flagged similarity report.
+737,124,reviewer_assigned,system,,2026-05-05T15:00:00+00:00,open,assigned,Assigned to reviewer 4.
+738,124,review_started,reviewer,4,2026-05-05T15:00:00+00:00,assigned,under_review,Human review started.
+739,124,evidence_added,reviewer,4,2026-05-05T16:00:00+00:00,,,Synthetic evidence added before the decision.
+740,124,decision_recorded,reviewer,4,2026-05-05T17:00:00+00:00,under_review,decision_recorded,no_breach
+741,125,case_opened,system,,2026-05-06T15:00:00+00:00,,open,Case created from a flagged similarity report.
+742,125,reviewer_assigned,system,,2026-05-06T15:00:00+00:00,open,assigned,Assigned to reviewer 5.
+743,125,review_started,reviewer,5,2026-05-06T15:00:00+00:00,assigned,under_review,Human review started.
+744,125,evidence_added,reviewer,5,2026-05-06T16:00:00+00:00,,,Synthetic evidence added before the decision.
+745,125,decision_recorded,reviewer,5,2026-05-06T17:00:00+00:00,under_review,decision_recorded,inconclusive
+746,126,case_opened,system,,2026-05-07T15:00:00+00:00,,open,Case created from a flagged similarity report.
+747,126,reviewer_assigned,system,,2026-05-07T15:00:00+00:00,open,assigned,Assigned to reviewer 6.
+748,126,review_started,reviewer,6,2026-05-07T15:00:00+00:00,assigned,under_review,Human review started.
+749,126,evidence_added,reviewer,6,2026-05-07T16:00:00+00:00,,,Synthetic evidence added before the decision.
+750,126,decision_recorded,reviewer,6,2026-05-07T17:00:00+00:00,under_review,decision_recorded,no_breach
+751,127,case_opened,system,,2026-05-08T15:00:00+00:00,,open,Case created from a flagged similarity report.
+752,127,reviewer_assigned,system,,2026-05-08T15:00:00+00:00,open,assigned,Assigned to reviewer 7.
+753,127,review_started,reviewer,7,2026-05-08T15:00:00+00:00,assigned,under_review,Human review started.
+754,127,evidence_added,reviewer,7,2026-05-08T16:00:00+00:00,,,Synthetic evidence added before the decision.
+755,127,decision_recorded,reviewer,7,2026-05-08T17:00:00+00:00,under_review,decision_recorded,no_breach
+756,128,case_opened,system,,2026-05-09T15:00:00+00:00,,open,Case created from a flagged similarity report.
+757,128,reviewer_assigned,system,,2026-05-09T15:00:00+00:00,open,assigned,Assigned to reviewer 8.
+758,128,review_started,reviewer,8,2026-05-09T15:00:00+00:00,assigned,under_review,Human review started.
+759,128,evidence_added,reviewer,8,2026-05-09T16:00:00+00:00,,,Synthetic evidence added before the decision.
+760,128,decision_recorded,reviewer,8,2026-05-09T17:00:00+00:00,under_review,decision_recorded,no_breach
+761,129,case_opened,system,,2026-05-10T15:00:00+00:00,,open,Case created from a flagged similarity report.
+762,129,reviewer_assigned,system,,2026-05-10T15:00:00+00:00,open,assigned,Assigned to reviewer 9.
+763,129,review_started,reviewer,9,2026-05-10T15:00:00+00:00,assigned,under_review,Human review started.
+764,129,evidence_added,reviewer,9,2026-05-10T16:00:00+00:00,,,Synthetic evidence added before the decision.
+765,129,decision_recorded,reviewer,9,2026-05-10T17:00:00+00:00,under_review,decision_recorded,inconclusive
+766,130,case_opened,system,,2026-05-11T15:00:00+00:00,,open,Case created from a flagged similarity report.
+767,130,reviewer_assigned,system,,2026-05-11T15:00:00+00:00,open,assigned,Assigned to reviewer 11.
+768,130,review_started,reviewer,11,2026-05-11T15:00:00+00:00,assigned,under_review,Human review started.
+769,130,evidence_added,reviewer,11,2026-05-11T16:00:00+00:00,,,Synthetic evidence added before the decision.
+770,130,decision_recorded,reviewer,11,2026-05-11T17:00:00+00:00,under_review,decision_recorded,no_breach
+771,131,case_opened,system,,2026-05-12T15:00:00+00:00,,open,Case created from a flagged similarity report.
+772,131,reviewer_assigned,system,,2026-05-12T15:00:00+00:00,open,assigned,Assigned to reviewer 11.
+773,131,review_started,reviewer,11,2026-05-12T15:00:00+00:00,assigned,under_review,Human review started.
+774,131,evidence_added,reviewer,11,2026-05-12T16:00:00+00:00,,,Synthetic evidence added before the decision.
+775,131,decision_recorded,reviewer,11,2026-05-12T17:00:00+00:00,under_review,decision_recorded,no_breach
+776,132,case_opened,system,,2026-05-13T15:00:00+00:00,,open,Case created from a flagged similarity report.
+777,132,reviewer_assigned,system,,2026-05-13T15:00:00+00:00,open,assigned,Assigned to reviewer 12.
+778,132,review_started,reviewer,12,2026-05-13T15:00:00+00:00,assigned,under_review,Human review started.
+779,132,evidence_added,reviewer,12,2026-05-13T16:00:00+00:00,,,Synthetic evidence added before the decision.
+780,132,decision_recorded,reviewer,12,2026-05-13T17:00:00+00:00,under_review,decision_recorded,no_breach
+781,133,case_opened,system,,2026-05-14T15:00:00+00:00,,open,Case created from a flagged similarity report.
+782,133,reviewer_assigned,system,,2026-05-14T15:00:00+00:00,open,assigned,Assigned to reviewer 13.
+783,133,review_started,reviewer,13,2026-05-14T15:00:00+00:00,assigned,under_review,Human review started.
+784,133,evidence_added,reviewer,13,2026-05-14T16:00:00+00:00,,,Synthetic evidence added before the decision.
+785,133,decision_recorded,reviewer,13,2026-05-14T17:00:00+00:00,under_review,decision_recorded,breach_found
+786,134,case_opened,system,,2026-05-15T15:00:00+00:00,,open,Case created from a flagged similarity report.
+787,134,reviewer_assigned,system,,2026-05-15T15:00:00+00:00,open,assigned,Assigned to reviewer 14.
+788,134,review_started,reviewer,14,2026-05-15T15:00:00+00:00,assigned,under_review,Human review started.
+789,134,evidence_added,reviewer,14,2026-05-15T16:00:00+00:00,,,Synthetic evidence added before the decision.
+790,134,decision_recorded,reviewer,14,2026-05-15T17:00:00+00:00,under_review,decision_recorded,no_breach
+791,135,case_opened,system,,2026-05-16T15:00:00+00:00,,open,Case created from a flagged similarity report.
+792,135,reviewer_assigned,system,,2026-05-16T15:00:00+00:00,open,assigned,Assigned to reviewer 15.
+793,135,review_started,reviewer,15,2026-05-16T15:00:00+00:00,assigned,under_review,Human review started.
+794,135,evidence_added,reviewer,15,2026-05-16T16:00:00+00:00,,,Synthetic evidence added before the decision.
+795,135,decision_recorded,reviewer,15,2026-05-16T17:00:00+00:00,under_review,decision_recorded,no_breach
+796,136,case_opened,system,,2026-05-17T15:00:00+00:00,,open,Case created from a flagged similarity report.
+797,136,reviewer_assigned,system,,2026-05-17T15:00:00+00:00,open,assigned,Assigned to reviewer 16.
+798,136,review_started,reviewer,16,2026-05-17T15:00:00+00:00,assigned,under_review,Human review started.
+799,136,evidence_added,reviewer,16,2026-05-17T16:00:00+00:00,,,Synthetic evidence added before the decision.
+800,136,decision_recorded,reviewer,16,2026-05-17T17:00:00+00:00,under_review,decision_recorded,no_breach
+801,137,case_opened,system,,2026-05-18T15:00:00+00:00,,open,Case created from a flagged similarity report.
+802,137,reviewer_assigned,system,,2026-05-18T15:00:00+00:00,open,assigned,Assigned to reviewer 17.
+803,137,review_started,reviewer,17,2026-05-18T15:00:00+00:00,assigned,under_review,Human review started.
+804,137,evidence_added,reviewer,17,2026-05-18T16:00:00+00:00,,,Synthetic evidence added before the decision.
+805,137,decision_recorded,reviewer,17,2026-05-18T17:00:00+00:00,under_review,decision_recorded,inconclusive
+806,138,case_opened,system,,2026-05-19T15:00:00+00:00,,open,Case created from a flagged similarity report.
+807,138,reviewer_assigned,system,,2026-05-19T15:00:00+00:00,open,assigned,Assigned to reviewer 18.
+808,138,review_started,reviewer,18,2026-05-19T15:00:00+00:00,assigned,under_review,Human review started.
+809,138,evidence_added,reviewer,18,2026-05-19T16:00:00+00:00,,,Synthetic evidence added before the decision.
+810,138,decision_recorded,reviewer,18,2026-05-19T17:00:00+00:00,under_review,decision_recorded,no_breach
+811,139,case_opened,system,,2026-05-20T15:00:00+00:00,,open,Case created from a flagged similarity report.
+812,139,reviewer_assigned,system,,2026-05-20T15:00:00+00:00,open,assigned,Assigned to reviewer 19.
+813,139,review_started,reviewer,19,2026-05-20T15:00:00+00:00,assigned,under_review,Human review started.
+814,139,evidence_added,reviewer,19,2026-05-20T16:00:00+00:00,,,Synthetic evidence added before the decision.
+815,139,decision_recorded,reviewer,19,2026-05-20T17:00:00+00:00,under_review,decision_recorded,no_breach
+816,140,case_opened,system,,2026-05-21T15:00:00+00:00,,open,Case created from a flagged similarity report.
+817,140,reviewer_assigned,system,,2026-05-21T15:00:00+00:00,open,assigned,Assigned to reviewer 1.
+818,140,review_started,reviewer,1,2026-05-21T15:00:00+00:00,assigned,under_review,Human review started.
+819,140,evidence_added,reviewer,1,2026-05-21T16:00:00+00:00,,,Synthetic evidence added before the decision.
+820,140,decision_recorded,reviewer,1,2026-05-21T17:00:00+00:00,under_review,decision_recorded,no_breach
+821,141,case_opened,system,,2026-05-22T15:00:00+00:00,,open,Case created from a flagged similarity report.
+822,141,reviewer_assigned,system,,2026-05-22T15:00:00+00:00,open,assigned,Assigned to reviewer 1.
+823,141,review_started,reviewer,1,2026-05-22T15:00:00+00:00,assigned,under_review,Human review started.
+824,141,evidence_added,reviewer,1,2026-05-22T16:00:00+00:00,,,Synthetic evidence added before the decision.
+825,141,decision_recorded,reviewer,1,2026-05-22T17:00:00+00:00,under_review,decision_recorded,inconclusive
+826,142,case_opened,system,,2026-05-23T15:00:00+00:00,,open,Case created from a flagged similarity report.
+827,142,reviewer_assigned,system,,2026-05-23T15:00:00+00:00,open,assigned,Assigned to reviewer 2.
+828,142,review_started,reviewer,2,2026-05-23T15:00:00+00:00,assigned,under_review,Human review started.
+829,142,evidence_added,reviewer,2,2026-05-23T16:00:00+00:00,,,Synthetic evidence added before the decision.
+830,142,decision_recorded,reviewer,2,2026-05-23T17:00:00+00:00,under_review,decision_recorded,no_breach
+831,143,case_opened,system,,2026-05-24T15:00:00+00:00,,open,Case created from a flagged similarity report.
+832,143,reviewer_assigned,system,,2026-05-24T15:00:00+00:00,open,assigned,Assigned to reviewer 3.
+833,143,review_started,reviewer,3,2026-05-24T15:00:00+00:00,assigned,under_review,Human review started.
+834,143,evidence_added,reviewer,3,2026-05-24T16:00:00+00:00,,,Synthetic evidence added before the decision.
+835,143,decision_recorded,reviewer,3,2026-05-24T17:00:00+00:00,under_review,decision_recorded,no_breach
+836,144,case_opened,system,,2026-05-25T15:00:00+00:00,,open,Case created from a flagged similarity report.
+837,144,reviewer_assigned,system,,2026-05-25T15:00:00+00:00,open,assigned,Assigned to reviewer 4.
+838,144,review_started,reviewer,4,2026-05-25T15:00:00+00:00,assigned,under_review,Human review started.
+839,144,evidence_added,reviewer,4,2026-05-25T16:00:00+00:00,,,Synthetic evidence added before the decision.
+840,144,decision_recorded,reviewer,4,2026-05-25T17:00:00+00:00,under_review,decision_recorded,no_breach
+841,145,case_opened,system,,2026-05-26T15:00:00+00:00,,open,Case created from a flagged similarity report.
+842,145,reviewer_assigned,system,,2026-05-26T15:00:00+00:00,open,assigned,Assigned to reviewer 5.
+843,145,review_started,reviewer,5,2026-05-26T15:00:00+00:00,assigned,under_review,Human review started.
+844,145,evidence_added,reviewer,5,2026-05-26T16:00:00+00:00,,,Synthetic evidence added before the decision.
+845,145,decision_recorded,reviewer,5,2026-05-26T17:00:00+00:00,under_review,decision_recorded,inconclusive
+846,146,case_opened,system,,2026-05-27T15:00:00+00:00,,open,Case created from a flagged similarity report.
+847,146,reviewer_assigned,system,,2026-05-27T15:00:00+00:00,open,assigned,Assigned to reviewer 6.
+848,146,review_started,reviewer,6,2026-05-27T15:00:00+00:00,assigned,under_review,Human review started.
+849,146,evidence_added,reviewer,6,2026-05-27T16:00:00+00:00,,,Synthetic evidence added before the decision.
+850,146,decision_recorded,reviewer,6,2026-05-27T17:00:00+00:00,under_review,decision_recorded,no_breach
+851,147,case_opened,system,,2026-05-28T15:00:00+00:00,,open,Case created from a flagged similarity report.
+852,147,reviewer_assigned,system,,2026-05-28T15:00:00+00:00,open,assigned,Assigned to reviewer 7.
+853,147,review_started,reviewer,7,2026-05-28T15:00:00+00:00,assigned,under_review,Human review started.
+854,147,evidence_added,reviewer,7,2026-05-28T16:00:00+00:00,,,Synthetic evidence added before the decision.
+855,147,decision_recorded,reviewer,7,2026-05-28T17:00:00+00:00,under_review,decision_recorded,no_breach
+856,148,case_opened,system,,2026-05-29T15:00:00+00:00,,open,Case created from a flagged similarity report.
+857,148,reviewer_assigned,system,,2026-05-29T15:00:00+00:00,open,assigned,Assigned to reviewer 8.
+858,148,review_started,reviewer,8,2026-05-29T15:00:00+00:00,assigned,under_review,Human review started.
+859,148,evidence_added,reviewer,8,2026-05-29T16:00:00+00:00,,,Synthetic evidence added before the decision.
+860,148,decision_recorded,reviewer,8,2026-05-29T17:00:00+00:00,under_review,decision_recorded,no_breach
+861,149,case_opened,system,,2026-05-30T15:00:00+00:00,,open,Case created from a flagged similarity report.
+862,149,reviewer_assigned,system,,2026-05-30T15:00:00+00:00,open,assigned,Assigned to reviewer 9.
+863,149,review_started,reviewer,9,2026-05-30T15:00:00+00:00,assigned,under_review,Human review started.
+864,149,evidence_added,reviewer,9,2026-05-30T16:00:00+00:00,,,Synthetic evidence added before the decision.
+865,149,decision_recorded,reviewer,9,2026-05-30T17:00:00+00:00,under_review,decision_recorded,breach_found
+866,150,case_opened,system,,2026-05-31T15:00:00+00:00,,open,Case created from a flagged similarity report.
+867,150,reviewer_assigned,system,,2026-05-31T15:00:00+00:00,open,assigned,Assigned to reviewer 11.
+868,150,review_started,reviewer,11,2026-05-31T15:00:00+00:00,assigned,under_review,Human review started.
+869,150,evidence_added,reviewer,11,2026-05-31T16:00:00+00:00,,,Synthetic evidence added before the decision.
+870,150,decision_recorded,reviewer,11,2026-05-31T17:00:00+00:00,under_review,decision_recorded,no_breach
+871,151,case_opened,system,,2026-06-01T15:00:00+00:00,,open,Case created from a flagged similarity report.
+872,151,reviewer_assigned,system,,2026-06-01T15:00:00+00:00,open,assigned,Assigned to reviewer 11.
+873,151,review_started,reviewer,11,2026-06-01T15:00:00+00:00,assigned,under_review,Human review started.
+874,151,evidence_added,reviewer,11,2026-06-01T16:00:00+00:00,,,Synthetic evidence added before the decision.
+875,151,decision_recorded,reviewer,11,2026-06-01T17:00:00+00:00,under_review,decision_recorded,no_breach
+876,152,case_opened,system,,2026-06-02T15:00:00+00:00,,open,Case created from a flagged similarity report.
+877,152,reviewer_assigned,system,,2026-06-02T15:00:00+00:00,open,assigned,Assigned to reviewer 12.
+878,152,review_started,reviewer,12,2026-06-02T15:00:00+00:00,assigned,under_review,Human review started.
+879,152,evidence_added,reviewer,12,2026-06-02T16:00:00+00:00,,,Synthetic evidence added before the decision.
+880,152,decision_recorded,reviewer,12,2026-06-02T17:00:00+00:00,under_review,decision_recorded,no_breach
+881,153,case_opened,system,,2026-06-03T15:00:00+00:00,,open,Case created from a flagged similarity report.
+882,153,reviewer_assigned,system,,2026-06-03T15:00:00+00:00,open,assigned,Assigned to reviewer 13.
+883,153,review_started,reviewer,13,2026-06-03T15:00:00+00:00,assigned,under_review,Human review started.
+884,153,evidence_added,reviewer,13,2026-06-03T16:00:00+00:00,,,Synthetic evidence added before the decision.
+885,153,decision_recorded,reviewer,13,2026-06-03T17:00:00+00:00,under_review,decision_recorded,breach_found
+886,154,case_opened,system,,2026-06-04T15:00:00+00:00,,open,Case created from a flagged similarity report.
+887,154,reviewer_assigned,system,,2026-06-04T15:00:00+00:00,open,assigned,Assigned to reviewer 14.
+888,154,review_started,reviewer,14,2026-06-04T15:00:00+00:00,assigned,under_review,Human review started.
+889,154,evidence_added,reviewer,14,2026-06-04T16:00:00+00:00,,,Synthetic evidence added before the decision.
+890,154,decision_recorded,reviewer,14,2026-06-04T17:00:00+00:00,under_review,decision_recorded,no_breach
+891,155,case_opened,system,,2026-06-05T15:00:00+00:00,,open,Case created from a flagged similarity report.
+892,155,reviewer_assigned,system,,2026-06-05T15:00:00+00:00,open,assigned,Assigned to reviewer 15.
+893,155,review_started,reviewer,15,2026-06-05T15:00:00+00:00,assigned,under_review,Human review started.
+894,155,evidence_added,reviewer,15,2026-06-05T16:00:00+00:00,,,Synthetic evidence added before the decision.
+895,155,decision_recorded,reviewer,15,2026-06-05T17:00:00+00:00,under_review,decision_recorded,no_breach
+896,156,case_opened,system,,2026-06-06T15:00:00+00:00,,open,Case created from a flagged similarity report.
+897,156,reviewer_assigned,system,,2026-06-06T15:00:00+00:00,open,assigned,Assigned to reviewer 16.
+898,156,review_started,reviewer,16,2026-06-06T15:00:00+00:00,assigned,under_review,Human review started.
+899,156,evidence_added,reviewer,16,2026-06-06T16:00:00+00:00,,,Synthetic evidence added before the decision.
+900,156,decision_recorded,reviewer,16,2026-06-06T17:00:00+00:00,under_review,decision_recorded,no_breach
+901,157,case_opened,system,,2026-06-07T15:00:00+00:00,,open,Case created from a flagged similarity report.
+902,157,reviewer_assigned,system,,2026-06-07T15:00:00+00:00,open,assigned,Assigned to reviewer 17.
+903,157,review_started,reviewer,17,2026-06-07T15:00:00+00:00,assigned,under_review,Human review started.
+904,157,evidence_added,reviewer,17,2026-06-07T16:00:00+00:00,,,Synthetic evidence added before the decision.
+905,157,decision_recorded,reviewer,17,2026-06-07T17:00:00+00:00,under_review,decision_recorded,inconclusive
+906,158,case_opened,system,,2026-06-08T15:00:00+00:00,,open,Case created from a flagged similarity report.
+907,158,reviewer_assigned,system,,2026-06-08T15:00:00+00:00,open,assigned,Assigned to reviewer 18.
+908,158,review_started,reviewer,18,2026-06-08T15:00:00+00:00,assigned,under_review,Human review started.
+909,158,evidence_added,reviewer,18,2026-06-08T16:00:00+00:00,,,Synthetic evidence added before the decision.
+910,158,decision_recorded,reviewer,18,2026-06-08T17:00:00+00:00,under_review,decision_recorded,no_breach
+911,159,case_opened,system,,2026-06-09T15:00:00+00:00,,open,Case created from a flagged similarity report.
+912,159,reviewer_assigned,system,,2026-06-09T15:00:00+00:00,open,assigned,Assigned to reviewer 19.
+913,159,review_started,reviewer,19,2026-06-09T15:00:00+00:00,assigned,under_review,Human review started.
+914,159,evidence_added,reviewer,19,2026-06-09T16:00:00+00:00,,,Synthetic evidence added before the decision.
+915,159,decision_recorded,reviewer,19,2026-06-09T17:00:00+00:00,under_review,decision_recorded,no_breach
+916,160,case_opened,system,,2026-06-10T15:00:00+00:00,,open,Case created from a flagged similarity report.
+917,160,reviewer_assigned,system,,2026-06-10T15:00:00+00:00,open,assigned,Assigned to reviewer 1.
+918,160,review_started,reviewer,1,2026-06-10T15:00:00+00:00,assigned,under_review,Human review started.
+919,160,evidence_added,reviewer,1,2026-06-10T16:00:00+00:00,,,Synthetic evidence added before the decision.
+920,160,decision_recorded,reviewer,1,2026-06-10T17:00:00+00:00,under_review,decision_recorded,no_breach
+921,161,case_opened,system,,2026-06-11T15:00:00+00:00,,open,Case created from a flagged similarity report.
+922,161,reviewer_assigned,system,,2026-06-11T15:00:00+00:00,open,assigned,Assigned to reviewer 1.
+923,161,review_started,reviewer,1,2026-06-11T15:00:00+00:00,assigned,under_review,Human review started.
+924,161,evidence_added,reviewer,1,2026-06-11T16:00:00+00:00,,,Synthetic evidence added before the decision.
+925,161,decision_recorded,reviewer,1,2026-06-11T17:00:00+00:00,under_review,decision_recorded,inconclusive
+926,162,case_opened,system,,2026-06-12T15:00:00+00:00,,open,Case created from a flagged similarity report.
+927,162,reviewer_assigned,system,,2026-06-12T15:00:00+00:00,open,assigned,Assigned to reviewer 2.
+928,162,review_started,reviewer,2,2026-06-12T15:00:00+00:00,assigned,under_review,Human review started.
+929,162,evidence_added,reviewer,2,2026-06-12T16:00:00+00:00,,,Synthetic evidence added before the decision.
+930,162,decision_recorded,reviewer,2,2026-06-12T17:00:00+00:00,under_review,decision_recorded,no_breach
+931,163,case_opened,system,,2026-06-13T15:00:00+00:00,,open,Case created from a flagged similarity report.
+932,163,reviewer_assigned,system,,2026-06-13T15:00:00+00:00,open,assigned,Assigned to reviewer 3.
+933,163,review_started,reviewer,3,2026-06-13T15:00:00+00:00,assigned,under_review,Human review started.
+934,163,evidence_added,reviewer,3,2026-06-13T16:00:00+00:00,,,Synthetic evidence added before the decision.
+935,163,decision_recorded,reviewer,3,2026-06-13T17:00:00+00:00,under_review,decision_recorded,no_breach
+936,164,case_opened,system,,2026-06-14T15:00:00+00:00,,open,Case created from a flagged similarity report.
+937,164,reviewer_assigned,system,,2026-06-14T15:00:00+00:00,open,assigned,Assigned to reviewer 4.
+938,164,review_started,reviewer,4,2026-06-14T15:00:00+00:00,assigned,under_review,Human review started.
+939,164,evidence_added,reviewer,4,2026-06-14T16:00:00+00:00,,,Synthetic evidence added before the decision.
+940,164,decision_recorded,reviewer,4,2026-06-14T17:00:00+00:00,under_review,decision_recorded,no_breach
+941,165,case_opened,system,,2026-06-15T15:00:00+00:00,,open,Case created from a flagged similarity report.
+942,165,reviewer_assigned,system,,2026-06-15T15:00:00+00:00,open,assigned,Assigned to reviewer 5.
+943,165,review_started,reviewer,5,2026-06-15T15:00:00+00:00,assigned,under_review,Human review started.
+944,165,evidence_added,reviewer,5,2026-06-15T16:00:00+00:00,,,Synthetic evidence added before the decision.
+945,165,decision_recorded,reviewer,5,2026-06-15T17:00:00+00:00,under_review,decision_recorded,inconclusive
+946,166,case_opened,system,,2026-06-16T15:00:00+00:00,,open,Case created from a flagged similarity report.
+947,166,reviewer_assigned,system,,2026-06-16T15:00:00+00:00,open,assigned,Assigned to reviewer 6.
+948,166,review_started,reviewer,6,2026-06-16T15:00:00+00:00,assigned,under_review,Human review started.
+949,166,evidence_added,reviewer,6,2026-06-16T16:00:00+00:00,,,Synthetic evidence added before the decision.
+950,166,decision_recorded,reviewer,6,2026-06-16T17:00:00+00:00,under_review,decision_recorded,no_breach
+951,167,case_opened,system,,2026-06-17T15:00:00+00:00,,open,Case created from a flagged similarity report.
+952,167,reviewer_assigned,system,,2026-06-17T15:00:00+00:00,open,assigned,Assigned to reviewer 7.
+953,167,review_started,reviewer,7,2026-06-17T15:00:00+00:00,assigned,under_review,Human review started.
+954,167,evidence_added,reviewer,7,2026-06-17T16:00:00+00:00,,,Synthetic evidence added before the decision.
+955,167,decision_recorded,reviewer,7,2026-06-17T17:00:00+00:00,under_review,decision_recorded,no_breach
+956,168,case_opened,system,,2026-06-18T15:00:00+00:00,,open,Case created from a flagged similarity report.
+957,168,reviewer_assigned,system,,2026-06-18T15:00:00+00:00,open,assigned,Assigned to reviewer 8.
+958,168,review_started,reviewer,8,2026-06-18T15:00:00+00:00,assigned,under_review,Human review started.
+959,168,evidence_added,reviewer,8,2026-06-18T16:00:00+00:00,,,Synthetic evidence added before the decision.
+960,168,decision_recorded,reviewer,8,2026-06-18T17:00:00+00:00,under_review,decision_recorded,no_breach
+961,169,case_opened,system,,2026-06-19T15:00:00+00:00,,open,Case created from a flagged similarity report.
+962,169,reviewer_assigned,system,,2026-06-19T15:00:00+00:00,open,assigned,Assigned to reviewer 9.
+963,169,review_started,reviewer,9,2026-06-19T15:00:00+00:00,assigned,under_review,Human review started.
+964,169,evidence_added,reviewer,9,2026-06-19T16:00:00+00:00,,,Synthetic evidence added before the decision.
+965,169,decision_recorded,reviewer,9,2026-06-19T17:00:00+00:00,under_review,decision_recorded,inconclusive
+966,170,case_opened,system,,2026-06-20T15:00:00+00:00,,open,Case created from a flagged similarity report.
+967,170,reviewer_assigned,system,,2026-06-20T15:00:00+00:00,open,assigned,Assigned to reviewer 11.
+968,170,review_started,reviewer,11,2026-06-20T15:00:00+00:00,assigned,under_review,Human review started.
+969,170,evidence_added,reviewer,11,2026-06-20T16:00:00+00:00,,,Synthetic evidence added before the decision.
+970,170,decision_recorded,reviewer,11,2026-06-20T17:00:00+00:00,under_review,decision_recorded,no_breach
+971,171,case_opened,system,,2026-06-21T15:00:00+00:00,,open,Case created from a flagged similarity report.
+972,171,reviewer_assigned,system,,2026-06-21T15:00:00+00:00,open,assigned,Assigned to reviewer 11.
+973,171,review_started,reviewer,11,2026-06-21T15:00:00+00:00,assigned,under_review,Human review started.
+974,171,evidence_added,reviewer,11,2026-06-21T16:00:00+00:00,,,Synthetic evidence added before the decision.
+975,171,decision_recorded,reviewer,11,2026-06-21T17:00:00+00:00,under_review,decision_recorded,no_breach
+976,172,case_opened,system,,2026-06-22T15:00:00+00:00,,open,Case created from a flagged similarity report.
+977,172,reviewer_assigned,system,,2026-06-22T15:00:00+00:00,open,assigned,Assigned to reviewer 12.
+978,172,review_started,reviewer,12,2026-06-22T15:00:00+00:00,assigned,under_review,Human review started.
+979,172,evidence_added,reviewer,12,2026-06-22T16:00:00+00:00,,,Synthetic evidence added before the decision.
+980,172,decision_recorded,reviewer,12,2026-06-22T17:00:00+00:00,under_review,decision_recorded,no_breach
+981,173,case_opened,system,,2026-06-23T15:00:00+00:00,,open,Case created from a flagged similarity report.
+982,173,reviewer_assigned,system,,2026-06-23T15:00:00+00:00,open,assigned,Assigned to reviewer 13.
+983,173,review_started,reviewer,13,2026-06-23T15:00:00+00:00,assigned,under_review,Human review started.
+984,173,evidence_added,reviewer,13,2026-06-23T16:00:00+00:00,,,Synthetic evidence added before the decision.
+985,173,decision_recorded,reviewer,13,2026-06-23T17:00:00+00:00,under_review,decision_recorded,inconclusive
+986,174,case_opened,system,,2026-06-24T15:00:00+00:00,,open,Case created from a flagged similarity report.
+987,174,reviewer_assigned,system,,2026-06-24T15:00:00+00:00,open,assigned,Assigned to reviewer 14.
+988,174,review_started,reviewer,14,2026-06-24T15:00:00+00:00,assigned,under_review,Human review started.
+989,174,evidence_added,reviewer,14,2026-06-24T16:00:00+00:00,,,Synthetic evidence added before the decision.
+990,174,decision_recorded,reviewer,14,2026-06-24T17:00:00+00:00,under_review,decision_recorded,no_breach
+991,175,case_opened,system,,2026-06-25T15:00:00+00:00,,open,Case created from a flagged similarity report.
+992,175,reviewer_assigned,system,,2026-06-25T15:00:00+00:00,open,assigned,Assigned to reviewer 15.
+993,175,review_started,reviewer,15,2026-06-25T15:00:00+00:00,assigned,under_review,Human review started.
+994,175,evidence_added,reviewer,15,2026-06-25T16:00:00+00:00,,,Synthetic evidence added before the decision.
+995,175,decision_recorded,reviewer,15,2026-06-25T17:00:00+00:00,under_review,decision_recorded,no_breach
+996,176,case_opened,system,,2026-06-26T15:00:00+00:00,,open,Case created from a flagged similarity report.
+997,176,reviewer_assigned,system,,2026-06-26T15:00:00+00:00,open,assigned,Assigned to reviewer 16.
+998,176,review_started,reviewer,16,2026-06-26T15:00:00+00:00,assigned,under_review,Human review started.
+999,176,evidence_added,reviewer,16,2026-06-26T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1000,176,decision_recorded,reviewer,16,2026-06-26T17:00:00+00:00,under_review,decision_recorded,no_breach
+1001,177,case_opened,system,,2026-06-27T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1002,177,reviewer_assigned,system,,2026-06-27T15:00:00+00:00,open,assigned,Assigned to reviewer 17.
+1003,177,review_started,reviewer,17,2026-06-27T15:00:00+00:00,assigned,under_review,Human review started.
+1004,177,evidence_added,reviewer,17,2026-06-27T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1005,177,decision_recorded,reviewer,17,2026-06-27T17:00:00+00:00,under_review,decision_recorded,breach_found
+1006,178,case_opened,system,,2026-06-28T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1007,178,reviewer_assigned,system,,2026-06-28T15:00:00+00:00,open,assigned,Assigned to reviewer 18.
+1008,178,review_started,reviewer,18,2026-06-28T15:00:00+00:00,assigned,under_review,Human review started.
+1009,178,evidence_added,reviewer,18,2026-06-28T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1010,178,decision_recorded,reviewer,18,2026-06-28T17:00:00+00:00,under_review,decision_recorded,no_breach
+1011,179,case_opened,system,,2026-06-29T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1012,179,reviewer_assigned,system,,2026-06-29T15:00:00+00:00,open,assigned,Assigned to reviewer 19.
+1013,179,review_started,reviewer,19,2026-06-29T15:00:00+00:00,assigned,under_review,Human review started.
+1014,179,evidence_added,reviewer,19,2026-06-29T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1015,179,decision_recorded,reviewer,19,2026-06-29T17:00:00+00:00,under_review,decision_recorded,no_breach
+1016,180,case_opened,system,,2026-06-30T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1017,180,reviewer_assigned,system,,2026-06-30T15:00:00+00:00,open,assigned,Assigned to reviewer 1.
+1018,180,review_started,reviewer,1,2026-06-30T15:00:00+00:00,assigned,under_review,Human review started.
+1019,180,evidence_added,reviewer,1,2026-06-30T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1020,180,decision_recorded,reviewer,1,2026-06-30T17:00:00+00:00,under_review,decision_recorded,no_breach
+1021,181,case_opened,system,,2026-07-01T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1022,181,reviewer_assigned,system,,2026-07-01T15:00:00+00:00,open,assigned,Assigned to reviewer 1.
+1023,181,review_started,reviewer,1,2026-07-01T15:00:00+00:00,assigned,under_review,Human review started.
+1024,181,evidence_added,reviewer,1,2026-07-01T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1025,181,decision_recorded,reviewer,1,2026-07-01T17:00:00+00:00,under_review,decision_recorded,breach_found
+1026,182,case_opened,system,,2026-07-02T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1027,182,reviewer_assigned,system,,2026-07-02T15:00:00+00:00,open,assigned,Assigned to reviewer 2.
+1028,182,review_started,reviewer,2,2026-07-02T15:00:00+00:00,assigned,under_review,Human review started.
+1029,182,evidence_added,reviewer,2,2026-07-02T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1030,182,decision_recorded,reviewer,2,2026-07-02T17:00:00+00:00,under_review,decision_recorded,no_breach
+1031,183,case_opened,system,,2026-07-03T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1032,183,reviewer_assigned,system,,2026-07-03T15:00:00+00:00,open,assigned,Assigned to reviewer 3.
+1033,183,review_started,reviewer,3,2026-07-03T15:00:00+00:00,assigned,under_review,Human review started.
+1034,183,evidence_added,reviewer,3,2026-07-03T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1035,183,decision_recorded,reviewer,3,2026-07-03T17:00:00+00:00,under_review,decision_recorded,no_breach
+1036,184,case_opened,system,,2026-07-04T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1037,184,reviewer_assigned,system,,2026-07-04T15:00:00+00:00,open,assigned,Assigned to reviewer 4.
+1038,184,review_started,reviewer,4,2026-07-04T15:00:00+00:00,assigned,under_review,Human review started.
+1039,184,evidence_added,reviewer,4,2026-07-04T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1040,184,decision_recorded,reviewer,4,2026-07-04T17:00:00+00:00,under_review,decision_recorded,no_breach
+1041,185,case_opened,system,,2026-07-05T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1042,185,reviewer_assigned,system,,2026-07-05T15:00:00+00:00,open,assigned,Assigned to reviewer 5.
+1043,185,review_started,reviewer,5,2026-07-05T15:00:00+00:00,assigned,under_review,Human review started.
+1044,185,evidence_added,reviewer,5,2026-07-05T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1045,185,decision_recorded,reviewer,5,2026-07-05T17:00:00+00:00,under_review,decision_recorded,breach_found
+1046,186,case_opened,system,,2026-07-06T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1047,186,reviewer_assigned,system,,2026-07-06T15:00:00+00:00,open,assigned,Assigned to reviewer 6.
+1048,186,review_started,reviewer,6,2026-07-06T15:00:00+00:00,assigned,under_review,Human review started.
+1049,186,evidence_added,reviewer,6,2026-07-06T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1050,186,decision_recorded,reviewer,6,2026-07-06T17:00:00+00:00,under_review,decision_recorded,no_breach
+1051,187,case_opened,system,,2026-07-07T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1052,187,reviewer_assigned,system,,2026-07-07T15:00:00+00:00,open,assigned,Assigned to reviewer 7.
+1053,187,review_started,reviewer,7,2026-07-07T15:00:00+00:00,assigned,under_review,Human review started.
+1054,187,evidence_added,reviewer,7,2026-07-07T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1055,187,decision_recorded,reviewer,7,2026-07-07T17:00:00+00:00,under_review,decision_recorded,no_breach
+1056,188,case_opened,system,,2026-07-08T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1057,188,reviewer_assigned,system,,2026-07-08T15:00:00+00:00,open,assigned,Assigned to reviewer 8.
+1058,188,review_started,reviewer,8,2026-07-08T15:00:00+00:00,assigned,under_review,Human review started.
+1059,188,evidence_added,reviewer,8,2026-07-08T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1060,188,decision_recorded,reviewer,8,2026-07-08T17:00:00+00:00,under_review,decision_recorded,no_breach
+1061,189,case_opened,system,,2026-07-09T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1062,189,reviewer_assigned,system,,2026-07-09T15:00:00+00:00,open,assigned,Assigned to reviewer 9.
+1063,189,review_started,reviewer,9,2026-07-09T15:00:00+00:00,assigned,under_review,Human review started.
+1064,189,evidence_added,reviewer,9,2026-07-09T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1065,189,decision_recorded,reviewer,9,2026-07-09T17:00:00+00:00,under_review,decision_recorded,inconclusive
+1066,190,case_opened,system,,2026-07-10T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1067,190,reviewer_assigned,system,,2026-07-10T15:00:00+00:00,open,assigned,Assigned to reviewer 11.
+1068,190,review_started,reviewer,11,2026-07-10T15:00:00+00:00,assigned,under_review,Human review started.
+1069,190,evidence_added,reviewer,11,2026-07-10T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1070,190,decision_recorded,reviewer,11,2026-07-10T17:00:00+00:00,under_review,decision_recorded,no_breach
+1071,191,case_opened,system,,2026-07-11T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1072,191,reviewer_assigned,system,,2026-07-11T15:00:00+00:00,open,assigned,Assigned to reviewer 11.
+1073,191,review_started,reviewer,11,2026-07-11T15:00:00+00:00,assigned,under_review,Human review started.
+1074,191,evidence_added,reviewer,11,2026-07-11T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1075,191,decision_recorded,reviewer,11,2026-07-11T17:00:00+00:00,under_review,decision_recorded,no_breach
+1076,192,case_opened,system,,2026-07-12T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1077,192,reviewer_assigned,system,,2026-07-12T15:00:00+00:00,open,assigned,Assigned to reviewer 12.
+1078,192,review_started,reviewer,12,2026-07-12T15:00:00+00:00,assigned,under_review,Human review started.
+1079,192,evidence_added,reviewer,12,2026-07-12T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1080,192,decision_recorded,reviewer,12,2026-07-12T17:00:00+00:00,under_review,decision_recorded,no_breach
+1081,193,case_opened,system,,2026-07-13T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1082,193,reviewer_assigned,system,,2026-07-13T15:00:00+00:00,open,assigned,Assigned to reviewer 13.
+1083,193,review_started,reviewer,13,2026-07-13T15:00:00+00:00,assigned,under_review,Human review started.
+1084,193,evidence_added,reviewer,13,2026-07-13T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1085,193,decision_recorded,reviewer,13,2026-07-13T17:00:00+00:00,under_review,decision_recorded,breach_found
+1086,194,case_opened,system,,2026-07-14T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1087,194,reviewer_assigned,system,,2026-07-14T15:00:00+00:00,open,assigned,Assigned to reviewer 14.
+1088,194,review_started,reviewer,14,2026-07-14T15:00:00+00:00,assigned,under_review,Human review started.
+1089,194,evidence_added,reviewer,14,2026-07-14T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1090,194,decision_recorded,reviewer,14,2026-07-14T17:00:00+00:00,under_review,decision_recorded,no_breach
+1091,195,case_opened,system,,2026-07-15T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1092,195,reviewer_assigned,system,,2026-07-15T15:00:00+00:00,open,assigned,Assigned to reviewer 15.
+1093,195,review_started,reviewer,15,2026-07-15T15:00:00+00:00,assigned,under_review,Human review started.
+1094,195,evidence_added,reviewer,15,2026-07-15T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1095,195,decision_recorded,reviewer,15,2026-07-15T17:00:00+00:00,under_review,decision_recorded,no_breach
+1096,196,case_opened,system,,2026-07-16T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1097,196,reviewer_assigned,system,,2026-07-16T15:00:00+00:00,open,assigned,Assigned to reviewer 16.
+1098,196,review_started,reviewer,16,2026-07-16T15:00:00+00:00,assigned,under_review,Human review started.
+1099,196,evidence_added,reviewer,16,2026-07-16T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1100,196,decision_recorded,reviewer,16,2026-07-16T17:00:00+00:00,under_review,decision_recorded,no_breach
+1101,197,case_opened,system,,2026-07-17T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1102,197,reviewer_assigned,system,,2026-07-17T15:00:00+00:00,open,assigned,Assigned to reviewer 17.
+1103,197,review_started,reviewer,17,2026-07-17T15:00:00+00:00,assigned,under_review,Human review started.
+1104,197,evidence_added,reviewer,17,2026-07-17T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1105,197,decision_recorded,reviewer,17,2026-07-17T17:00:00+00:00,under_review,decision_recorded,inconclusive
+1106,198,case_opened,system,,2026-07-18T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1107,198,reviewer_assigned,system,,2026-07-18T15:00:00+00:00,open,assigned,Assigned to reviewer 18.
+1108,198,review_started,reviewer,18,2026-07-18T15:00:00+00:00,assigned,under_review,Human review started.
+1109,198,evidence_added,reviewer,18,2026-07-18T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1110,198,decision_recorded,reviewer,18,2026-07-18T17:00:00+00:00,under_review,decision_recorded,no_breach
+1111,199,case_opened,system,,2026-07-19T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1112,199,reviewer_assigned,system,,2026-07-19T15:00:00+00:00,open,assigned,Assigned to reviewer 19.
+1113,199,review_started,reviewer,19,2026-07-19T15:00:00+00:00,assigned,under_review,Human review started.
+1114,199,evidence_added,reviewer,19,2026-07-19T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1115,199,decision_recorded,reviewer,19,2026-07-19T17:00:00+00:00,under_review,decision_recorded,no_breach
+1116,200,case_opened,system,,2026-07-20T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1117,200,reviewer_assigned,system,,2026-07-20T15:00:00+00:00,open,assigned,Assigned to reviewer 1.
+1118,200,review_started,reviewer,1,2026-07-20T15:00:00+00:00,assigned,under_review,Human review started.
+1119,200,evidence_added,reviewer,1,2026-07-20T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1120,200,decision_recorded,reviewer,1,2026-07-20T17:00:00+00:00,under_review,decision_recorded,no_breach
+1121,201,case_opened,system,,2026-07-21T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1122,201,reviewer_assigned,system,,2026-07-21T15:00:00+00:00,open,assigned,Assigned to reviewer 1.
+1123,201,review_started,reviewer,1,2026-07-21T15:00:00+00:00,assigned,under_review,Human review started.
+1124,201,evidence_added,reviewer,1,2026-07-21T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1125,201,decision_recorded,reviewer,1,2026-07-21T17:00:00+00:00,under_review,decision_recorded,inconclusive
+1126,202,case_opened,system,,2026-07-22T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1127,202,reviewer_assigned,system,,2026-07-22T15:00:00+00:00,open,assigned,Assigned to reviewer 2.
+1128,202,review_started,reviewer,2,2026-07-22T15:00:00+00:00,assigned,under_review,Human review started.
+1129,202,evidence_added,reviewer,2,2026-07-22T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1130,202,decision_recorded,reviewer,2,2026-07-22T17:00:00+00:00,under_review,decision_recorded,no_breach
+1131,203,case_opened,system,,2026-07-23T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1132,203,reviewer_assigned,system,,2026-07-23T15:00:00+00:00,open,assigned,Assigned to reviewer 3.
+1133,203,review_started,reviewer,3,2026-07-23T15:00:00+00:00,assigned,under_review,Human review started.
+1134,203,evidence_added,reviewer,3,2026-07-23T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1135,203,decision_recorded,reviewer,3,2026-07-23T17:00:00+00:00,under_review,decision_recorded,no_breach
+1136,204,case_opened,system,,2026-07-24T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1137,204,reviewer_assigned,system,,2026-07-24T15:00:00+00:00,open,assigned,Assigned to reviewer 4.
+1138,204,review_started,reviewer,4,2026-07-24T15:00:00+00:00,assigned,under_review,Human review started.
+1139,204,evidence_added,reviewer,4,2026-07-24T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1140,204,decision_recorded,reviewer,4,2026-07-24T17:00:00+00:00,under_review,decision_recorded,no_breach
+1141,205,case_opened,system,,2026-07-25T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1142,205,reviewer_assigned,system,,2026-07-25T15:00:00+00:00,open,assigned,Assigned to reviewer 5.
+1143,205,review_started,reviewer,5,2026-07-25T15:00:00+00:00,assigned,under_review,Human review started.
+1144,205,evidence_added,reviewer,5,2026-07-25T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1145,205,decision_recorded,reviewer,5,2026-07-25T17:00:00+00:00,under_review,decision_recorded,inconclusive
+1146,206,case_opened,system,,2026-07-26T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1147,206,reviewer_assigned,system,,2026-07-26T15:00:00+00:00,open,assigned,Assigned to reviewer 6.
+1148,206,review_started,reviewer,6,2026-07-26T15:00:00+00:00,assigned,under_review,Human review started.
+1149,206,evidence_added,reviewer,6,2026-07-26T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1150,206,decision_recorded,reviewer,6,2026-07-26T17:00:00+00:00,under_review,decision_recorded,no_breach
+1151,207,case_opened,system,,2026-07-27T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1152,207,reviewer_assigned,system,,2026-07-27T15:00:00+00:00,open,assigned,Assigned to reviewer 7.
+1153,207,review_started,reviewer,7,2026-07-27T15:00:00+00:00,assigned,under_review,Human review started.
+1154,207,evidence_added,reviewer,7,2026-07-27T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1155,207,decision_recorded,reviewer,7,2026-07-27T17:00:00+00:00,under_review,decision_recorded,no_breach
+1156,208,case_opened,system,,2026-07-28T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1157,208,reviewer_assigned,system,,2026-07-28T15:00:00+00:00,open,assigned,Assigned to reviewer 8.
+1158,208,review_started,reviewer,8,2026-07-28T15:00:00+00:00,assigned,under_review,Human review started.
+1159,208,evidence_added,reviewer,8,2026-07-28T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1160,208,decision_recorded,reviewer,8,2026-07-28T17:00:00+00:00,under_review,decision_recorded,no_breach
+1161,209,case_opened,system,,2026-07-29T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1162,209,reviewer_assigned,system,,2026-07-29T15:00:00+00:00,open,assigned,Assigned to reviewer 9.
+1163,209,review_started,reviewer,9,2026-07-29T15:00:00+00:00,assigned,under_review,Human review started.
+1164,209,evidence_added,reviewer,9,2026-07-29T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1165,209,decision_recorded,reviewer,9,2026-07-29T17:00:00+00:00,under_review,decision_recorded,inconclusive
+1166,210,case_opened,system,,2026-07-30T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1167,210,reviewer_assigned,system,,2026-07-30T15:00:00+00:00,open,assigned,Assigned to reviewer 11.
+1168,210,review_started,reviewer,11,2026-07-30T15:00:00+00:00,assigned,under_review,Human review started.
+1169,210,evidence_added,reviewer,11,2026-07-30T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1170,210,decision_recorded,reviewer,11,2026-07-30T17:00:00+00:00,under_review,decision_recorded,no_breach
+1171,211,case_opened,system,,2026-07-31T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1172,211,reviewer_assigned,system,,2026-07-31T15:00:00+00:00,open,assigned,Assigned to reviewer 11.
+1173,211,review_started,reviewer,11,2026-07-31T15:00:00+00:00,assigned,under_review,Human review started.
+1174,211,evidence_added,reviewer,11,2026-07-31T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1175,211,decision_recorded,reviewer,11,2026-07-31T17:00:00+00:00,under_review,decision_recorded,no_breach
+1176,212,case_opened,system,,2026-08-01T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1177,212,reviewer_assigned,system,,2026-08-01T15:00:00+00:00,open,assigned,Assigned to reviewer 12.
+1178,212,review_started,reviewer,12,2026-08-01T15:00:00+00:00,assigned,under_review,Human review started.
+1179,212,evidence_added,reviewer,12,2026-08-01T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1180,212,decision_recorded,reviewer,12,2026-08-01T17:00:00+00:00,under_review,decision_recorded,no_breach
+1181,213,case_opened,system,,2026-08-02T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1182,213,reviewer_assigned,system,,2026-08-02T15:00:00+00:00,open,assigned,Assigned to reviewer 13.
+1183,213,review_started,reviewer,13,2026-08-02T15:00:00+00:00,assigned,under_review,Human review started.
+1184,213,evidence_added,reviewer,13,2026-08-02T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1185,213,decision_recorded,reviewer,13,2026-08-02T17:00:00+00:00,under_review,decision_recorded,inconclusive
+1186,214,case_opened,system,,2026-08-03T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1187,214,reviewer_assigned,system,,2026-08-03T15:00:00+00:00,open,assigned,Assigned to reviewer 14.
+1188,214,review_started,reviewer,14,2026-08-03T15:00:00+00:00,assigned,under_review,Human review started.
+1189,214,evidence_added,reviewer,14,2026-08-03T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1190,214,decision_recorded,reviewer,14,2026-08-03T17:00:00+00:00,under_review,decision_recorded,no_breach
+1191,215,case_opened,system,,2026-08-04T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1192,215,reviewer_assigned,system,,2026-08-04T15:00:00+00:00,open,assigned,Assigned to reviewer 15.
+1193,215,review_started,reviewer,15,2026-08-04T15:00:00+00:00,assigned,under_review,Human review started.
+1194,215,evidence_added,reviewer,15,2026-08-04T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1195,215,decision_recorded,reviewer,15,2026-08-04T17:00:00+00:00,under_review,decision_recorded,no_breach
+1196,216,case_opened,system,,2026-08-05T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1197,216,reviewer_assigned,system,,2026-08-05T15:00:00+00:00,open,assigned,Assigned to reviewer 16.
+1198,216,review_started,reviewer,16,2026-08-05T15:00:00+00:00,assigned,under_review,Human review started.
+1199,216,evidence_added,reviewer,16,2026-08-05T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1200,216,decision_recorded,reviewer,16,2026-08-05T17:00:00+00:00,under_review,decision_recorded,no_breach
+1201,217,case_opened,system,,2026-08-06T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1202,217,reviewer_assigned,system,,2026-08-06T15:00:00+00:00,open,assigned,Assigned to reviewer 17.
+1203,217,review_started,reviewer,17,2026-08-06T15:00:00+00:00,assigned,under_review,Human review started.
+1204,217,evidence_added,reviewer,17,2026-08-06T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1205,217,decision_recorded,reviewer,17,2026-08-06T17:00:00+00:00,under_review,decision_recorded,inconclusive
+1206,218,case_opened,system,,2026-08-07T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1207,218,reviewer_assigned,system,,2026-08-07T15:00:00+00:00,open,assigned,Assigned to reviewer 18.
+1208,218,review_started,reviewer,18,2026-08-07T15:00:00+00:00,assigned,under_review,Human review started.
+1209,218,evidence_added,reviewer,18,2026-08-07T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1210,218,decision_recorded,reviewer,18,2026-08-07T17:00:00+00:00,under_review,decision_recorded,no_breach
+1211,219,case_opened,system,,2026-08-08T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1212,219,reviewer_assigned,system,,2026-08-08T15:00:00+00:00,open,assigned,Assigned to reviewer 19.
+1213,219,review_started,reviewer,19,2026-08-08T15:00:00+00:00,assigned,under_review,Human review started.
+1214,219,evidence_added,reviewer,19,2026-08-08T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1215,219,decision_recorded,reviewer,19,2026-08-08T17:00:00+00:00,under_review,decision_recorded,no_breach
+1216,220,case_opened,system,,2026-08-09T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1217,220,reviewer_assigned,system,,2026-08-09T15:00:00+00:00,open,assigned,Assigned to reviewer 1.
+1218,220,review_started,reviewer,1,2026-08-09T15:00:00+00:00,assigned,under_review,Human review started.
+1219,220,evidence_added,reviewer,1,2026-08-09T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1220,220,decision_recorded,reviewer,1,2026-08-09T17:00:00+00:00,under_review,decision_recorded,no_breach
+1221,221,case_opened,system,,2026-08-10T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1222,221,reviewer_assigned,system,,2026-08-10T15:00:00+00:00,open,assigned,Assigned to reviewer 1.
+1223,221,review_started,reviewer,1,2026-08-10T15:00:00+00:00,assigned,under_review,Human review started.
+1224,221,evidence_added,reviewer,1,2026-08-10T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1225,221,decision_recorded,reviewer,1,2026-08-10T17:00:00+00:00,under_review,decision_recorded,inconclusive
+1226,222,case_opened,system,,2026-08-11T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1227,222,reviewer_assigned,system,,2026-08-11T15:00:00+00:00,open,assigned,Assigned to reviewer 2.
+1228,222,review_started,reviewer,2,2026-08-11T15:00:00+00:00,assigned,under_review,Human review started.
+1229,222,evidence_added,reviewer,2,2026-08-11T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1230,222,decision_recorded,reviewer,2,2026-08-11T17:00:00+00:00,under_review,decision_recorded,no_breach
+1231,223,case_opened,system,,2026-08-12T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1232,223,reviewer_assigned,system,,2026-08-12T15:00:00+00:00,open,assigned,Assigned to reviewer 3.
+1233,223,review_started,reviewer,3,2026-08-12T15:00:00+00:00,assigned,under_review,Human review started.
+1234,223,evidence_added,reviewer,3,2026-08-12T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1235,223,decision_recorded,reviewer,3,2026-08-12T17:00:00+00:00,under_review,decision_recorded,no_breach
+1236,224,case_opened,system,,2026-08-13T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1237,224,reviewer_assigned,system,,2026-08-13T15:00:00+00:00,open,assigned,Assigned to reviewer 4.
+1238,224,review_started,reviewer,4,2026-08-13T15:00:00+00:00,assigned,under_review,Human review started.
+1239,224,evidence_added,reviewer,4,2026-08-13T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1240,224,decision_recorded,reviewer,4,2026-08-13T17:00:00+00:00,under_review,decision_recorded,no_breach
+1241,225,case_opened,system,,2026-08-14T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1242,225,reviewer_assigned,system,,2026-08-14T15:00:00+00:00,open,assigned,Assigned to reviewer 5.
+1243,225,review_started,reviewer,5,2026-08-14T15:00:00+00:00,assigned,under_review,Human review started.
+1244,225,evidence_added,reviewer,5,2026-08-14T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1245,225,decision_recorded,reviewer,5,2026-08-14T17:00:00+00:00,under_review,decision_recorded,breach_found
+1246,226,case_opened,system,,2026-08-15T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1247,226,reviewer_assigned,system,,2026-08-15T15:00:00+00:00,open,assigned,Assigned to reviewer 6.
+1248,226,review_started,reviewer,6,2026-08-15T15:00:00+00:00,assigned,under_review,Human review started.
+1249,226,evidence_added,reviewer,6,2026-08-15T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1250,226,decision_recorded,reviewer,6,2026-08-15T17:00:00+00:00,under_review,decision_recorded,no_breach
+1251,227,case_opened,system,,2026-08-16T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1252,227,reviewer_assigned,system,,2026-08-16T15:00:00+00:00,open,assigned,Assigned to reviewer 7.
+1253,227,review_started,reviewer,7,2026-08-16T15:00:00+00:00,assigned,under_review,Human review started.
+1254,227,evidence_added,reviewer,7,2026-08-16T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1255,227,decision_recorded,reviewer,7,2026-08-16T17:00:00+00:00,under_review,decision_recorded,no_breach
+1256,228,case_opened,system,,2026-08-17T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1257,228,reviewer_assigned,system,,2026-08-17T15:00:00+00:00,open,assigned,Assigned to reviewer 8.
+1258,228,review_started,reviewer,8,2026-08-17T15:00:00+00:00,assigned,under_review,Human review started.
+1259,228,evidence_added,reviewer,8,2026-08-17T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1260,228,decision_recorded,reviewer,8,2026-08-17T17:00:00+00:00,under_review,decision_recorded,no_breach
+1261,229,case_opened,system,,2026-08-18T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1262,229,reviewer_assigned,system,,2026-08-18T15:00:00+00:00,open,assigned,Assigned to reviewer 9.
+1263,229,review_started,reviewer,9,2026-08-18T15:00:00+00:00,assigned,under_review,Human review started.
+1264,229,evidence_added,reviewer,9,2026-08-18T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1265,229,decision_recorded,reviewer,9,2026-08-18T17:00:00+00:00,under_review,decision_recorded,breach_found
+1266,230,case_opened,system,,2026-08-19T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1267,230,reviewer_assigned,system,,2026-08-19T15:00:00+00:00,open,assigned,Assigned to reviewer 11.
+1268,230,review_started,reviewer,11,2026-08-19T15:00:00+00:00,assigned,under_review,Human review started.
+1269,230,evidence_added,reviewer,11,2026-08-19T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1270,230,decision_recorded,reviewer,11,2026-08-19T17:00:00+00:00,under_review,decision_recorded,no_breach
+1271,231,case_opened,system,,2026-08-20T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1272,231,reviewer_assigned,system,,2026-08-20T15:00:00+00:00,open,assigned,Assigned to reviewer 11.
+1273,231,review_started,reviewer,11,2026-08-20T15:00:00+00:00,assigned,under_review,Human review started.
+1274,231,evidence_added,reviewer,11,2026-08-20T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1275,231,decision_recorded,reviewer,11,2026-08-20T17:00:00+00:00,under_review,decision_recorded,no_breach
+1276,232,case_opened,system,,2026-08-21T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1277,232,reviewer_assigned,system,,2026-08-21T15:00:00+00:00,open,assigned,Assigned to reviewer 12.
+1278,232,review_started,reviewer,12,2026-08-21T15:00:00+00:00,assigned,under_review,Human review started.
+1279,232,evidence_added,reviewer,12,2026-08-21T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1280,232,decision_recorded,reviewer,12,2026-08-21T17:00:00+00:00,under_review,decision_recorded,no_breach
+1281,233,case_opened,system,,2026-08-22T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1282,233,reviewer_assigned,system,,2026-08-22T15:00:00+00:00,open,assigned,Assigned to reviewer 13.
+1283,233,review_started,reviewer,13,2026-08-22T15:00:00+00:00,assigned,under_review,Human review started.
+1284,233,evidence_added,reviewer,13,2026-08-22T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1285,233,decision_recorded,reviewer,13,2026-08-22T17:00:00+00:00,under_review,decision_recorded,inconclusive
+1286,234,case_opened,system,,2026-08-23T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1287,234,reviewer_assigned,system,,2026-08-23T15:00:00+00:00,open,assigned,Assigned to reviewer 14.
+1288,234,review_started,reviewer,14,2026-08-23T15:00:00+00:00,assigned,under_review,Human review started.
+1289,234,evidence_added,reviewer,14,2026-08-23T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1290,234,decision_recorded,reviewer,14,2026-08-23T17:00:00+00:00,under_review,decision_recorded,no_breach
+1291,235,case_opened,system,,2026-08-24T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1292,235,reviewer_assigned,system,,2026-08-24T15:00:00+00:00,open,assigned,Assigned to reviewer 15.
+1293,235,review_started,reviewer,15,2026-08-24T15:00:00+00:00,assigned,under_review,Human review started.
+1294,235,evidence_added,reviewer,15,2026-08-24T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1295,235,decision_recorded,reviewer,15,2026-08-24T17:00:00+00:00,under_review,decision_recorded,no_breach
+1296,236,case_opened,system,,2026-08-25T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1297,236,reviewer_assigned,system,,2026-08-25T15:00:00+00:00,open,assigned,Assigned to reviewer 16.
+1298,236,review_started,reviewer,16,2026-08-25T15:00:00+00:00,assigned,under_review,Human review started.
+1299,236,evidence_added,reviewer,16,2026-08-25T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1300,236,decision_recorded,reviewer,16,2026-08-25T17:00:00+00:00,under_review,decision_recorded,no_breach
+1301,237,case_opened,system,,2026-08-26T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1302,237,reviewer_assigned,system,,2026-08-26T15:00:00+00:00,open,assigned,Assigned to reviewer 17.
+1303,237,review_started,reviewer,17,2026-08-26T15:00:00+00:00,assigned,under_review,Human review started.
+1304,237,evidence_added,reviewer,17,2026-08-26T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1305,237,decision_recorded,reviewer,17,2026-08-26T17:00:00+00:00,under_review,decision_recorded,inconclusive
+1306,238,case_opened,system,,2026-08-27T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1307,238,reviewer_assigned,system,,2026-08-27T15:00:00+00:00,open,assigned,Assigned to reviewer 18.
+1308,238,review_started,reviewer,18,2026-08-27T15:00:00+00:00,assigned,under_review,Human review started.
+1309,238,evidence_added,reviewer,18,2026-08-27T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1310,238,decision_recorded,reviewer,18,2026-08-27T17:00:00+00:00,under_review,decision_recorded,no_breach
+1311,239,case_opened,system,,2026-08-28T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1312,239,reviewer_assigned,system,,2026-08-28T15:00:00+00:00,open,assigned,Assigned to reviewer 19.
+1313,239,review_started,reviewer,19,2026-08-28T15:00:00+00:00,assigned,under_review,Human review started.
+1314,239,evidence_added,reviewer,19,2026-08-28T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1315,239,decision_recorded,reviewer,19,2026-08-28T17:00:00+00:00,under_review,decision_recorded,no_breach
+1316,240,case_opened,system,,2026-08-29T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1317,240,reviewer_assigned,system,,2026-08-29T15:00:00+00:00,open,assigned,Assigned to reviewer 1.
+1318,240,review_started,reviewer,1,2026-08-29T15:00:00+00:00,assigned,under_review,Human review started.
+1319,240,evidence_added,reviewer,1,2026-08-29T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1320,240,decision_recorded,reviewer,1,2026-08-29T17:00:00+00:00,under_review,decision_recorded,no_breach
+1321,241,case_opened,system,,2026-08-30T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1322,241,reviewer_assigned,system,,2026-08-30T15:00:00+00:00,open,assigned,Assigned to reviewer 1.
+1323,241,review_started,reviewer,1,2026-08-30T15:00:00+00:00,assigned,under_review,Human review started.
+1324,241,evidence_added,reviewer,1,2026-08-30T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1325,241,decision_recorded,reviewer,1,2026-08-30T17:00:00+00:00,under_review,decision_recorded,breach_found
+1326,242,case_opened,system,,2026-08-31T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1327,242,reviewer_assigned,system,,2026-08-31T15:00:00+00:00,open,assigned,Assigned to reviewer 2.
+1328,242,review_started,reviewer,2,2026-08-31T15:00:00+00:00,assigned,under_review,Human review started.
+1329,242,evidence_added,reviewer,2,2026-08-31T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1330,242,decision_recorded,reviewer,2,2026-08-31T17:00:00+00:00,under_review,decision_recorded,no_breach
+1331,243,case_opened,system,,2026-09-01T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1332,243,reviewer_assigned,system,,2026-09-01T15:00:00+00:00,open,assigned,Assigned to reviewer 3.
+1333,243,review_started,reviewer,3,2026-09-01T15:00:00+00:00,assigned,under_review,Human review started.
+1334,243,evidence_added,reviewer,3,2026-09-01T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1335,243,decision_recorded,reviewer,3,2026-09-01T17:00:00+00:00,under_review,decision_recorded,no_breach
+1336,244,case_opened,system,,2026-09-02T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1337,244,reviewer_assigned,system,,2026-09-02T15:00:00+00:00,open,assigned,Assigned to reviewer 4.
+1338,244,review_started,reviewer,4,2026-09-02T15:00:00+00:00,assigned,under_review,Human review started.
+1339,244,evidence_added,reviewer,4,2026-09-02T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1340,244,decision_recorded,reviewer,4,2026-09-02T17:00:00+00:00,under_review,decision_recorded,no_breach
+1341,245,case_opened,system,,2026-09-03T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1342,245,reviewer_assigned,system,,2026-09-03T15:00:00+00:00,open,assigned,Assigned to reviewer 5.
+1343,245,review_started,reviewer,5,2026-09-03T15:00:00+00:00,assigned,under_review,Human review started.
+1344,245,evidence_added,reviewer,5,2026-09-03T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1345,245,decision_recorded,reviewer,5,2026-09-03T17:00:00+00:00,under_review,decision_recorded,inconclusive
+1346,246,case_opened,system,,2026-09-04T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1347,246,reviewer_assigned,system,,2026-09-04T15:00:00+00:00,open,assigned,Assigned to reviewer 6.
+1348,246,review_started,reviewer,6,2026-09-04T15:00:00+00:00,assigned,under_review,Human review started.
+1349,246,evidence_added,reviewer,6,2026-09-04T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1350,246,decision_recorded,reviewer,6,2026-09-04T17:00:00+00:00,under_review,decision_recorded,no_breach
+1351,247,case_opened,system,,2026-09-05T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1352,247,reviewer_assigned,system,,2026-09-05T15:00:00+00:00,open,assigned,Assigned to reviewer 7.
+1353,247,review_started,reviewer,7,2026-09-05T15:00:00+00:00,assigned,under_review,Human review started.
+1354,247,evidence_added,reviewer,7,2026-09-05T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1355,247,decision_recorded,reviewer,7,2026-09-05T17:00:00+00:00,under_review,decision_recorded,no_breach
+1356,248,case_opened,system,,2026-09-06T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1357,248,reviewer_assigned,system,,2026-09-06T15:00:00+00:00,open,assigned,Assigned to reviewer 8.
+1358,248,review_started,reviewer,8,2026-09-06T15:00:00+00:00,assigned,under_review,Human review started.
+1359,248,evidence_added,reviewer,8,2026-09-06T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1360,248,decision_recorded,reviewer,8,2026-09-06T17:00:00+00:00,under_review,decision_recorded,no_breach
+1361,249,case_opened,system,,2026-09-07T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1362,249,reviewer_assigned,system,,2026-09-07T15:00:00+00:00,open,assigned,Assigned to reviewer 9.
+1363,249,review_started,reviewer,9,2026-09-07T15:00:00+00:00,assigned,under_review,Human review started.
+1364,249,evidence_added,reviewer,9,2026-09-07T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1365,249,decision_recorded,reviewer,9,2026-09-07T17:00:00+00:00,under_review,decision_recorded,breach_found
+1366,250,case_opened,system,,2026-09-08T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1367,250,reviewer_assigned,system,,2026-09-08T15:00:00+00:00,open,assigned,Assigned to reviewer 11.
+1368,250,review_started,reviewer,11,2026-09-08T15:00:00+00:00,assigned,under_review,Human review started.
+1369,250,evidence_added,reviewer,11,2026-09-08T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1370,250,decision_recorded,reviewer,11,2026-09-08T17:00:00+00:00,under_review,decision_recorded,no_breach
+1371,251,case_opened,system,,2026-09-09T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1372,251,reviewer_assigned,system,,2026-09-09T15:00:00+00:00,open,assigned,Assigned to reviewer 11.
+1373,251,review_started,reviewer,11,2026-09-09T15:00:00+00:00,assigned,under_review,Human review started.
+1374,251,evidence_added,reviewer,11,2026-09-09T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1375,251,decision_recorded,reviewer,11,2026-09-09T17:00:00+00:00,under_review,decision_recorded,no_breach
+1376,252,case_opened,system,,2026-09-10T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1377,252,reviewer_assigned,system,,2026-09-10T15:00:00+00:00,open,assigned,Assigned to reviewer 12.
+1378,252,review_started,reviewer,12,2026-09-10T15:00:00+00:00,assigned,under_review,Human review started.
+1379,252,evidence_added,reviewer,12,2026-09-10T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1380,252,decision_recorded,reviewer,12,2026-09-10T17:00:00+00:00,under_review,decision_recorded,no_breach
+1381,253,case_opened,system,,2026-09-11T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1382,253,reviewer_assigned,system,,2026-09-11T15:00:00+00:00,open,assigned,Assigned to reviewer 13.
+1383,253,review_started,reviewer,13,2026-09-11T15:00:00+00:00,assigned,under_review,Human review started.
+1384,253,evidence_added,reviewer,13,2026-09-11T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1385,253,decision_recorded,reviewer,13,2026-09-11T17:00:00+00:00,under_review,decision_recorded,breach_found
+1386,254,case_opened,system,,2026-09-12T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1387,254,reviewer_assigned,system,,2026-09-12T15:00:00+00:00,open,assigned,Assigned to reviewer 14.
+1388,254,review_started,reviewer,14,2026-09-12T15:00:00+00:00,assigned,under_review,Human review started.
+1389,254,evidence_added,reviewer,14,2026-09-12T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1390,254,decision_recorded,reviewer,14,2026-09-12T17:00:00+00:00,under_review,decision_recorded,no_breach
+1391,255,case_opened,system,,2026-09-13T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1392,255,reviewer_assigned,system,,2026-09-13T15:00:00+00:00,open,assigned,Assigned to reviewer 15.
+1393,255,review_started,reviewer,15,2026-09-13T15:00:00+00:00,assigned,under_review,Human review started.
+1394,255,evidence_added,reviewer,15,2026-09-13T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1395,255,decision_recorded,reviewer,15,2026-09-13T17:00:00+00:00,under_review,decision_recorded,no_breach
+1396,256,case_opened,system,,2026-09-14T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1397,256,reviewer_assigned,system,,2026-09-14T15:00:00+00:00,open,assigned,Assigned to reviewer 16.
+1398,256,review_started,reviewer,16,2026-09-14T15:00:00+00:00,assigned,under_review,Human review started.
+1399,256,evidence_added,reviewer,16,2026-09-14T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1400,256,decision_recorded,reviewer,16,2026-09-14T17:00:00+00:00,under_review,decision_recorded,no_breach
+1401,257,case_opened,system,,2026-09-15T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1402,257,reviewer_assigned,system,,2026-09-15T15:00:00+00:00,open,assigned,Assigned to reviewer 17.
+1403,257,review_started,reviewer,17,2026-09-15T15:00:00+00:00,assigned,under_review,Human review started.
+1404,257,evidence_added,reviewer,17,2026-09-15T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1405,257,decision_recorded,reviewer,17,2026-09-15T17:00:00+00:00,under_review,decision_recorded,inconclusive
+1406,258,case_opened,system,,2026-09-16T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1407,258,reviewer_assigned,system,,2026-09-16T15:00:00+00:00,open,assigned,Assigned to reviewer 18.
+1408,258,review_started,reviewer,18,2026-09-16T15:00:00+00:00,assigned,under_review,Human review started.
+1409,258,evidence_added,reviewer,18,2026-09-16T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1410,258,decision_recorded,reviewer,18,2026-09-16T17:00:00+00:00,under_review,decision_recorded,no_breach
+1411,259,case_opened,system,,2026-09-17T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1412,259,reviewer_assigned,system,,2026-09-17T15:00:00+00:00,open,assigned,Assigned to reviewer 19.
+1413,259,review_started,reviewer,19,2026-09-17T15:00:00+00:00,assigned,under_review,Human review started.
+1414,259,evidence_added,reviewer,19,2026-09-17T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1415,259,decision_recorded,reviewer,19,2026-09-17T17:00:00+00:00,under_review,decision_recorded,no_breach
+1416,260,case_opened,system,,2026-09-18T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1417,260,reviewer_assigned,system,,2026-09-18T15:00:00+00:00,open,assigned,Assigned to reviewer 1.
+1418,260,review_started,reviewer,1,2026-09-18T15:00:00+00:00,assigned,under_review,Human review started.
+1419,260,evidence_added,reviewer,1,2026-09-18T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1420,260,decision_recorded,reviewer,1,2026-09-18T17:00:00+00:00,under_review,decision_recorded,no_breach
+1421,261,case_opened,system,,2026-09-19T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1422,261,reviewer_assigned,system,,2026-09-19T15:00:00+00:00,open,assigned,Assigned to reviewer 1.
+1423,261,review_started,reviewer,1,2026-09-19T15:00:00+00:00,assigned,under_review,Human review started.
+1424,261,evidence_added,reviewer,1,2026-09-19T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1425,261,decision_recorded,reviewer,1,2026-09-19T17:00:00+00:00,under_review,decision_recorded,inconclusive
+1426,262,case_opened,system,,2026-09-20T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1427,262,reviewer_assigned,system,,2026-09-20T15:00:00+00:00,open,assigned,Assigned to reviewer 2.
+1428,262,review_started,reviewer,2,2026-09-20T15:00:00+00:00,assigned,under_review,Human review started.
+1429,262,evidence_added,reviewer,2,2026-09-20T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1430,262,decision_recorded,reviewer,2,2026-09-20T17:00:00+00:00,under_review,decision_recorded,no_breach
+1431,263,case_opened,system,,2026-09-21T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1432,263,reviewer_assigned,system,,2026-09-21T15:00:00+00:00,open,assigned,Assigned to reviewer 3.
+1433,263,review_started,reviewer,3,2026-09-21T15:00:00+00:00,assigned,under_review,Human review started.
+1434,263,evidence_added,reviewer,3,2026-09-21T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1435,263,decision_recorded,reviewer,3,2026-09-21T17:00:00+00:00,under_review,decision_recorded,no_breach
+1436,264,case_opened,system,,2026-09-22T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1437,264,reviewer_assigned,system,,2026-09-22T15:00:00+00:00,open,assigned,Assigned to reviewer 4.
+1438,264,review_started,reviewer,4,2026-09-22T15:00:00+00:00,assigned,under_review,Human review started.
+1439,264,evidence_added,reviewer,4,2026-09-22T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1440,264,decision_recorded,reviewer,4,2026-09-22T17:00:00+00:00,under_review,decision_recorded,no_breach
+1441,265,case_opened,system,,2026-09-23T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1442,265,reviewer_assigned,system,,2026-09-23T15:00:00+00:00,open,assigned,Assigned to reviewer 5.
+1443,265,review_started,reviewer,5,2026-09-23T15:00:00+00:00,assigned,under_review,Human review started.
+1444,265,evidence_added,reviewer,5,2026-09-23T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1445,265,decision_recorded,reviewer,5,2026-09-23T17:00:00+00:00,under_review,decision_recorded,inconclusive
+1446,266,case_opened,system,,2026-09-24T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1447,266,reviewer_assigned,system,,2026-09-24T15:00:00+00:00,open,assigned,Assigned to reviewer 6.
+1448,266,review_started,reviewer,6,2026-09-24T15:00:00+00:00,assigned,under_review,Human review started.
+1449,266,evidence_added,reviewer,6,2026-09-24T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1450,266,decision_recorded,reviewer,6,2026-09-24T17:00:00+00:00,under_review,decision_recorded,no_breach
+1451,267,case_opened,system,,2026-09-25T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1452,267,reviewer_assigned,system,,2026-09-25T15:00:00+00:00,open,assigned,Assigned to reviewer 7.
+1453,267,review_started,reviewer,7,2026-09-25T15:00:00+00:00,assigned,under_review,Human review started.
+1454,267,evidence_added,reviewer,7,2026-09-25T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1455,267,decision_recorded,reviewer,7,2026-09-25T17:00:00+00:00,under_review,decision_recorded,no_breach
+1456,268,case_opened,system,,2026-09-26T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1457,268,reviewer_assigned,system,,2026-09-26T15:00:00+00:00,open,assigned,Assigned to reviewer 8.
+1458,268,review_started,reviewer,8,2026-09-26T15:00:00+00:00,assigned,under_review,Human review started.
+1459,268,evidence_added,reviewer,8,2026-09-26T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1460,268,decision_recorded,reviewer,8,2026-09-26T17:00:00+00:00,under_review,decision_recorded,no_breach
+1461,269,case_opened,system,,2026-09-27T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1462,269,reviewer_assigned,system,,2026-09-27T15:00:00+00:00,open,assigned,Assigned to reviewer 9.
+1463,269,review_started,reviewer,9,2026-09-27T15:00:00+00:00,assigned,under_review,Human review started.
+1464,269,evidence_added,reviewer,9,2026-09-27T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1465,269,decision_recorded,reviewer,9,2026-09-27T17:00:00+00:00,under_review,decision_recorded,inconclusive
+1466,270,case_opened,system,,2026-09-28T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1467,270,reviewer_assigned,system,,2026-09-28T15:00:00+00:00,open,assigned,Assigned to reviewer 11.
+1468,270,review_started,reviewer,11,2026-09-28T15:00:00+00:00,assigned,under_review,Human review started.
+1469,270,evidence_added,reviewer,11,2026-09-28T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1470,270,decision_recorded,reviewer,11,2026-09-28T17:00:00+00:00,under_review,decision_recorded,no_breach
+1471,271,case_opened,system,,2026-09-29T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1472,271,reviewer_assigned,system,,2026-09-29T15:00:00+00:00,open,assigned,Assigned to reviewer 11.
+1473,271,review_started,reviewer,11,2026-09-29T15:00:00+00:00,assigned,under_review,Human review started.
+1474,271,evidence_added,reviewer,11,2026-09-29T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1475,271,decision_recorded,reviewer,11,2026-09-29T17:00:00+00:00,under_review,decision_recorded,no_breach
+1476,272,case_opened,system,,2026-09-30T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1477,272,reviewer_assigned,system,,2026-09-30T15:00:00+00:00,open,assigned,Assigned to reviewer 12.
+1478,272,review_started,reviewer,12,2026-09-30T15:00:00+00:00,assigned,under_review,Human review started.
+1479,272,evidence_added,reviewer,12,2026-09-30T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1480,272,decision_recorded,reviewer,12,2026-09-30T17:00:00+00:00,under_review,decision_recorded,no_breach
+1481,273,case_opened,system,,2026-10-01T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1482,273,reviewer_assigned,system,,2026-10-01T15:00:00+00:00,open,assigned,Assigned to reviewer 13.
+1483,273,review_started,reviewer,13,2026-10-01T15:00:00+00:00,assigned,under_review,Human review started.
+1484,273,evidence_added,reviewer,13,2026-10-01T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1485,273,decision_recorded,reviewer,13,2026-10-01T17:00:00+00:00,under_review,decision_recorded,breach_found
+1486,274,case_opened,system,,2026-10-02T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1487,274,reviewer_assigned,system,,2026-10-02T15:00:00+00:00,open,assigned,Assigned to reviewer 14.
+1488,274,review_started,reviewer,14,2026-10-02T15:00:00+00:00,assigned,under_review,Human review started.
+1489,274,evidence_added,reviewer,14,2026-10-02T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1490,274,decision_recorded,reviewer,14,2026-10-02T17:00:00+00:00,under_review,decision_recorded,no_breach
+1491,275,case_opened,system,,2026-10-03T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1492,275,reviewer_assigned,system,,2026-10-03T15:00:00+00:00,open,assigned,Assigned to reviewer 15.
+1493,275,review_started,reviewer,15,2026-10-03T15:00:00+00:00,assigned,under_review,Human review started.
+1494,275,evidence_added,reviewer,15,2026-10-03T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1495,275,decision_recorded,reviewer,15,2026-10-03T17:00:00+00:00,under_review,decision_recorded,no_breach
+1496,276,case_opened,system,,2026-10-04T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1497,276,reviewer_assigned,system,,2026-10-04T15:00:00+00:00,open,assigned,Assigned to reviewer 16.
+1498,276,review_started,reviewer,16,2026-10-04T15:00:00+00:00,assigned,under_review,Human review started.
+1499,276,evidence_added,reviewer,16,2026-10-04T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1500,276,decision_recorded,reviewer,16,2026-10-04T17:00:00+00:00,under_review,decision_recorded,no_breach
+1501,277,case_opened,system,,2026-10-05T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1502,277,reviewer_assigned,system,,2026-10-05T15:00:00+00:00,open,assigned,Assigned to reviewer 17.
+1503,277,review_started,reviewer,17,2026-10-05T15:00:00+00:00,assigned,under_review,Human review started.
+1504,277,evidence_added,reviewer,17,2026-10-05T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1505,277,decision_recorded,reviewer,17,2026-10-05T17:00:00+00:00,under_review,decision_recorded,inconclusive
+1506,278,case_opened,system,,2026-10-06T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1507,278,reviewer_assigned,system,,2026-10-06T15:00:00+00:00,open,assigned,Assigned to reviewer 18.
+1508,278,review_started,reviewer,18,2026-10-06T15:00:00+00:00,assigned,under_review,Human review started.
+1509,278,evidence_added,reviewer,18,2026-10-06T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1510,278,decision_recorded,reviewer,18,2026-10-06T17:00:00+00:00,under_review,decision_recorded,no_breach
+1511,279,case_opened,system,,2026-10-07T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1512,279,reviewer_assigned,system,,2026-10-07T15:00:00+00:00,open,assigned,Assigned to reviewer 19.
+1513,279,review_started,reviewer,19,2026-10-07T15:00:00+00:00,assigned,under_review,Human review started.
+1514,279,evidence_added,reviewer,19,2026-10-07T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1515,279,decision_recorded,reviewer,19,2026-10-07T17:00:00+00:00,under_review,decision_recorded,no_breach
+1516,280,case_opened,system,,2026-10-08T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1517,280,reviewer_assigned,system,,2026-10-08T15:00:00+00:00,open,assigned,Assigned to reviewer 1.
+1518,280,review_started,reviewer,1,2026-10-08T15:00:00+00:00,assigned,under_review,Human review started.
+1519,280,evidence_added,reviewer,1,2026-10-08T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1520,280,decision_recorded,reviewer,1,2026-10-08T17:00:00+00:00,under_review,decision_recorded,no_breach
+1521,281,case_opened,system,,2026-10-09T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1522,281,reviewer_assigned,system,,2026-10-09T15:00:00+00:00,open,assigned,Assigned to reviewer 1.
+1523,281,review_started,reviewer,1,2026-10-09T15:00:00+00:00,assigned,under_review,Human review started.
+1524,281,evidence_added,reviewer,1,2026-10-09T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1525,281,decision_recorded,reviewer,1,2026-10-09T17:00:00+00:00,under_review,decision_recorded,breach_found
+1526,282,case_opened,system,,2026-10-10T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1527,282,reviewer_assigned,system,,2026-10-10T15:00:00+00:00,open,assigned,Assigned to reviewer 2.
+1528,282,review_started,reviewer,2,2026-10-10T15:00:00+00:00,assigned,under_review,Human review started.
+1529,282,evidence_added,reviewer,2,2026-10-10T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1530,282,decision_recorded,reviewer,2,2026-10-10T17:00:00+00:00,under_review,decision_recorded,no_breach
+1531,283,case_opened,system,,2026-10-11T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1532,283,reviewer_assigned,system,,2026-10-11T15:00:00+00:00,open,assigned,Assigned to reviewer 3.
+1533,283,review_started,reviewer,3,2026-10-11T15:00:00+00:00,assigned,under_review,Human review started.
+1534,283,evidence_added,reviewer,3,2026-10-11T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1535,283,decision_recorded,reviewer,3,2026-10-11T17:00:00+00:00,under_review,decision_recorded,no_breach
+1536,284,case_opened,system,,2026-10-12T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1537,284,reviewer_assigned,system,,2026-10-12T15:00:00+00:00,open,assigned,Assigned to reviewer 4.
+1538,284,review_started,reviewer,4,2026-10-12T15:00:00+00:00,assigned,under_review,Human review started.
+1539,284,evidence_added,reviewer,4,2026-10-12T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1540,284,decision_recorded,reviewer,4,2026-10-12T17:00:00+00:00,under_review,decision_recorded,no_breach
+1541,285,case_opened,system,,2026-10-13T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1542,285,reviewer_assigned,system,,2026-10-13T15:00:00+00:00,open,assigned,Assigned to reviewer 5.
+1543,285,review_started,reviewer,5,2026-10-13T15:00:00+00:00,assigned,under_review,Human review started.
+1544,285,evidence_added,reviewer,5,2026-10-13T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1545,285,decision_recorded,reviewer,5,2026-10-13T17:00:00+00:00,under_review,decision_recorded,breach_found
+1546,286,case_opened,system,,2026-10-14T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1547,286,reviewer_assigned,system,,2026-10-14T15:00:00+00:00,open,assigned,Assigned to reviewer 6.
+1548,286,review_started,reviewer,6,2026-10-14T15:00:00+00:00,assigned,under_review,Human review started.
+1549,286,evidence_added,reviewer,6,2026-10-14T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1550,286,decision_recorded,reviewer,6,2026-10-14T17:00:00+00:00,under_review,decision_recorded,no_breach
+1551,287,case_opened,system,,2026-10-15T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1552,287,reviewer_assigned,system,,2026-10-15T15:00:00+00:00,open,assigned,Assigned to reviewer 7.
+1553,287,review_started,reviewer,7,2026-10-15T15:00:00+00:00,assigned,under_review,Human review started.
+1554,287,evidence_added,reviewer,7,2026-10-15T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1555,287,decision_recorded,reviewer,7,2026-10-15T17:00:00+00:00,under_review,decision_recorded,no_breach
+1556,288,case_opened,system,,2026-10-16T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1557,288,reviewer_assigned,system,,2026-10-16T15:00:00+00:00,open,assigned,Assigned to reviewer 8.
+1558,288,review_started,reviewer,8,2026-10-16T15:00:00+00:00,assigned,under_review,Human review started.
+1559,288,evidence_added,reviewer,8,2026-10-16T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1560,288,decision_recorded,reviewer,8,2026-10-16T17:00:00+00:00,under_review,decision_recorded,no_breach
+1561,289,case_opened,system,,2026-10-17T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1562,289,reviewer_assigned,system,,2026-10-17T15:00:00+00:00,open,assigned,Assigned to reviewer 9.
+1563,289,review_started,reviewer,9,2026-10-17T15:00:00+00:00,assigned,under_review,Human review started.
+1564,289,evidence_added,reviewer,9,2026-10-17T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1565,289,decision_recorded,reviewer,9,2026-10-17T17:00:00+00:00,under_review,decision_recorded,breach_found
+1566,290,case_opened,system,,2026-10-18T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1567,290,reviewer_assigned,system,,2026-10-18T15:00:00+00:00,open,assigned,Assigned to reviewer 11.
+1568,290,review_started,reviewer,11,2026-10-18T15:00:00+00:00,assigned,under_review,Human review started.
+1569,290,evidence_added,reviewer,11,2026-10-18T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1570,290,decision_recorded,reviewer,11,2026-10-18T17:00:00+00:00,under_review,decision_recorded,no_breach
+1571,291,case_opened,system,,2026-10-19T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1572,291,reviewer_assigned,system,,2026-10-19T15:00:00+00:00,open,assigned,Assigned to reviewer 11.
+1573,291,review_started,reviewer,11,2026-10-19T15:00:00+00:00,assigned,under_review,Human review started.
+1574,291,evidence_added,reviewer,11,2026-10-19T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1575,291,decision_recorded,reviewer,11,2026-10-19T17:00:00+00:00,under_review,decision_recorded,no_breach
+1576,292,case_opened,system,,2026-10-20T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1577,292,reviewer_assigned,system,,2026-10-20T15:00:00+00:00,open,assigned,Assigned to reviewer 12.
+1578,292,review_started,reviewer,12,2026-10-20T15:00:00+00:00,assigned,under_review,Human review started.
+1579,292,evidence_added,reviewer,12,2026-10-20T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1580,292,decision_recorded,reviewer,12,2026-10-20T17:00:00+00:00,under_review,decision_recorded,no_breach
+1581,293,case_opened,system,,2026-10-21T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1582,293,reviewer_assigned,system,,2026-10-21T15:00:00+00:00,open,assigned,Assigned to reviewer 13.
+1583,293,review_started,reviewer,13,2026-10-21T15:00:00+00:00,assigned,under_review,Human review started.
+1584,293,evidence_added,reviewer,13,2026-10-21T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1585,293,decision_recorded,reviewer,13,2026-10-21T17:00:00+00:00,under_review,decision_recorded,inconclusive
+1586,294,case_opened,system,,2026-10-22T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1587,294,reviewer_assigned,system,,2026-10-22T15:00:00+00:00,open,assigned,Assigned to reviewer 14.
+1588,294,review_started,reviewer,14,2026-10-22T15:00:00+00:00,assigned,under_review,Human review started.
+1589,294,evidence_added,reviewer,14,2026-10-22T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1590,294,decision_recorded,reviewer,14,2026-10-22T17:00:00+00:00,under_review,decision_recorded,no_breach
+1591,295,case_opened,system,,2026-10-23T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1592,295,reviewer_assigned,system,,2026-10-23T15:00:00+00:00,open,assigned,Assigned to reviewer 15.
+1593,295,review_started,reviewer,15,2026-10-23T15:00:00+00:00,assigned,under_review,Human review started.
+1594,295,evidence_added,reviewer,15,2026-10-23T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1595,295,decision_recorded,reviewer,15,2026-10-23T17:00:00+00:00,under_review,decision_recorded,no_breach
+1596,296,case_opened,system,,2026-10-24T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1597,296,reviewer_assigned,system,,2026-10-24T15:00:00+00:00,open,assigned,Assigned to reviewer 16.
+1598,296,review_started,reviewer,16,2026-10-24T15:00:00+00:00,assigned,under_review,Human review started.
+1599,296,evidence_added,reviewer,16,2026-10-24T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1600,296,decision_recorded,reviewer,16,2026-10-24T17:00:00+00:00,under_review,decision_recorded,no_breach
+1601,297,case_opened,system,,2026-10-25T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1602,297,reviewer_assigned,system,,2026-10-25T15:00:00+00:00,open,assigned,Assigned to reviewer 17.
+1603,297,review_started,reviewer,17,2026-10-25T15:00:00+00:00,assigned,under_review,Human review started.
+1604,297,evidence_added,reviewer,17,2026-10-25T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1605,297,decision_recorded,reviewer,17,2026-10-25T17:00:00+00:00,under_review,decision_recorded,breach_found
+1606,298,case_opened,system,,2026-10-26T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1607,298,reviewer_assigned,system,,2026-10-26T15:00:00+00:00,open,assigned,Assigned to reviewer 18.
+1608,298,review_started,reviewer,18,2026-10-26T15:00:00+00:00,assigned,under_review,Human review started.
+1609,298,evidence_added,reviewer,18,2026-10-26T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1610,298,decision_recorded,reviewer,18,2026-10-26T17:00:00+00:00,under_review,decision_recorded,no_breach
+1611,299,case_opened,system,,2026-10-27T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1612,299,reviewer_assigned,system,,2026-10-27T15:00:00+00:00,open,assigned,Assigned to reviewer 19.
+1613,299,review_started,reviewer,19,2026-10-27T15:00:00+00:00,assigned,under_review,Human review started.
+1614,299,evidence_added,reviewer,19,2026-10-27T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1615,299,decision_recorded,reviewer,19,2026-10-27T17:00:00+00:00,under_review,decision_recorded,no_breach
+1616,300,case_opened,system,,2026-01-01T15:00:00+00:00,,open,Case created from a flagged similarity report.
+1617,300,reviewer_assigned,system,,2026-01-01T15:00:00+00:00,open,assigned,Assigned to reviewer 1.
+1618,300,review_started,reviewer,1,2026-01-01T15:00:00+00:00,assigned,under_review,Human review started.
+1619,300,evidence_added,reviewer,1,2026-01-01T16:00:00+00:00,,,Synthetic evidence added before the decision.
+1620,300,decision_recorded,reviewer,1,2026-01-01T17:00:00+00:00,under_review,decision_recorded,no_breach

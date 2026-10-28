@@ -8,7 +8,7 @@
 
 
 
-Status: Proposed
+Status: Accepted
 
 
 
@@ -50,7 +50,7 @@ requiring a paid external service.
 
 
 
-Status: Proposed
+Status: Accepted
 
 
 
@@ -84,7 +84,7 @@ row counts and checksums.
 
 
 
-Status: Proposed
+Status: Accepted
 
 
 
@@ -116,7 +116,7 @@ Test all required negative scenarios and valid lifecycle paths.
 
 
 
-Status: Proposed
+Status: Accepted
 
 
 
@@ -144,7 +144,7 @@ Confirm that later actions do not erase earlier events or decisions.
 
 
 
-Status: Proposed
+Status: Accepted
 
 
 

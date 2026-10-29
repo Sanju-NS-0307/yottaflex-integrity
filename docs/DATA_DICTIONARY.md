@@ -2,20 +2,20 @@
 
 Generated from `src/schema.sql`.
 
-This document describes the implemented SQLite schema. Business meanings and lifecycle rules are documented separately in `DATA_MODEL.md` and `workflow_triggers.sql`.
+This document describes the implemented SQLite schema. Business meanings and lifecycle rules are documented separately in `DATA_MODEL.md` and `src/workflow_triggers.sql`.
 
 ## `appeal`
 
 | Column | SQLite type | Required? | Key / uniqueness | Default | References |
 |---|---|---|---|---|---|
-| `appeal_id` | `INTEGER` | Yes | Primary key | `—` | — |
-| `appeal_ref` | `TEXT` | Yes | Unique | `—` | — |
-| `case_id` | `INTEGER` | Yes | — | `—` | case_record.case_id |
-| `original_decision_id` | `INTEGER` | Yes | — | `—` | decision.decision_id |
-| `grounds` | `TEXT` | Yes | — | `—` | — |
-| `submitted_at` | `TEXT` | Yes | — | `—` | — |
-| `appeal_status` | `TEXT` | Yes | — | `—` | — |
-| `outcome` | `TEXT` | No | — | `—` | — |
+| `appeal_id` | `INTEGER` | Yes | Primary key | `â€”` | â€” |
+| `appeal_ref` | `TEXT` | Yes | Unique (single-column) | `â€”` | â€” |
+| `case_id` | `INTEGER` | Yes | â€” | `â€”` | case_record.case_id |
+| `original_decision_id` | `INTEGER` | Yes | â€” | `â€”` | decision.decision_id |
+| `grounds` | `TEXT` | Yes | â€” | `â€”` | â€” |
+| `submitted_at` | `TEXT` | Yes | â€” | `â€”` | â€” |
+| `appeal_status` | `TEXT` | Yes | â€” | `â€”` | â€” |
+| `outcome` | `TEXT` | No | â€” | `â€”` | â€” |
 
 **Declared SQL constraints**
 
@@ -40,12 +40,12 @@ CREATE TABLE appeal (
 
 | Column | SQLite type | Required? | Key / uniqueness | Default | References |
 |---|---|---|---|---|---|
-| `appeal_review_id` | `INTEGER` | Yes | Primary key | `—` | — |
-| `appeal_id` | `INTEGER` | Yes | Unique | `—` | appeal.appeal_id |
-| `reviewer_id` | `INTEGER` | Yes | Unique | `—` | reviewer.reviewer_id |
-| `review_rationale` | `TEXT` | Yes | — | `—` | — |
-| `review_outcome` | `TEXT` | Yes | — | `—` | — |
-| `reviewed_at` | `TEXT` | Yes | — | `—` | — |
+| `appeal_review_id` | `INTEGER` | Yes | Primary key | `â€”` | â€” |
+| `appeal_id` | `INTEGER` | Yes | â€” | `â€”` | appeal.appeal_id |
+| `reviewer_id` | `INTEGER` | Yes | â€” | `â€”` | reviewer.reviewer_id |
+| `review_rationale` | `TEXT` | Yes | â€” | `â€”` | â€” |
+| `review_outcome` | `TEXT` | Yes | â€” | `â€”` | â€” |
+| `reviewed_at` | `TEXT` | Yes | â€” | `â€”` | â€” |
 
 **Declared SQL constraints**
 
@@ -62,17 +62,21 @@ CREATE TABLE appeal_review (
 )
 ```
 
+**Composite unique constraints**
+
+- Together, `appeal_id`, `reviewer_id` must be unique.
+
 ## `assessment`
 
 | Column | SQLite type | Required? | Key / uniqueness | Default | References |
 |---|---|---|---|---|---|
-| `assessment_id` | `INTEGER` | Yes | Primary key | `—` | — |
-| `assessment_ref` | `TEXT` | Yes | Unique | `—` | — |
-| `title` | `TEXT` | Yes | — | `—` | — |
-| `assessment_type` | `TEXT` | Yes | — | `—` | — |
-| `opens_at` | `TEXT` | Yes | — | `—` | — |
-| `closes_at` | `TEXT` | Yes | — | `—` | — |
-| `created_at` | `TEXT` | Yes | — | `—` | — |
+| `assessment_id` | `INTEGER` | Yes | Primary key | `â€”` | â€” |
+| `assessment_ref` | `TEXT` | Yes | Unique (single-column) | `â€”` | â€” |
+| `title` | `TEXT` | Yes | â€” | `â€”` | â€” |
+| `assessment_type` | `TEXT` | Yes | â€” | `â€”` | â€” |
+| `opens_at` | `TEXT` | Yes | â€” | `â€”` | â€” |
+| `closes_at` | `TEXT` | Yes | â€” | `â€”` | â€” |
+| `created_at` | `TEXT` | Yes | â€” | `â€”` | â€” |
 
 **Declared SQL constraints**
 
@@ -93,15 +97,15 @@ CREATE TABLE assessment (
 
 | Column | SQLite type | Required? | Key / uniqueness | Default | References |
 |---|---|---|---|---|---|
-| `event_id` | `INTEGER` | Yes | Primary key | `—` | — |
-| `case_id` | `INTEGER` | Yes | — | `—` | case_record.case_id |
-| `event_type` | `TEXT` | Yes | — | `—` | — |
-| `actor_type` | `TEXT` | Yes | — | `—` | — |
-| `actor_id` | `TEXT` | No | — | `—` | — |
-| `occurred_at` | `TEXT` | Yes | — | `—` | — |
-| `previous_state` | `TEXT` | No | — | `—` | — |
-| `new_state` | `TEXT` | No | — | `—` | — |
-| `event_details` | `TEXT` | Yes | — | `—` | — |
+| `event_id` | `INTEGER` | Yes | Primary key | `â€”` | â€” |
+| `case_id` | `INTEGER` | Yes | â€” | `â€”` | case_record.case_id |
+| `event_type` | `TEXT` | Yes | â€” | `â€”` | â€” |
+| `actor_type` | `TEXT` | Yes | â€” | `â€”` | â€” |
+| `actor_id` | `TEXT` | No | â€” | `â€”` | â€” |
+| `occurred_at` | `TEXT` | Yes | â€” | `â€”` | â€” |
+| `previous_state` | `TEXT` | No | â€” | `â€”` | â€” |
+| `new_state` | `TEXT` | No | â€” | `â€”` | â€” |
+| `event_details` | `TEXT` | Yes | â€” | `â€”` | â€” |
 
 **Declared SQL constraints**
 
@@ -123,13 +127,13 @@ CREATE TABLE audit_event (
 
 | Column | SQLite type | Required? | Key / uniqueness | Default | References |
 |---|---|---|---|---|---|
-| `case_id` | `INTEGER` | Yes | Primary key | `—` | — |
-| `case_ref` | `TEXT` | Yes | Unique | `—` | — |
-| `submission_id` | `INTEGER` | Yes | — | `—` | submission.submission_id |
-| `similarity_report_id` | `INTEGER` | Yes | — | `—` | similarity_report.similarity_report_id |
-| `opened_at` | `TEXT` | Yes | — | `—` | — |
-| `case_status` | `TEXT` | Yes | — | `—` | — |
-| `priority` | `TEXT` | Yes | — | `'normal'` | — |
+| `case_id` | `INTEGER` | Yes | Primary key | `â€”` | â€” |
+| `case_ref` | `TEXT` | Yes | Unique (single-column) | `â€”` | â€” |
+| `submission_id` | `INTEGER` | Yes | â€” | `â€”` | submission.submission_id |
+| `similarity_report_id` | `INTEGER` | Yes | â€” | `â€”` | similarity_report.similarity_report_id |
+| `opened_at` | `TEXT` | Yes | â€” | `â€”` | â€” |
+| `case_status` | `TEXT` | Yes | â€” | `â€”` | â€” |
+| `priority` | `TEXT` | Yes | â€” | `'normal'` | â€” |
 
 **Declared SQL constraints**
 
@@ -155,13 +159,13 @@ CREATE TABLE case_record (
 
 | Column | SQLite type | Required? | Key / uniqueness | Default | References |
 |---|---|---|---|---|---|
-| `decision_id` | `INTEGER` | Yes | Primary key | `—` | — |
-| `case_id` | `INTEGER` | Yes | — | `—` | case_record.case_id |
-| `reviewer_id` | `INTEGER` | Yes | — | `—` | reviewer.reviewer_id |
-| `decision_type` | `TEXT` | Yes | — | `—` | — |
-| `rationale` | `TEXT` | Yes | — | `—` | — |
-| `decided_at` | `TEXT` | Yes | — | `—` | — |
-| `integrity_rule_id` | `INTEGER` | Yes | — | `—` | integrity_rule.integrity_rule_id |
+| `decision_id` | `INTEGER` | Yes | Primary key | `â€”` | â€” |
+| `case_id` | `INTEGER` | Yes | â€” | `â€”` | case_record.case_id |
+| `reviewer_id` | `INTEGER` | Yes | â€” | `â€”` | reviewer.reviewer_id |
+| `decision_type` | `TEXT` | Yes | â€” | `â€”` | â€” |
+| `rationale` | `TEXT` | Yes | â€” | `â€”` | â€” |
+| `decided_at` | `TEXT` | Yes | â€” | `â€”` | â€” |
+| `integrity_rule_id` | `INTEGER` | Yes | â€” | `â€”` | integrity_rule.integrity_rule_id |
 
 **Declared SQL constraints**
 
@@ -182,14 +186,14 @@ CREATE TABLE decision (
 
 | Column | SQLite type | Required? | Key / uniqueness | Default | References |
 |---|---|---|---|---|---|
-| `evidence_item_id` | `INTEGER` | Yes | Primary key | `—` | — |
-| `evidence_ref` | `TEXT` | Yes | Unique | `—` | — |
-| `case_id` | `INTEGER` | Yes | — | `—` | case_record.case_id |
-| `evidence_type` | `TEXT` | Yes | — | `—` | — |
-| `source_reference` | `TEXT` | Yes | — | `—` | — |
-| `description` | `TEXT` | Yes | — | `—` | — |
-| `added_at` | `TEXT` | Yes | — | `—` | — |
-| `added_by_reviewer_id` | `INTEGER` | No | — | `—` | reviewer.reviewer_id |
+| `evidence_item_id` | `INTEGER` | Yes | Primary key | `â€”` | â€” |
+| `evidence_ref` | `TEXT` | Yes | Unique (single-column) | `â€”` | â€” |
+| `case_id` | `INTEGER` | Yes | â€” | `â€”` | case_record.case_id |
+| `evidence_type` | `TEXT` | Yes | â€” | `â€”` | â€” |
+| `source_reference` | `TEXT` | Yes | â€” | `â€”` | â€” |
+| `description` | `TEXT` | Yes | â€” | `â€”` | â€” |
+| `added_at` | `TEXT` | Yes | â€” | `â€”` | â€” |
+| `added_by_reviewer_id` | `INTEGER` | No | â€” | `â€”` | reviewer.reviewer_id |
 
 **Declared SQL constraints**
 
@@ -210,13 +214,13 @@ CREATE TABLE evidence_item (
 
 | Column | SQLite type | Required? | Key / uniqueness | Default | References |
 |---|---|---|---|---|---|
-| `integrity_rule_id` | `INTEGER` | Yes | Primary key | `—` | — |
-| `rule_ref` | `TEXT` | Yes | Unique | `—` | — |
-| `rule_version` | `INTEGER` | Yes | Unique | `—` | — |
-| `threshold` | `REAL` | Yes | — | `—` | — |
-| `effective_from` | `TEXT` | Yes | — | `—` | — |
-| `effective_to` | `TEXT` | No | — | `—` | — |
-| `rule_description` | `TEXT` | Yes | — | `—` | — |
+| `integrity_rule_id` | `INTEGER` | Yes | Primary key | `â€”` | â€” |
+| `rule_ref` | `TEXT` | Yes | â€” | `â€”` | â€” |
+| `rule_version` | `INTEGER` | Yes | â€” | `â€”` | â€” |
+| `threshold` | `REAL` | Yes | â€” | `â€”` | â€” |
+| `effective_from` | `TEXT` | Yes | â€” | `â€”` | â€” |
+| `effective_to` | `TEXT` | No | â€” | `â€”` | â€” |
+| `rule_description` | `TEXT` | Yes | â€” | `â€”` | â€” |
 
 **Declared SQL constraints**
 
@@ -234,15 +238,19 @@ CREATE TABLE integrity_rule (
 )
 ```
 
+**Composite unique constraints**
+
+- Together, `rule_ref`, `rule_version` must be unique.
+
 ## `learner`
 
 | Column | SQLite type | Required? | Key / uniqueness | Default | References |
 |---|---|---|---|---|---|
-| `learner_id` | `INTEGER` | Yes | Primary key | `—` | — |
-| `learner_ref` | `TEXT` | Yes | Unique | `—` | — |
-| `cohort` | `TEXT` | Yes | — | `—` | — |
-| `created_at` | `TEXT` | Yes | — | `—` | — |
-| `is_active` | `INTEGER` | Yes | — | `1` | — |
+| `learner_id` | `INTEGER` | Yes | Primary key | `â€”` | â€” |
+| `learner_ref` | `TEXT` | Yes | Unique (single-column) | `â€”` | â€” |
+| `cohort` | `TEXT` | Yes | â€” | `â€”` | â€” |
+| `created_at` | `TEXT` | Yes | â€” | `â€”` | â€” |
+| `is_active` | `INTEGER` | Yes | â€” | `1` | â€” |
 
 **Declared SQL constraints**
 
@@ -260,11 +268,11 @@ CREATE TABLE learner (
 
 | Column | SQLite type | Required? | Key / uniqueness | Default | References |
 |---|---|---|---|---|---|
-| `reviewer_id` | `INTEGER` | Yes | Primary key | `—` | — |
-| `reviewer_ref` | `TEXT` | Yes | Unique | `—` | — |
-| `role` | `TEXT` | Yes | — | `—` | — |
-| `is_active` | `INTEGER` | Yes | — | `1` | — |
-| `created_at` | `TEXT` | Yes | — | `—` | — |
+| `reviewer_id` | `INTEGER` | Yes | Primary key | `â€”` | â€” |
+| `reviewer_ref` | `TEXT` | Yes | Unique (single-column) | `â€”` | â€” |
+| `role` | `TEXT` | Yes | â€” | `â€”` | â€” |
+| `is_active` | `INTEGER` | Yes | â€” | `1` | â€” |
+| `created_at` | `TEXT` | Yes | â€” | `â€”` | â€” |
 
 **Declared SQL constraints**
 
@@ -283,12 +291,12 @@ CREATE TABLE reviewer (
 
 | Column | SQLite type | Required? | Key / uniqueness | Default | References |
 |---|---|---|---|---|---|
-| `assignment_id` | `INTEGER` | Yes | Primary key | `—` | — |
-| `case_id` | `INTEGER` | Yes | — | `—` | case_record.case_id |
-| `reviewer_id` | `INTEGER` | Yes | — | `—` | reviewer.reviewer_id |
-| `assigned_at` | `TEXT` | Yes | — | `—` | — |
-| `unassigned_at` | `TEXT` | No | — | `—` | — |
-| `assignment_reason` | `TEXT` | Yes | — | `—` | — |
+| `assignment_id` | `INTEGER` | Yes | Primary key | `â€”` | â€” |
+| `case_id` | `INTEGER` | Yes | â€” | `â€”` | case_record.case_id |
+| `reviewer_id` | `INTEGER` | Yes | â€” | `â€”` | reviewer.reviewer_id |
+| `assigned_at` | `TEXT` | Yes | â€” | `â€”` | â€” |
+| `unassigned_at` | `TEXT` | No | â€” | `â€”` | â€” |
+| `assignment_reason` | `TEXT` | Yes | â€” | `â€”` | â€” |
 
 **Declared SQL constraints**
 
@@ -308,13 +316,13 @@ CREATE TABLE reviewer_assignment (
 
 | Column | SQLite type | Required? | Key / uniqueness | Default | References |
 |---|---|---|---|---|---|
-| `conflict_id` | `INTEGER` | Yes | Primary key | `—` | — |
-| `case_id` | `INTEGER` | Yes | — | `—` | case_record.case_id |
-| `reviewer_id` | `INTEGER` | Yes | — | `—` | reviewer.reviewer_id |
-| `conflict_type` | `TEXT` | Yes | — | `—` | — |
-| `declared_at` | `TEXT` | Yes | — | `—` | — |
-| `resolution_status` | `TEXT` | Yes | — | `—` | — |
-| `resolution_note` | `TEXT` | No | — | `—` | — |
+| `conflict_id` | `INTEGER` | Yes | Primary key | `â€”` | â€” |
+| `case_id` | `INTEGER` | Yes | â€” | `â€”` | case_record.case_id |
+| `reviewer_id` | `INTEGER` | Yes | â€” | `â€”` | reviewer.reviewer_id |
+| `conflict_type` | `TEXT` | Yes | â€” | `â€”` | â€” |
+| `declared_at` | `TEXT` | Yes | â€” | `â€”` | â€” |
+| `resolution_status` | `TEXT` | Yes | â€” | `â€”` | â€” |
+| `resolution_note` | `TEXT` | No | â€” | `â€”` | â€” |
 
 **Declared SQL constraints**
 
@@ -335,14 +343,14 @@ CREATE TABLE reviewer_conflict (
 
 | Column | SQLite type | Required? | Key / uniqueness | Default | References |
 |---|---|---|---|---|---|
-| `similarity_report_id` | `INTEGER` | Yes | Primary key | `—` | — |
-| `report_ref` | `TEXT` | Yes | Unique | `—` | — |
-| `submission_id` | `INTEGER` | Yes | — | `—` | submission.submission_id |
-| `integrity_rule_id` | `INTEGER` | Yes | — | `—` | integrity_rule.integrity_rule_id |
-| `similarity_score` | `REAL` | Yes | — | `—` | — |
-| `generated_at` | `TEXT` | Yes | — | `—` | — |
-| `flag_status` | `TEXT` | Yes | — | `—` | — |
-| `evidence_reference` | `TEXT` | No | — | `—` | — |
+| `similarity_report_id` | `INTEGER` | Yes | Primary key | `â€”` | â€” |
+| `report_ref` | `TEXT` | Yes | Unique (single-column) | `â€”` | â€” |
+| `submission_id` | `INTEGER` | Yes | â€” | `â€”` | submission.submission_id |
+| `integrity_rule_id` | `INTEGER` | Yes | â€” | `â€”` | integrity_rule.integrity_rule_id |
+| `similarity_score` | `REAL` | Yes | â€” | `â€”` | â€” |
+| `generated_at` | `TEXT` | Yes | â€” | `â€”` | â€” |
+| `flag_status` | `TEXT` | Yes | â€” | `â€”` | â€” |
+| `evidence_reference` | `TEXT` | No | â€” | `â€”` | â€” |
 
 **Declared SQL constraints**
 
@@ -365,13 +373,13 @@ CREATE TABLE similarity_report (
 
 | Column | SQLite type | Required? | Key / uniqueness | Default | References |
 |---|---|---|---|---|---|
-| `submission_id` | `INTEGER` | Yes | Primary key | `—` | — |
-| `submission_ref` | `TEXT` | Yes | Unique | `—` | — |
-| `learner_id` | `INTEGER` | Yes | Unique | `—` | learner.learner_id |
-| `assessment_id` | `INTEGER` | Yes | Unique | `—` | assessment.assessment_id |
-| `submitted_at` | `TEXT` | Yes | Unique | `—` | — |
-| `content_hash` | `TEXT` | Yes | — | `—` | — |
-| `submission_status` | `TEXT` | Yes | — | `—` | — |
+| `submission_id` | `INTEGER` | Yes | Primary key | `â€”` | â€” |
+| `submission_ref` | `TEXT` | Yes | Unique (single-column) | `â€”` | â€” |
+| `learner_id` | `INTEGER` | Yes | â€” | `â€”` | learner.learner_id |
+| `assessment_id` | `INTEGER` | Yes | â€” | `â€”` | assessment.assessment_id |
+| `submitted_at` | `TEXT` | Yes | â€” | `â€”` | â€” |
+| `content_hash` | `TEXT` | Yes | â€” | `â€”` | â€” |
+| `submission_status` | `TEXT` | Yes | â€” | `â€”` | â€” |
 
 **Declared SQL constraints**
 
@@ -389,9 +397,13 @@ CREATE TABLE submission (
 )
 ```
 
+**Composite unique constraints**
+
+- Together, `learner_id`, `assessment_id`, `submitted_at` must be unique.
+
 ## Interpretation notes
 
-- Similarity scores are percentages on a 0–100 scale.
+- Similarity scores are percentages on a 0â€“100 scale.
 - Boolean-like fields use SQLite integers constrained to 0 or 1.
 - Timestamps are stored as ISO-formatted text; the schema does not enforce a timezone format.
 - Enumerated values and range constraints are shown in each table's SQL definition above.

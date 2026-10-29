@@ -2,7 +2,7 @@
 
 
 
-Status: DRAFT - Review before implementation
+Status: Implemented baseline - verified against the current schema and workflow tests; full requirements audit remains in progress.
 
 
 
@@ -381,6 +381,5 @@ with a documented reason. Reopening must not erase prior decisions.
 - Require audit history for post-decision evidence additions.
 - Preserve all previous decisions and significant state-change events.
 
-Status: PROPOSED - Convert each rule into executable tests before
-marking the workflow implementation complete.
+Status: Partially verified - the documented workflow protections have corresponding automated checks. The checks cover defined scenarios and do not establish that every possible workflow path is correct.
 

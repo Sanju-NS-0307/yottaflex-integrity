@@ -56,7 +56,7 @@ The verified baseline contains:
 - 300 cases.
 - 60 appeals.
 - Zero foreign-key violations.
-- 21 reproducible CSV/JSON exports.
+- 21 reproducible CSV/JSON exports (17 CSV and 4 JSON), verified by `python tests/check_reproducibility.py`.
 - Successful restoration of the SQL dump, matching all 14 table counts and passing SQLite integrity validation.
 
 These are recorded results, not a substitute for rerunning the tests against the final repository state.

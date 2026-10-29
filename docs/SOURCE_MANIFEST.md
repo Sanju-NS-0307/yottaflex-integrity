@@ -1,8 +1,8 @@
-# Source Manifest
+﻿# Source Manifest
 
 ## Project
 
-YottaFlex Integrity — Academic Integrity Case Management and Synthetic Data Platform.
+YottaFlex Integrity - Academic Integrity Case Management and Synthetic Data Platform.
 
 ## Data Provenance
 
@@ -69,3 +69,4 @@ Rerun all checks before submission to verify the final repository state.
 - Similarity flags are review signals, not automatic findings of misconduct.
 - Reproducibility depends on the generator version, seed, parameters, and compatible runtime.
 - This manifest documents the generated artifacts; it does not independently establish that every assessment requirement is satisfied.
+

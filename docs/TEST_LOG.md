@@ -1,4 +1,4 @@
-﻿# Test Log
+# Test Log
 
 ## Environment
 - Operating system: Windows
@@ -47,7 +47,7 @@
 
 ## Reproducibility
 - Result: PASS
-- All 17 CSV/JSON exports matched byte-for-byte across repeated runs using seed 20261022.
+- All 21 CSV/JSON exports matched byte-for-byte across repeated runs using seed 20261022 (17 CSV and 4 JSON files).
 
 ## Limitations
 These tests cover the implemented schema, baseline dataset, selected workflow protections, successful outcomes, and export reproducibility. They do not prove that every possible workflow path is correct.

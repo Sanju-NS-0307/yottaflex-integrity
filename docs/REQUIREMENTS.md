@@ -60,14 +60,14 @@
 - [ ] R34 [VERIFIED]: Document generator command, seed and dataset parameters. Evidence: `README.md` and `docs/SOURCE_MANIFEST.md`.
 - [ ] R35 [TESTED]: Include source manifest and validation summary. Evidence: `docs/SOURCE_MANIFEST.md` and `outputs/validation_summary.json`; final content review remains.
 - [ ] R36 [TESTED]: Include setup, execution and verification instructions. Evidence: Clean-clone setup and validation passed on Python 3.12.9.
-- [ ] R37 [OPEN]: Maintain the complete AI prompt history required by the FAQ. Must verify the actual FAQ requirement and preserve the actual required history; do not substitute an invented or reconstructed history.
+- [ ] R37 [TESTED]: Maintain the AI prompt record required by the assessment FAQ. `docs/AI_PROMPT_HISTORY.md` identifies ChatGPT as the only AI tool reported, summarizes recoverable project-related assistance, and discloses that the record is not a verbatim transcript. The FAQ permits a reasonable record when a complete prompt export is unavailable.
 - [ ] R38 [IMPLEMENTED]: Document assumptions, decisions, limitations and incomplete work. Evidence: `docs/DECISIONS.md`, `docs/PROJECT_STATE.md`, `docs/DATA_MODEL.md`, and `README.md`; final consistency review remains.
 
 ## G. Final Submission
 
 - [ ] R39 [VERIFIED]: A fresh public-repository clone passed schema, data, workflow, no-automatic-guilt, edge-case, positive-workflow, reproducibility, data-dictionary, and SQL dump restore checks on Python 3.12.9.
-- [ ] R40 [TESTED]: Review Git history and exclude secrets and prohibited content. Review remains incomplete; a basic credential-pattern scan is not comprehensive.
-- [ ] R41 [VERIFIED]: Push final reviewed changes to the dedicated public GitHub repository.
+- [ ] R40 [TESTED]: Review Git history and exclude secrets and prohibited content. Current-file and reachable-history scans found no matches for the specific credential patterns checked. These scans are not comprehensive; the broader security and prohibited-content review remains incomplete.
+- [ ] R41 [OPEN]: Push final reviewed changes to the dedicated public GitHub repository.
 - [ ] R42 [OPEN]: Submit the public repository link from the same email address used during recruitment, following the provided submission instructions. Public repository access is verified; actual submission is pending.
 ## Verification Evidence
 

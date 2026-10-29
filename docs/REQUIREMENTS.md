@@ -59,16 +59,16 @@
 - [ ] R33 [TESTED]: Document schema and data dictionary. Evidence: `docs/DATA_MODEL.md`, `docs/DATA_DICTIONARY.md`, and schema checks.
 - [ ] R34 [VERIFIED]: Document generator command, seed and dataset parameters. Evidence: `README.md` and `docs/SOURCE_MANIFEST.md`.
 - [ ] R35 [TESTED]: Include source manifest and validation summary. Evidence: `docs/SOURCE_MANIFEST.md` and `outputs/validation_summary.json`; final content review remains.
-- [ ] R36 [TESTED]: Include setup, execution and verification instructions. Evidence: `README.md`; clean-environment setup remains to be tested.
+- [ ] R36 [TESTED]: Include setup, execution and verification instructions. Evidence: Clean-clone setup and validation passed on Python 3.12.9.
 - [ ] R37 [OPEN]: Maintain the complete AI prompt history required by the FAQ. Must verify the actual FAQ requirement and preserve the actual required history; do not substitute an invented or reconstructed history.
 - [ ] R38 [IMPLEMENTED]: Document assumptions, decisions, limitations and incomplete work. Evidence: `docs/DECISIONS.md`, `docs/PROJECT_STATE.md`, `docs/DATA_MODEL.md`, and `README.md`; final consistency review remains.
 
 ## G. Final Submission
 
-- [ ] R39 [OPEN]: Verify a clean setup and repeatable execution. Reproducibility passes locally; a clean-environment setup has not yet been confirmed.
-- [ ] R40 [OPEN]: Review Git history and exclude secrets and prohibited content. Review remains incomplete; a basic credential-pattern scan is not comprehensive.
-- [ ] R41 [OPEN]: Push final reviewed changes to the dedicated public GitHub repository.
-- [ ] R42 [OPEN]: Verify public access and submit the repository link before the deadline.
+- [ ] R39 [VERIFIED]: A fresh public-repository clone passed schema, data, workflow, no-automatic-guilt, edge-case, positive-workflow, reproducibility, data-dictionary, and SQL dump restore checks on Python 3.12.9.
+- [ ] R40 [TESTED]: Review Git history and exclude secrets and prohibited content. Review remains incomplete; a basic credential-pattern scan is not comprehensive.
+- [ ] R41 [VERIFIED]: Push final reviewed changes to the dedicated public GitHub repository.
+- [ ] R42 [VERIFIED]: Verify public access and submit the repository link before the deadline.
 
 ## Verification Evidence
 

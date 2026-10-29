@@ -452,6 +452,40 @@ def main() -> None:
         with (OUTPUT_DIR / "ground_truth.json").open("w", encoding="utf-8") as file:
             json.dump(ground_truth, file, indent=2)
 
+        # Deterministic anomaly ground truth, separate from operational input data.
+        edge_case_ground_truth = [
+            {
+                "scenario_id": "EDGE-001",
+                "issue_type": "flag_automatically_treated_as_guilt",
+                "ground_truth_label": "flag_is_not_guilt",
+                "expected_outcome": "A similarity flag alone must not create a case or decision.",
+                "verification_test": "tests/check_no_automatic_guilt.py",
+            },
+            {
+                "scenario_id": "EDGE-002",
+                "issue_type": "reviewer_conflict",
+                "ground_truth_label": "conflicted_decision_rejected",
+                "expected_outcome": "A conflicted reviewer must not record a decision.",
+                "verification_test": "tests/check_workflow.py",
+            },
+            {
+                "scenario_id": "EDGE-003",
+                "issue_type": "post_decision_evidence_without_history",
+                "ground_truth_label": "untracked_evidence_rejected",
+                "expected_outcome": "Post-decision evidence without a matching audit event must be rejected.",
+                "verification_test": "tests/check_workflow.py",
+            },
+            {
+                "scenario_id": "EDGE-004",
+                "issue_type": "appeal_closed_without_independent_review",
+                "ground_truth_label": "independent_review_required",
+                "expected_outcome": "An appeal must not be completed without independent review.",
+                "verification_test": "tests/check_workflow.py",
+            },
+        ]
+        write_csv(OUTPUT_DIR / "ground_truth_anomalies.csv", edge_case_ground_truth)
+        with (OUTPUT_DIR / "ground_truth_anomalies.json").open("w", encoding="utf-8") as file:
+            json.dump(edge_case_ground_truth, file, indent=2)
         validation = {
             "seed": args.seed,
             "submissions_requested": args.submissions,

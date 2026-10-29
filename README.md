@@ -1,4 +1,4 @@
-﻿# Academic Integrity Case Management Dataset
+# Academic Integrity Case Management Dataset
 
 A reproducible, SQLite-backed synthetic dataset and workflow model for academic-integrity review.
 
@@ -59,6 +59,7 @@ python tests/check_schema.py
 python tests/check_data.py
 python tests/check_workflow.py
 python tests/check_no_automatic_guilt.py
+python tests/check_edge_cases.py
 python tests/check_positive_workflows.py
 python tests/check_reproducibility.py
 python tests/check_data_dictionary.py
@@ -87,6 +88,8 @@ The SQL export test writes `outputs/integrity_cases_dump.sql` and restores it in
 | `outputs/audit_event.csv` | Case event history |
 | `outputs/ground_truth.csv` | Separate synthetic evaluation labels |
 | `outputs/ground_truth.json` | Evaluation labels in JSON |
+| `outputs/ground_truth_anomalies.csv` | Labelled edge-case scenarios in CSV |
+| `outputs/ground_truth_anomalies.json` | Labelled edge-case scenarios in JSON |
 | `outputs/validation_summary.json` | Generation and validation summary |
 | `docs/DATA_DICTIONARY.md` | Implemented columns, types, and constraints |
 | `docs/SOURCE_MANIFEST.md` | Data provenance and artifact manifest |

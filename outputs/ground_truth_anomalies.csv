@@ -1,0 +1,5 @@
+scenario_id,issue_type,ground_truth_label,expected_outcome,verification_test
+EDGE-001,flag_automatically_treated_as_guilt,flag_is_not_guilt,A similarity flag alone must not create a case or decision.,tests/check_no_automatic_guilt.py
+EDGE-002,reviewer_conflict,conflicted_decision_rejected,A conflicted reviewer must not record a decision.,tests/check_workflow.py
+EDGE-003,post_decision_evidence_without_history,untracked_evidence_rejected,Post-decision evidence without a matching audit event must be rejected.,tests/check_workflow.py
+EDGE-004,appeal_closed_without_independent_review,independent_review_required,An appeal must not be completed without independent review.,tests/check_workflow.py

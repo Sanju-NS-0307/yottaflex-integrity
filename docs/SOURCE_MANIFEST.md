@@ -1,4 +1,4 @@
-﻿# Source Manifest
+# Source Manifest
 
 ## Project
 
@@ -30,6 +30,10 @@ The generator creates the records and exports operational data separately from g
 | `outputs/validation_summary.json` | Validation counts and metrics |
 | `outputs/ground_truth.csv` | Separate ground-truth labels |
 | `outputs/ground_truth.json` | JSON version of the ground-truth labels |
+| `outputs/ground_truth_anomalies.csv` | Labelled synthetic edge-case scenarios |
+| `outputs/ground_truth_anomalies.json` | JSON version of the edge-case scenarios |
+| `outputs/edge_case_results.csv` | Results of the edge-case validation checks |
+| `outputs/edge_case_results.json` | JSON version of the edge-case validation results |
 | `outputs/*.csv` | Table-level CSV exports |
 | `docs/DATA_DICTIONARY.md` | Generated schema reference |
 
@@ -56,6 +60,7 @@ The following checks passed in the latest recorded run:
 - Schema smoke test.
 - Data-integrity checks.
 - Negative workflow checks.
+- Edge-case checks for flag-only records, reviewer conflicts, evidence audit history, and appeal-review independence.
 - Positive workflow checks.
 - CSV/JSON reproducibility checks.
 - Data dictionary regression checks.

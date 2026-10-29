@@ -1,4 +1,4 @@
-﻿# AI Prompt History and Contribution Disclosure
+# AI Prompt History and Contribution Disclosure
 
 ## Purpose
 
@@ -14,7 +14,7 @@ The assessment FAQ permits a reasonable record with the limitation disclosed whe
 
 - Tool: ChatGPT
 - Use: Development assistance, code review, debugging, documentation, test planning, and Git workflow guidance.
-- Other AI tools: Not established by the available record. Add their actual usage if applicable.
+- Other AI tools: None reported by the project owner. ChatGPT was the AI assistant used throughout the project.
 
 ## Summary of AI-assisted work
 
@@ -27,12 +27,12 @@ The assessment FAQ permits a reasonable record with the limitation disclosed whe
 
 ## Contribution disclosure
 
-The project owner ran the commands locally, reviewed the outputs, and performed the Git operations. AI assistance was used for guidance and proposed code or documentation changes. This summary does not establish that every AI-generated suggestion was adopted unchanged.
+The project owner ran the commands locally, reviewed the outputs, and performed the Git operations. ChatGPT provided development guidance, debugging support, and proposed code and documentation changes. This summary does not claim that every line was manually authored by the project owner or that every AI suggestion was adopted unchanged.
 
 ## Remaining history work
 
-- Recover any available full conversation exports or original prompts.
-- Add prompts from every other AI tool actually used, if any.
+- Check whether original prompts or conversation exports are available; do not invent missing prompts or describe this summary as a verbatim transcript.
+- No other AI tools were reported by the project owner. Update this disclosure if that information changes.
 - Preserve the required record without publishing assessment problem statements, interview questions, secrets, or unauthorized confidential material.
 - Update this disclosure if more complete history becomes available.
 

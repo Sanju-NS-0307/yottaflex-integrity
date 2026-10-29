@@ -1,0 +1,5 @@
+scenario_id,issue_type,ground_truth_label,expected_outcome,test_file,required_output,actual_result,test_exit_code,verification_detail
+EDGE-001,flag_automatically_treated_as_guilt,flag_is_not_guilt,A flag alone creates neither a case nor a decision.,check_no_automatic_guilt.py,,passed,0,Required test completed successfully.
+EDGE-002,reviewer_conflict,conflicted_decision_rejected,A conflicted reviewer cannot record a decision.,check_workflow.py,PASS: Conflicted reviewer cannot record a decision,passed,0,Required test completed successfully.
+EDGE-003,post_decision_evidence_without_history,untracked_evidence_rejected,Post-decision evidence without an audit event is rejected.,check_workflow.py,PASS: Post-decision evidence requires an audit event,passed,0,Required test completed successfully.
+EDGE-004,appeal_closed_without_independent_review,independent_review_required,An appeal cannot be closed without independent review.,check_workflow.py,PASS: Appeal cannot close before independent review,passed,0,Required test completed successfully.

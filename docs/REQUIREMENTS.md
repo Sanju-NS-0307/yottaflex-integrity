@@ -1,4 +1,4 @@
-﻿# Project Requirements and Verification Tracker
+# Project Requirements and Verification Tracker
 
 ## Status definitions
 
@@ -49,7 +49,7 @@
 - [ ] R26 [IMPLEMENTED]: Validate enums, date ordering, joins and duplicate records. Evidence: schema and data checks; complete validation-coverage audit remains.
 - [ ] R27 [TESTED]: Validate lifecycle transitions and arithmetic reconciliation. Lifecycle checks pass; full arithmetic-reconciliation coverage remains.
 - [ ] R28 [TESTED]: Generate a validation summary and measurable evaluation metrics. Evidence: `outputs/validation_summary.json`; metric completeness review remains.
-- [ ] R29 [VERIFIED]: Run the same seed twice and compare row counts and checksums. Evidence: `python tests/check_reproducibility.py` confirms all 17 CSV/JSON exports are byte-for-byte identical.
+- [ ] R29 [VERIFIED]: Run the same seed twice and compare row counts and checksums. Evidence: `python tests/check_reproducibility.py` confirms all 21 CSV/JSON exports are byte-for-byte identical.
 
 ## F. Deliverables
 

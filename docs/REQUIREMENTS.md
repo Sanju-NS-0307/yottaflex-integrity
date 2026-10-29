@@ -67,7 +67,7 @@
 
 - [ ] R39 [VERIFIED]: A fresh public-repository clone passed schema, data, workflow, no-automatic-guilt, edge-case, positive-workflow, reproducibility, data-dictionary, and SQL dump restore checks on Python 3.12.9.
 - [ ] R40 [TESTED]: Review Git history and exclude secrets and prohibited content. Current-file and reachable-history scans found no matches for the specific credential patterns checked. These scans are not comprehensive; the broader security and prohibited-content review remains incomplete.
-- [ ] R41 [OPEN]: Final documentation changes are being reviewed locally; update this item after the final push is verified.
+- [x] R41 [VERIFIED]: Final reviewed documentation changes were pushed to the dedicated public GitHub repository and verified at commit 82fb763.
 - [ ] R42 [OPEN]: Submit the public repository link from the same email address used during recruitment, following the provided submission instructions. Public repository access is verified; actual submission is pending.
 ## Verification Evidence
 

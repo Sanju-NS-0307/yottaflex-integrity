@@ -38,7 +38,7 @@
 
 ## D. Required Negative Scenarios
 
-- [ ] R21 [OPEN]: Detect or reject a flag automatically treated as guilt. A dedicated test for this exact scenario has not been confirmed.
+- [x] R21 [TESTED]: Verify that a flagged similarity report alone creates no case or decision. Evidence: `python tests/check_no_automatic_guilt.py`; broader decision-path coverage remains open.
 - [ ] R22 [TESTED]: Prevent a conflicted reviewer from deciding the case. Evidence: `python tests/check_workflow.py`.
 - [ ] R23 [TESTED]: Detect or prevent evidence added after a decision without audit history. Evidence: `python tests/check_workflow.py`.
 - [ ] R24 [TESTED]: Prevent appeal closure without independent review. Evidence: `python tests/check_workflow.py`.

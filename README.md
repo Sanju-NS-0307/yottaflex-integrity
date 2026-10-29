@@ -58,13 +58,14 @@ Generate the default dataset before running the checks.
 python tests/check_schema.py
 python tests/check_data.py
 python tests/check_workflow.py
+python tests/check_no_automatic_guilt.py
 python tests/check_positive_workflows.py
 python tests/check_reproducibility.py
 python tests/check_data_dictionary.py
 python tests/export_sql_dump.py
 ```
 
-These checks cover schema creation, data integrity, invalid workflow actions, valid workflow paths, CSV/JSON reproducibility, data-dictionary constraint documentation, and SQL dump restoration.
+These checks cover schema creation, data integrity, invalid workflow actions, no automatic case or decision from a flag alone, valid workflow paths, CSV/JSON reproducibility, data-dictionary constraint documentation, and SQL dump restoration.
 
 The SQL export test writes `outputs/integrity_cases_dump.sql` and restores it into a fresh in-memory database to compare table counts and check database integrity.
 

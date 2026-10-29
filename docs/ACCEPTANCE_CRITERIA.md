@@ -88,7 +88,7 @@ Pass: Valid workflow tests succeed.
 
 ## AC-05: Negative Scenarios
 
-- Automatic guilt from a flag is detected or rejected.
+- A flagged report alone does not automatically create a case or decision (tested by `python tests/check_no_automatic_guilt.py`).
 
 - Conflicted reviewer decisions are detected or rejected.
 
@@ -185,8 +185,3 @@ Pass: A clean local setup reproduces the documented results.
 
 
 Pass: Public access and submission are confirmed.
-
-
-
-
-

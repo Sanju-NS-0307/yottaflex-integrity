@@ -68,8 +68,7 @@
 - [ ] R39 [VERIFIED]: A fresh public-repository clone passed schema, data, workflow, no-automatic-guilt, edge-case, positive-workflow, reproducibility, data-dictionary, and SQL dump restore checks on Python 3.12.9.
 - [ ] R40 [TESTED]: Review Git history and exclude secrets and prohibited content. Review remains incomplete; a basic credential-pattern scan is not comprehensive.
 - [ ] R41 [VERIFIED]: Push final reviewed changes to the dedicated public GitHub repository.
-- [ ] R42 [VERIFIED]: Verify public access and submit the repository link before the deadline.
-
+- [ ] R42 [OPEN]: Submit the public repository link from the same email address used during recruitment, following the provided submission instructions. Public repository access is verified; actual submission is pending.
 ## Verification Evidence
 
 Evidence cited above refers to the commands and files recorded during the current project review. Rerun the checks against the final committed state. Do not treat a passing test as proof of requirements that the test does not cover.

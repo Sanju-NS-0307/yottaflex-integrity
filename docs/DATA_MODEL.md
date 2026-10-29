@@ -1,4 +1,4 @@
-﻿# Data Model Specification
+# Data Model Specification
 
 **Status:** Implemented baseline — verified against the current schema and defined workflow tests; the full requirements audit remains in progress.
 
@@ -162,7 +162,7 @@ The following lists describe the intended lifecycle states. They should not be i
 - `partially_upheld`
 - `closed`
 
-Case and appeal states represent separate lifecycles. `under_independent_review` is an appeal state, not a case state. A case associated with an appeal may be closed only after the required independent appeal review is complete.
+Case and appeal states represent connected lifecycles. In the current schema, `under_independent_review` is accepted as both a case status and an appeal status. The case workflow trigger also permits the transitions `appealed` → `under_independent_review` → `closed`. This overlap is a known design inconsistency that should be reviewed; the documentation reflects the current implementation rather than claiming the distinction is enforced.
 
 The schema constraints, workflow implementation, and automated tests should be consulted to determine which states and transitions are actually accepted or rejected.
 
@@ -219,9 +219,10 @@ The intended case lifecycle includes these transitions:
 - `under_review` → `decision_recorded`
 - `decision_recorded` → `appealed`
 - `decision_recorded` → `closed`
-- `appealed` → `closed`, only after the required independent appeal review is complete
+- `appealed` → `under_independent_review`
+- `under_independent_review` → `closed`
 
-Independent appeal review is represented in the appeal lifecycle; it is not a separate case state.
+The current implementation also uses "under_independent_review" as a case state. This overlap with the appeal lifecycle is a known design inconsistency.
 
 A case may be reopened only through an explicit, audited action with a documented reason. Reopening must not erase prior decisions. Reopening behavior must be checked against the implementation and should not be assumed to be supported unless verified.
 
